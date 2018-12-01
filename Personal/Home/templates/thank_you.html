@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block thank_you %}
+
+<p> Thanks for getting ahold of me {{form_variables.first_name}}.</p>
+<p>I got your comment: {{form_variables.body}}</p>
+<p>I'm delighted you took the time to contact me. For a faster line of communication,
+ you can always contact me at (419)-206-8550. Otherwise I will reach out to you at 
+ {{form_variables.email}}</p>
+
+{% endblock %}

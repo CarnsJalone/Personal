@@ -28,6 +28,7 @@
           <a href="{% url 'resume' %}"><p>Resume</p></a>
           <a href="{% url 'about_me' %}"><p>About Me</p></a>
           <a href="{% url 'connect' %}"><p>Connect</p></a>
+          <p>Projects</p>
         </div>
       </div>
     </div>
@@ -36,6 +37,7 @@
     {% block resume %}{% endblock %}
     {% block about_me %}{% endblock %}
     {% block connect %}{% endblock %}
+    {% block thank_you %}{% endblock %}
 
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"

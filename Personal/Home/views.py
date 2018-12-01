@@ -22,12 +22,21 @@ def connect(request):
             email = form.cleaned_data['email']
             body = form.cleaned_data['body']
 
-            return HttpResponse('Yo')
+            form_variables = {
+                'first_name' : first_name, 
+                'last_name' : last_name, 
+                'email' : email, 
+                'body' : body
+                }
 
+            return render(request, 'thank_you.html', {'form_variables' : form_variables})
+        
         else:
             form = ConnectForm()
+            return render(request, 'connect.html', {'form' : form})
     else: 
         form = ConnectForm()
+        return render(request, 'connect.html', {'form' : form})
 
 
     return render(request, 'connect.html', {'form':form})

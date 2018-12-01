@@ -5,7 +5,7 @@
     <h1>Hello Again</h1>
 
     <div id="connect_page_form_div">
-         <form action="">
+         <form id="connect_page_form_form" action="/connect/thanks_for_reaching_out/" method="POST">
             {% csrf_token %}
             {{ form }}
             <input type="submit" id="connect_page_form_submit_button">
