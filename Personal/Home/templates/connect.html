@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block connect %}
+
+    <h1>Hello Again</h1>
+
+    <div id="connect_page_form_div">
+         <form action="">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" id="connect_page_form_submit_button">
+         </form>
+
+    </div>
+
+{% endblock %}

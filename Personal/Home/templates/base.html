@@ -20,20 +20,22 @@
     <title>Jarret Laberdee</title>
   </head>
   <body>
-      <div id="main_header_outer">
-          <div id="main_header_inner">
-              <div id="main_header_left_half">
-                <p>Hi, I'm Jarret</p>
-              </div>
-              <div id="main_header_right_half">
-                <p>Resume</p>
-                <p>About Me</p>
-              </div>
-          </div>
+    <div id="main_header_outer">
+      <div id="main_header_inner">
+        <div id="main_header_left_half"><p>Hey, I'm Jarret</p></div>
+        <div id="main_header_right_half">
+          <a href="{% url 'home' %}"><p>Home</p></a>
+          <a href="{% url 'resume' %}"><p>Resume</p></a>
+          <a href="{% url 'about_me' %}"><p>About Me</p></a>
+          <a href="{% url 'connect' %}"><p>Connect</p></a>
+        </div>
       </div>
+    </div>
 
-
-    {% block home %}{% endblock %} {% block resume %}{% endblock %}
+    {% block home %}{% endblock %} 
+    {% block resume %}{% endblock %}
+    {% block about_me %}{% endblock %}
+    {% block connect %}{% endblock %}
 
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
