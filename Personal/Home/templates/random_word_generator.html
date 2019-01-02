@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block random_word_generator %}
+
+
+    <div id="random_word_generator_div" class="container">
+
+        <p>Here is a quick little script that generates a random sequence of consonants and vowels 
+        in what I like to call a <span style="font-style: italic">"word"</span>. 
+        The script will randomly choose whether to begin the word with a consonant or vowel. 
+        These words are in no way affiliated with the accepted Merriam-Webster dictionary and are 
+        more times than not incoherent.</p>
+
+        <form>
+            <button id="random_word_generator_submit_button" type="submit" action="{% url 'random_word_generator' %}" method="get">Generate a Random Word</button>
+        </form>
+
+        <div id="random_word_generator_inner_div">
+
+            <h3 id="random_word_generator_random_word"> Random Word: 
+            <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
+            <span style="font-style:italic">{{random_word}}</span>
+            </h3>
+        </div>
+
+    </div>
+
+{% endblock %}

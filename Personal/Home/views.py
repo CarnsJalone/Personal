@@ -3,12 +3,10 @@ from django.http import HttpResponse
 
 # Local Imports
 from . forms import ConnectForm
+from . random_word_generator import generate_random_word
 
 def home(request):
     return render(request, 'home.html', {})
-
-def resume(request):
-    return render(request, 'resume.html', {})
 
 def about_me(request):
     return render(request, 'about_me.html', {})
@@ -40,3 +38,14 @@ def connect(request):
 
 
     return render(request, 'connect.html', {'form':form})
+
+def projects(request):
+    return render(request, 'project_home_page.html', {})
+
+def random_word_generator(request):
+    context = {'random_word' : generate_random_word}
+
+    if request.method == 'GET':
+        return render(request, 'random_word_generator.html', context)
+    else:
+        return render(request, 'random_word_generator.html', {})

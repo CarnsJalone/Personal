@@ -20,6 +20,10 @@ body {
   div#connect_page_form_div {
     width: 90%;
   }
+  div#resume_page_img_div {
+    width: 85%;
+    height: auto;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 550px) {
@@ -36,6 +40,10 @@ body {
   }
   div#connect_page_form_div {
     width: 85%;
+  }
+  div#resume_page_img_div {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -54,6 +62,10 @@ body {
   div#connect_page_form_div {
     width: 80%;
   }
+  div#resume_page_img_div {
+    width: 75%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -70,6 +82,10 @@ body {
   }
   div#connect_page_form_div {
     width: 70%;
+  }
+  div#resume_page_img_div {
+    width: 75%;
+    height: auto;
   }
 }
 
@@ -88,6 +104,10 @@ body {
   div#connect_page_form_div {
     width: 60%;
   }
+  div#resume_page_img_div {
+    width: 60%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1500px) {
@@ -105,6 +125,10 @@ body {
   div#connect_page_form_div {
     width: 50%;
   }
+  div#resume_page_img_div {
+    width: 60%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1501px) {
@@ -121,6 +145,10 @@ body {
   }
   div#connect_page_form_div {
     width: 50%;
+  }
+  div#resume_page_img_div {
+    width: 55%;
+    height: auto;
   }
 }
 
@@ -158,9 +186,7 @@ div#main_header_right_half a {
   margin: 0 auto;
 }
 
-div#resume_page_img_div {
-    width: 90%;
-    height: 80%;   
+div#resume_page_img_div { 
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -181,3 +207,34 @@ img#resume_page_img_img {
 div#connect_page_form_div {
   margin: 0 auto;
 }
+
+ul#about_me_page_ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Random Word Generator Page */
+
+div#random_word_generator_div {
+  text-align: center;
+}
+
+button#random_word_generator_submit_button {
+  border-radius: 0.5em;
+  margin-bottom: 10px;
+}
+
+div#random_word_generator_inner_div {
+  padding: 5px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+h3#random_word_generator_random_word {
+  color: #cfc259;
+  background-color: #6e73ab;
+  padding: 5px;
+  margin: 0px;
+  border-radius: .25em;
+}
+

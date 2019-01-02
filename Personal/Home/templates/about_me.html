@@ -1,19 +1,46 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block about_me %}
 
     <div class="container">
-        <p>Hey There!<p/>
-        <p>My name is Jarret Laberdee. I’m 28 years old and very 
-        enthusiastic about software design and web development. 
-        I have become encapsulated with fascination about how technology 
-        plays such a vital role in our day to day lives in our modern society. 
-        It’s with this fascination that I continue to push myself to put new 
-        hats on and learn new technologies.</p>
+        <ul id="about_me_page_ul">
+            <li>
+                <h5>Personal Fulfillment</h5>
+                <p>Over the last 2.5 years I have become encapsulated in the world of
+                    software design. I am constantly taken back by how heavily the modern 
+                    world around us is shaped by technology, and it's in that same breath 
+                    that I want to be a contributor to that shaped world. 
+                </p>
+            </li>
+            <li>
+                <h5>Professional Goals</h5>
+                <p>I've been in a professional setting for about 4 years. I have managed 
+                    upwards of 75 employees in a professional, manufacturing setting. I 
+                    have worked in systems integrations, process enhancment and manpower 
+                    allocation. 
+                </p>
+            </li>
+            <li>
+                <h5>Experience</h5>
+                <p>For the last 4 years I've worked for Fiat Chrysler Automobiles. I 
+                    started out as a line supervisor, and slowly worked my way into an 
+                    data-based analysis role with my technological saavy. 
+                </p>
+            </li>
+        </ul>
+   
+    </div>
 
-        <p>Despite not being formally education in Computer Science, 
-        I possess the problem-solving capabilities to carry out any task 
-        that I set my sights on.</p>
+    <div class="container">
+    <p>Take a look at my resume below. You'll find that I have the necessary 
+    problem-solving skills to attack any problem!</p>
+    </div>
+
+    <div id="resume_page_img_div">
+
+        <img src="{% static 'img/Jarret_Laberdee_Resume.jpg' %}" alt="Jarret Laberdee Resume" id="resume_page_img_img">
+
     </div>
 
 {% endblock %}

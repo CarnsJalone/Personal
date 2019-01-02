@@ -25,10 +25,9 @@
         <div id="main_header_left_half"><p>Hey, I'm Jarret</p></div>
         <div id="main_header_right_half">
           <a href="{% url 'home' %}"><p>Home</p></a>
-          <a href="{% url 'resume' %}"><p>Resume</p></a>
           <a href="{% url 'about_me' %}"><p>About Me</p></a>
           <a href="{% url 'connect' %}"><p>Connect</p></a>
-          <p>Projects</p>
+          <a href="{% url 'projects_home_page' %}"><p>Projects</p></a>
         </div>
       </div>
     </div>
@@ -38,6 +37,8 @@
     {% block about_me %}{% endblock %}
     {% block connect %}{% endblock %}
     {% block thank_you %}{% endblock %}
+    {% block project_home_page %}{% endblock %}
+    {% block random_word_generator %} {% endblock %}
 
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
