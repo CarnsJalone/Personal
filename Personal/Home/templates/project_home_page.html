@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block project_home_page %}
 
-<a href="{% url 'random_word_generator' %}"><p>Random Word Generator</p></a>
+<div id="project_home_main_div">
+
+    <div class="project_home_section">
+        <div class="project_home_project_description_div">
+            <a class="project_home_project_description_links" id="random_word_generator_link" href="{% url 'random_word_generator' %}"><p>Random Word Generator</p></a>
+        </div>
+        <div class="project_home_project_thumbnail_div">
+            <img id="project_home_project_thumbnail_img" src="{% static 'png/Random_Word_Generator.png' %}" alt="Random Word Generator Thumbnail">
+        </div>
+
+    </div>
+
+    <hr style="width: 90%; background-color: #6e73ab;">
+
+</div>
+
+
 
 {% endblock %}

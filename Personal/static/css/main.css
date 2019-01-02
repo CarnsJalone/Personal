@@ -1,6 +1,9 @@
 body {
-  background-color: #9fa3cc;
   font-family: "Merienda", cursive;
+}
+
+#body_id {
+  background-color: #FFF8BE;
 }
 
 @media only screen and (max-width: 400px) {
@@ -24,6 +27,23 @@ body {
     width: 85%;
     height: auto;
   }
+
+    /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: column;
+  }
+
+  div.project_home_project_description_div {
+    width: 50%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 50%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 550px) {
@@ -44,6 +64,23 @@ body {
   div#resume_page_img_div {
     width: 80%;
     height: auto;
+  }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: column;
+  }
+
+  div.project_home_project_description_div {
+    width: 100%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 100%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 90%;
   }
 }
 
@@ -66,6 +103,23 @@ body {
     width: 75%;
     height: auto;
   }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: column;
+  }
+
+  div.project_home_project_description_div {
+    width: 100%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 100%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 80%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -86,6 +140,23 @@ body {
   div#resume_page_img_div {
     width: 75%;
     height: auto;
+  }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: row;
+  }
+
+  div.project_home_project_description_div {
+    width: 50%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 50%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 100%;
   }
 }
 
@@ -108,6 +179,23 @@ body {
     width: 60%;
     height: auto;
   }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: row;
+  }
+
+  div.project_home_project_description_div {
+    width: 50%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 50%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1500px) {
@@ -129,6 +217,23 @@ body {
     width: 60%;
     height: auto;
   }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: row;
+  }
+
+  div.project_home_project_description_div {
+    width: 50%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 50%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 80%;
+  }
 }
 
 @media (min-width: 1501px) {
@@ -149,6 +254,23 @@ body {
   div#resume_page_img_div {
     width: 55%;
     height: auto;
+  }
+
+  /* Project Home Page */
+
+  div.project_home_section {
+    flex-direction: row;
+  }
+
+  div.project_home_project_description_div {
+    width: 50%;
+  }
+  div.project_home_project_thumbnail_div {
+    width: 50%;
+  }
+
+  img#project_home_project_thumbnail_img {
+    width: 75%;
   }
 }
 
@@ -213,13 +335,52 @@ ul#about_me_page_ul {
   list-style-type: none;
 }
 
-/* Random Word Generator Page */
+/* Projects Home Page */
 
-div#random_word_generator_div {
+div#project_home_main_div {}
+
+div.project_home_section {
+  display: flex;
+  align-items: center;
   text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-button#random_word_generator_submit_button {
+a.project_home_project_description_links {
+  color: #6e73ab;
+  font-weight: bold;
+}
+
+a.project_home_project_description_links:hover,
+a.project_home_project_description_links:active {
+  color: #cfc259;
+  background-color: #6e73ab;
+  text-decoration: none;
+ 
+}
+
+a#random_word_generator_link p {
+  margin: 0px;
+}
+
+
+/* Random Word Generator Page */
+
+div#random_word_generator_outer_div {
+  text-align: center;
+  display: absolute;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+button#random_word_generator_submit_button_python {
+  border-radius: 0.5em;
+  margin-bottom: 10px;
+}
+
+button#random_word_generator_submit_button_ajax {
   border-radius: 0.5em;
   margin-bottom: 10px;
 }

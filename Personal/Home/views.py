@@ -46,6 +46,7 @@ def random_word_generator(request):
     context = {'random_word' : generate_random_word}
 
     if request.method == 'GET':
+        random_word = request.GET.get('random_word')
         return render(request, 'random_word_generator.html', context)
     else:
         return render(request, 'random_word_generator.html', {})
