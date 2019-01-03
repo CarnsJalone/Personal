@@ -5,12 +5,14 @@
 
     <div id="random_word_generator_outer_div" class="container">
 
-        <p>Here is a quick little script that generates a random sequence of consonants and vowels 
-        in what I like to call a <span style="font-style: italic">"word"</span>. I say word very loosely because 
-        these words are in no way affiliated with the accepted Merriam-Webster dictionary and are 
-        more times than not incoherent. 
-        I thought it would be a fun little activity to at generate something that will at least catch 
-        your eye in terms of structure.</p>
+        <h3>Random Word/Name Generator</h3>
+
+        <hr>
+
+        <p>Random Word Generator (Python) - This function is done on the server side language that I am using for this application. 
+        In this example I am usiing a Python Web Framework called Django. 
+        Note that running this function will refresh the page as it is done on the backend.</p>
+
 
         <form>
             <button id="random_word_generator_submit_button_python" type="submit" action="{% url 'random_word_generator' %}" method="get">Generate a Random Word (Server Side - Python)</button>
@@ -20,21 +22,27 @@
 
             <h3 id="random_word_generator_random_word"> Random Word: 
             <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
-            <span style="font-style:italic">{{random_word}}</span>
+            <span id="check" style="font-style:italic">{{random_word}}</span>
             </h3>
         </div>
 
         <hr>
 
+        <p>Random Word Generator (Ajax) - This function is done on the client side language that I am using for this application. 
+        In this example I am using a Javascript Framework called Ajax. 
+        Running this function will not refresh the page as everything is done asynchronously between the front 
+        and backend languages communicating.</p>
+
+
         <form>
-            <button id="random_word_generator_submit_button_ajax" type="submit">Generate a Random Word (Client Side - Ajax)</button>
+            <button id="random_word_generator_submit_button_ajax" type="submit" action="{% url 'random_word_generator_ajax' %}" method="get">Generate a Random Word (Client Side - Ajax)</button>
         </form>
 
         <div id="random_word_generator_inner_div">
 
             <h3 id="random_word_generator_random_word"> Random Word: 
             <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
-            <span style="font-style:italic">{{random_word}}</span>
+            <span id="random_word_generator_destination_span" style="font-style:italic">Click Button To Generate Word</span>
             </h3>
         </div>
 

@@ -9,4 +9,5 @@ urlpatterns = [
     path('connect/thanks_for_reaching_out/', views.connect, name="thank_you"),
     path('projects/', views.projects, name="projects_home_page"),
     path('projects/random_word_generator', views.random_word_generator, name="random_word_generator"),
+    path('projects/random_word_generator_ajax', views.random_word_generator_ajax, name="random_word_generator_ajax"),
 ]

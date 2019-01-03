@@ -62,3 +62,5 @@ def generate_random_word():
     random_word = random.choice(random_name_full_pool)
 
     return random_word
+
+ajax_random_word = generate_random_word()

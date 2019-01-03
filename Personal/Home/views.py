@@ -1,9 +1,15 @@
+# System Imports
+import json
+
+# Django Imports
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import JsonResponse
+from django.core.serializers import serialize
 
 # Local Imports
 from . forms import ConnectForm
-from . random_word_generator import generate_random_word
+from . random_word_generator import generate_random_word, ajax_random_word
 
 def home(request):
     return render(request, 'home.html', {})
@@ -44,9 +50,16 @@ def projects(request):
 
 def random_word_generator(request):
     context = {'random_word' : generate_random_word}
-
     if request.method == 'GET':
-        random_word = request.GET.get('random_word')
         return render(request, 'random_word_generator.html', context)
     else:
         return render(request, 'random_word_generator.html', {})
+
+def random_word_generator_ajax(request):
+    generate_random_word()
+    random_word = generate_random_word()
+    json_word = {'random_word' : random_word}
+    return JsonResponse(json_word)
+
+    
+
