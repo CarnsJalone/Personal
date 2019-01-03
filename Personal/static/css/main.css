@@ -82,6 +82,12 @@ body {
   img#project_home_project_thumbnail_img {
     width: 90%;
   }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 90%;
+  }  
 }
 
 @media (min-width: 551px) and (max-width: 767px) {
@@ -120,6 +126,18 @@ body {
   img#project_home_project_thumbnail_img {
     width: 80%;
   }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 65%;
+  }
+  
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 87.5%;
+  }  
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -158,6 +176,12 @@ body {
   img#project_home_project_thumbnail_img {
     width: 100%;
   }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 72.5%;
+  }  
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -196,6 +220,12 @@ body {
   img#project_home_project_thumbnail_img {
     width: 90%;
   }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 55%;
+  }  
 }
 
 @media (min-width: 1201px) and (max-width: 1500px) {
@@ -234,6 +264,12 @@ body {
   img#project_home_project_thumbnail_img {
     width: 80%;
   }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1501px) {
@@ -271,6 +307,12 @@ body {
 
   img#project_home_project_thumbnail_img {
     width: 75%;
+  }
+
+  /* Random Word/Name Generator */
+
+  div#random_word_generator_inner_div {
+    width: 50%;
   }
 }
 
@@ -389,7 +431,6 @@ button#random_name_generator_submit_button_ajax {
 div#random_word_generator_inner_div {
   padding: 5px;
   margin: 0 auto;
-  width: 75%;
 }
 
 h3#random_word_generator_random_word {
@@ -400,3 +441,7 @@ h3#random_word_generator_random_word {
   border-radius: .25em;
 }
 
+hr.random_word_generator_page_hrs {
+  margin: 0 auto;
+  padding: 0px;
+}

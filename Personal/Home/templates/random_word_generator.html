@@ -7,9 +7,14 @@
 
         <h3>Random Word/Name Generator</h3>
 
+        <p>Here are a few fun applications that I created. The first two randomly generate a sequence of consonants and vowels. 
+        While what they produce will unlikely be in the Merriam-Webster unabridged, it demonstrates the power, and potential 
+        application of random sequence generators. The third application is a simple random name generator. It looks at two texts files, 
+        first names and last names, and they randomly selects one entry from both, providing a completely random full name.</p>
+
         <hr>
 
-        <p><strong>Random Word Generator (Python)</strong> - This function is done on the server side language that I am using for this application. 
+        <p><strong>Random Word Generator (Django)</strong> - This function is done on the server side language that I am using for this application. 
         In this example I am usiing a Python Web Framework called Django. 
         Note that running this function will refresh the page as it is done on the backend.</p>
 
@@ -21,7 +26,7 @@
         <div id="random_word_generator_inner_div">
 
             <h3 id="random_word_generator_random_word"> Random Word: 
-            <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
+            <hr class="random_word_generator_page_hrs">
             <span id="check" style="font-style:italic">{{random_word}}</span>
             </h3>
         </div>
@@ -41,7 +46,7 @@
         <div id="random_word_generator_inner_div">
 
             <h3 id="random_word_generator_random_word"> Random Word: 
-            <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
+            <hr class="random_word_generator_page_hrs">
             <span id="random_word_generator_destination_span" style="font-style:italic">Click Button To Generate Word</span>
             </h3>
         </div>
@@ -59,7 +64,7 @@
         <div id="random_word_generator_inner_div">
 
             <h3 id="random_word_generator_random_word"> Random Name: 
-            <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
+            <hr class="random_word_generator_page_hrs">
             <span id="random_name_generator_destination_span" style="font-style:italic">Click Button To Generate Name</span>
             </h3>
         </div>

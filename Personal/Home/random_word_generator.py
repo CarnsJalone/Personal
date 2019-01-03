@@ -27,9 +27,6 @@ def generate_random_word():
 
     consonant_conjunctions = list(chain.from_iterable(consonant_conjunctions))
 
-    # vowel_rand_choice = random.choice(vowel_conjunctions)
-    # cons_rand_choice = random.choice(consonant_conjunctions)
-
     random_vowel_pool = []
     random_vowel_pool.append(random.sample(vowel_conjunctions, chain_selection))
 
