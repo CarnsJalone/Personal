@@ -380,7 +380,8 @@ button#random_word_generator_submit_button_python {
   margin-bottom: 10px;
 }
 
-button#random_word_generator_submit_button_ajax {
+button#random_word_generator_submit_button_ajax, 
+button#random_name_generator_submit_button_ajax {
   border-radius: 0.5em;
   margin-bottom: 10px;
 }

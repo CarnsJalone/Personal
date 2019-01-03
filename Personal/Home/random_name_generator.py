@@ -1,29 +1,62 @@
 # Python Imports
-import os
+from os import path
+import random
 
-# Django Import
-from django.conf import settings
+CURRENT_FILE_DIRECTORY = path.dirname(path.dirname(path.abspath(__file__)))
+TEXT_FILE_DIRECTORY = path.join(CURRENT_FILE_DIRECTORY, 'static/txt')
 
-class Generation:
+class Generator:
 
-    text_file_dir = os.path.dirname(__file__)
-    first_name_txt_path = os.path.join(text_file_dir, './txt/First_Names.txt')
+    def __init__(self):
 
-    print(text_file_dir)
+        self.FIRST_NAMES_FILE = path.join(TEXT_FILE_DIRECTORY, 'First_Names.txt')
+        self.LAST_NAMES_FILE = path.join(TEXT_FILE_DIRECTORY, 'Last_Names.txt')
 
-    first_names_file = '../Personal/static/txt/First_Names.txt'
+    def generate_random_first_name(self):
 
-    # Personal/static
+        first_names = open(self.FIRST_NAMES_FILE, 'rb')
 
-    def read_in_first_name(self):
-        with open(self.first_name_txt_path, 'rb') as first_name:
-            for line in first_name:
-                print(line)
+        list_of_first_names = []
+        formatted_list_of_first_names = []
 
-        # print(self.first_name_txt_path)
+        for name in first_names:
+            list_of_first_names.append(name)
 
-G1 = Generation()
+        first_names.close()
 
-# G1.read_in_first_name()
+        for name in list_of_first_names:
+            name = name.decode('utf-8')
+            name = name.replace("\n", "")
+            formatted_list_of_first_names.append(name)
 
-print(os.getcwd())
+        random_first_name = random.choice(formatted_list_of_first_names)
+
+        return random_first_name
+     
+    def generate_random_last_name(self):
+
+        last_names = open(self.LAST_NAMES_FILE, 'rb')
+
+        list_of_last_names = []
+        formatted_list_of_last_names = []
+
+        for name in last_names:
+            list_of_last_names.append(name)
+
+        last_names.close()
+
+        for name in list_of_last_names:
+            name = name.decode('utf-8')
+            name = name.replace("\n", "")
+            formatted_list_of_last_names.append(name)
+
+        random_last_name = random.choice(formatted_list_of_last_names)
+
+        return random_last_name
+
+    def generate_random_full_name(self):
+        first = self.generate_random_first_name()
+        last = self.generate_random_last_name()
+        random_full_name = '{} {}'.format(first, last)
+
+        return random_full_name

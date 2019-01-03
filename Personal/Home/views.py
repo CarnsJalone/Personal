@@ -10,6 +10,7 @@ from django.core.serializers import serialize
 # Local Imports
 from . forms import ConnectForm
 from . random_word_generator import generate_random_word, ajax_random_word
+from . random_name_generator import Generator
 
 def home(request):
     return render(request, 'home.html', {})
@@ -60,6 +61,12 @@ def random_word_generator_ajax(request):
     random_word = generate_random_word()
     json_word = {'random_word' : random_word}
     return JsonResponse(json_word)
+
+def random_name_generator(request):
+    name_generator = Generator()
+    randomly_generated_name = name_generator.generate_random_full_name()
+    json_formatted_random_randomly_generated_name = {'randomly_generated_name' : randomly_generated_name}
+    return JsonResponse(json_formatted_random_randomly_generated_name) 
 
     
 

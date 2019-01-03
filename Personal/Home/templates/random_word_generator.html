@@ -9,7 +9,7 @@
 
         <hr>
 
-        <p>Random Word Generator (Python) - This function is done on the server side language that I am using for this application. 
+        <p><strong>Random Word Generator (Python)</strong> - This function is done on the server side language that I am using for this application. 
         In this example I am usiing a Python Web Framework called Django. 
         Note that running this function will refresh the page as it is done on the backend.</p>
 
@@ -28,14 +28,14 @@
 
         <hr>
 
-        <p>Random Word Generator (Ajax) - This function is done on the client side language that I am using for this application. 
+        <p><strong>Random Word Generator (Ajax)</strong> - This function is done on the client side language that I am using for this application. 
         In this example I am using a Javascript Framework called Ajax. 
         Running this function will not refresh the page as everything is done asynchronously between the front 
         and backend languages communicating.</p>
 
 
         <form>
-            <button id="random_word_generator_submit_button_ajax" type="submit" action="{% url 'random_word_generator_ajax' %}" method="get">Generate a Random Word (Client Side - Ajax)</button>
+            <button id="random_word_generator_submit_button_ajax" type="submit" action="{% url 'random_word_generator_ajax' %}" method="get">Generate a Random Word (Client Side - Javascript)</button>
         </form>
 
         <div id="random_word_generator_inner_div">
@@ -43,6 +43,24 @@
             <h3 id="random_word_generator_random_word"> Random Word: 
             <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
             <span id="random_word_generator_destination_span" style="font-style:italic">Click Button To Generate Word</span>
+            </h3>
+        </div>
+
+        <hr>
+
+        <p><strong>Random Name Generator (Ajax)</strong> - This function utilizes a name database (courtesy of <a href="https://github.com/smashew/NameDatabases" target="_blank">Erik Norvelle</a>) 
+        to randomly generate both a first and last name from a large dataset of multi-regional names. 
+        The function, like the one above, is called asynchronously through Ajax.</p>
+
+        <form>
+            <button id="random_name_generator_submit_button_ajax" type="submit" action="{% url 'random_name_generator' %}" method="get">Generate a Random Word (Client Side - Javascript)</button>
+        </form>
+
+        <div id="random_word_generator_inner_div">
+
+            <h3 id="random_word_generator_random_word"> Random Name: 
+            <hr style="width: 75%; margin: 0 auto;text-align: center; background-color: #cfc259">
+            <span id="random_name_generator_destination_span" style="font-style:italic">Click Button To Generate Name</span>
             </h3>
         </div>
 

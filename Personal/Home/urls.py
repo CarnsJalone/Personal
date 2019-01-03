@@ -10,4 +10,5 @@ urlpatterns = [
     path('projects/', views.projects, name="projects_home_page"),
     path('projects/random_word_generator', views.random_word_generator, name="random_word_generator"),
     path('projects/random_word_generator_ajax', views.random_word_generator_ajax, name="random_word_generator_ajax"),
+    path('projects/random_name_generator', views.random_name_generator, name="random_name_generator"),
 ]
