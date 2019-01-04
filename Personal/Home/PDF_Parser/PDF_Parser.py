@@ -1,4 +1,4 @@
-from os import path, system, remove
+from os import path, system, remove, listdir
 
 class PDF_Handler():
 
@@ -9,56 +9,88 @@ class PDF_Handler():
         self.UPLOADED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Uploaded_Files')
         self.CONVERTED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files')
 
+        self.valid_pdf_files = []
 
-    def convert_uploaded_pdf_to_txt(self):
+    # Search folder for TXT
+    def find_txt_files(self):
+        
+        all_uploaded_files = listdir(self.UPLOADED_FILE_DIRECTORY)
 
-        # Find Uploaded PDF
-        pdf_file_link = path.join(self.UPLOADED_FILE_DIRECTORY, 'STOCKZERO.pdf')
+        txt_files = []
 
-
-        # Create name for converted text file into correct directory
-        temp_converted_text_file_name = str(self.CONVERTED_FILE_DIRECTORY) + '/temp_pdf.txt'
-       
-        # Create conversion command
-        # $ pdf2txt.py -o output.html samples/naacl06-shinyama.pdf    
-        # (extract text as an HTML file whose filename is output.html)
-        formatted_conversion_command = '{} {} {} {}'.format(
-            'pdf2txt.py',
-            '-o',
-            temp_converted_text_file_name,
-            pdf_file_link)
-
-        # Check if file exists, if it does delete it, then reissue the command
-        file_exists = path.isfile(temp_converted_text_file_name)
-
-        if file_exists:
-            print('File Already Exists, Removing File...')
-            remove(temp_converted_text_file_name)
-            print('Converting New File...')
-            system(formatted_conversion_command)
-            print('File Converted')
-
-        # If the file does not already exist, run the command to create it
+        if len(all_uploaded_files) == 0:
+            print('There is nothing inside this directory')
+            return
         else:
-            print('File Doesn\'t Yet Exist, Creating File...')
-            system(formatted_conversion_command)
-            print('File Converted')
+            for file in all_uploaded_files:
+                file_path = path.join(self.UPLOADED_FILE_DIRECTORY, file)
+                filename, extension = path.splitext(file)
+
+                if extension == '.txt':
+                    txt_files.append({file_path : file})
+
+        return txt_files
+
+    # Search folder for PDF
+    def find_pdf_files(self):
+        
+        all_uploaded_files = listdir(self.UPLOADED_FILE_DIRECTORY)
+
+        pdf_files = []
+
+        if len(all_uploaded_files) == 0:
+            print('There is nothing inside this directory')
+            return
+        else:
+            for file in all_uploaded_files:
+                file_path = path.join(self.UPLOADED_FILE_DIRECTORY, file)
+                filename, extension = path.splitext(file)
+                if extension == '.pdf':
+                    pdf_files.append({file_path : file})
+
+        return pdf_files
+   
+    # Convert PDF file to text
+    def convert_pdf_to_txt(self):
+
+        pdf_files = self.find_pdf_files()
+
+        for each_file in pdf_files:
+           for pdf_file_path, pdf_file in each_file.items():
+               
+                # Create a linux-based conversion command
+                # pdftotext -layout NAME_OF_PDF.pdf
+                formatted_conversion_command = '{} {} {}'.format(
+                    'pdftotext',
+                    '-layout',
+                    pdf_file_path
+                )
+                system(formatted_conversion_command)
+                print(pdf_file,'converted to .txt')
+
+    def delete_unecessary_txt_files(self):
+
+        txt_files = self.find_txt_files()
+
+        for text_file in txt_files:
+            for file_path, file_name in text_file.items():
+                name, extension = path.splitext(file_name)
+                if extension == '.txt':
+                    remove(file_path)
+                    print(file_name,'at',file_path,'removed.')
 
 
-    def open_and_parse_txt(self):
-            text_file_link = str(self.CONVERTED_FILE_DIRECTORY) + '/temp_pdf.txt'
-
-            opened_file = open(text_file_link, 'rb')
-
-            for line in opened_file:
-                line = line.decode('utf-8')
-                print(line)
-
-
+    def main(self):
+        self.find_txt_files()
+        self.delete_unecessary_txt_files()
+        self.find_pdf_files()
+        self.convert_pdf_to_txt()
 
 handler_1 = PDF_Handler()
 
-handler_1.open_and_parse_txt()
-
+# handler_1.find_pdf_files()
+# handler_1.print_test()
+# handler_1.convert_pdf_to_txt()
+handler_1.main()
 
 
