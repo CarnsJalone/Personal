@@ -19,3 +19,14 @@ class ConnectForm(forms.Form):
     class Meta:
         model = Connector
         fields = ('first_name', 'last_name', 'email', 'body')
+
+class PDF_Upload_Form(forms.Form):
+    title = forms.CharField(max_length=50)
+    title.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_title'})
+
+    file = forms.FileField()
+    file.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_file_upload'})
+
+    class Meta:
+        fields = {'title', 'file'}
+

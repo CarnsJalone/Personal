@@ -1,5 +1,12 @@
 # System Imports
 import json
+import os
+import sys
+
+# Add additional directories for imports
+current_directory = os.path.dirname(os.path.abspath(__file__))
+pdf_parser_directory = os.path.join(current_directory, 'PDF_Parser')
+sys.path.append(pdf_parser_directory)
 
 # Django Imports
 from django.shortcuts import render
@@ -8,9 +15,10 @@ from django.http import JsonResponse
 from django.core.serializers import serialize
 
 # Local Imports
-from . forms import ConnectForm
+from . forms import ConnectForm, PDF_Upload_Form
 from . random_word_generator import generate_random_word, ajax_random_word
 from . random_name_generator import Generator
+from PDF_Parser import PDF_Handler
 
 def home(request):
     return render(request, 'home.html', {})
@@ -68,5 +76,24 @@ def random_name_generator(request):
     json_formatted_random_randomly_generated_name = {'randomly_generated_name' : randomly_generated_name}
     return JsonResponse(json_formatted_random_randomly_generated_name) 
 
+def upload_pdf(request):
+    if request.method == 'POST':
+        form = PDF_Upload_Form(request.POST, request.FILES)
+        if form.is_valid():
+            return JsonResponse({'request' : request})
+        else:
+            form = PDF_Upload_Form()
+            return render(request, 'pdf_parser.html', {'form' : form})
+
+    else:
+        form = PDF_Upload_Form()
+        return render(request, 'pdf_parser.html', {'form' : form})
+
+
+
+    return render(request, 'pdf_parser.html', {})
+
+# def pdf_parser_upload(request):
+#     return HttpResponse('Hello')
     
 

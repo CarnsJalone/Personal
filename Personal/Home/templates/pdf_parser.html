@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block pdf_parser %}
+
+<form id="pdf_parser_file_upload_form_form" action="{% url 'upload_pdf' %}" method="post">
+
+    {% csrf_token %}
+    {{ form }}
+
+    <button id="pdf_parser_file_upload_form_submit_button">Upload PDF</button>
+
+</form>
+
+
+
+{% endblock %}

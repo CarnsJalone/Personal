@@ -1,4 +1,4 @@
-from os import path, system, remove, listdir
+from os import path, system, remove, listdir, rename
 
 class PDF_Handler():
 
@@ -8,8 +8,6 @@ class PDF_Handler():
         self.CURRENT_FILE_DIRECTORY = path.dirname(path.abspath(__file__))
         self.UPLOADED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Uploaded_Files')
         self.CONVERTED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files')
-
-        self.valid_pdf_files = []
 
     # Search folder for TXT
     def find_txt_files(self):
@@ -79,18 +77,34 @@ class PDF_Handler():
                     remove(file_path)
                     print(file_name,'at',file_path,'removed.')
 
+    def move_converted_files_into_converted_folder(self):
+
+        current_dir = self.UPLOADED_FILE_DIRECTORY
+        destination_dir = self.CONVERTED_FILE_DIRECTORY
+        current_dir_contents = listdir(current_dir)
+
+        file_existence_check = 0
+
+        while file_existence_check < 3:
+            for file in current_dir_contents:
+                file_name, extension = path.splitext(file)
+                if extension == '.txt': 
+                    current_file = path.join(current_dir, file)
+                    destination_file = path.join(destination_dir, file)
+                    if path.isdir(destination_dir) and not path.isfile(destination_file):
+                        rename(current_file, destination_file)
+                        print('Moving source file into destination folder.')
+                    else:
+                        print('Destination file already exists, removing current file and reiterating through check.')
+                        remove(destination_file)
+                file_existence_check += 1                                                # print(current_dir_contents)
 
     def main(self):
         self.find_txt_files()
         self.delete_unecessary_txt_files()
         self.find_pdf_files()
         self.convert_pdf_to_txt()
+        self.move_converted_files_into_converted_folder()
 
-handler_1 = PDF_Handler()
-
-# handler_1.find_pdf_files()
-# handler_1.print_test()
-# handler_1.convert_pdf_to_txt()
-handler_1.main()
 
 
