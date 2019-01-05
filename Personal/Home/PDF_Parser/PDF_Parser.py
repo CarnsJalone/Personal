@@ -9,6 +9,8 @@ class PDF_Handler():
         self.UPLOADED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Uploaded_Files')
         self.CONVERTED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files')
 
+        self.UPLOADED_FILE = ''
+
     # Search folder for TXT
     def find_txt_files(self):
         
@@ -97,7 +99,14 @@ class PDF_Handler():
                     else:
                         print('Destination file already exists, removing current file and reiterating through check.')
                         remove(destination_file)
-                file_existence_check += 1                                                # print(current_dir_contents)
+                file_existence_check += 1   
+                
+    def upload_file(self, file):
+
+        uploads_directory = self.UPLOADED_FILE_DIRECTORY
+
+        print(path.dirname(path.abspath(file)))
+
 
     def main(self):
         self.find_txt_files()

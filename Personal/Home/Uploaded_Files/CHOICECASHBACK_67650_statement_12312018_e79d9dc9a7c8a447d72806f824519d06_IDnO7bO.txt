@@ -1,0 +1,197 @@
+1                             0
+
+
+
+
+        B
+        A
+        C               .
+       2955 University Drive Auburn Hills, MI 48326
+       CCFinancial.com P: (800) 777-6728
+
+
+
+
+           JARRET T LABERDEE
+                                                                                     s
+           1057 LAURA LN
+           OREGON OH 43616                                                           Account Number:             XXXXXX7650
+                                                                                     Total Savings:                   $389.04
+                                                                                     Total Checking:                $3,705.97
+                                                                                     Total Loans:                       $0.00
+
+
+
+    Statement Period: 12/01/2018 thru 12/31/2018
+    ACCOUNT SUMMARY
+    Type                                                   Starting Balance    Total Deposits  Total Withdrawals Ending Balance
+    REGULAR SHARES                                                    388.94              0.10               0.00         389.04
+    CHOICE CASHBACK                                                 5,812.97          4,266.67           6,373.67       3,705.97
+
+    ID 00 - REGULAR SHARES                                                         Dividends Paid: $0.40
+    Date              Withdrawal          Deposit     Balance                          Transaction Description
+    12/01/2018                                            388.94 Balance Forward
+    12/31/2018                               0.10         389.04 Deposit Dividend DIVIDEND
+                    Annual Percentage Yield Earned 0.100% from 10/01/2018 through 12/31/2018
+    12/31/2018                                            389.04 Ending Balance
+    ID 80 - CHOICE CASHBACK                                                        Dividends Paid: $0.00
+    Date              Withdrawal          Deposit     Balance                          Transaction Description
+    12/01/2018                                          5,812.97 Balance Forward
+    12/01/2018                 -39.99                   5,772.98 Withdrawal Bill Payment #6SIKHY8AKE3V
+                                                                 BP AMAZON.COM*M01AH8XF0 SEATTLE WA 00000101
+    12/02/2018                    -1.65                 5,771.33 Withdrawal Debit Card
+                                                                 12/01 24492158335637937956718 DIGITALOCEAN.COM
+                                                                 DIGITALOCEAN. NY VBASE2
+    12/02/2018                    -5.00                 5,766.33 Withdrawal Debit Card
+                                                                 12/02 24492158336715393169593 UBER TRIP LW6TG
+                                                                 HELP.UBER.COM CA VBASE2
+    12/03/2018                    -1.00                 5,765.33 Withdrawal ACH Subscription
+                                                                 TYPE: Acorns ID: 9000142693 CO: Subscription Entry Class Code:
+
+
+
+
+                                                                                A
+                                                                 WEB
+    12/03/2018                 -35.59                   5,729.74 Withdrawal ACH FIRSTENERGY OPCO
+                                                                 TYPE: ACH ID: 2341968288 CO: FIRSTENERGY OPCO Entry Class
+                                                                 Code: PPD
+    12/04/2018                 -76.87                   5,652.87 Withdrawal ACH COLUMBIA GAS OH
+                                                                 TYPE: SERV PYMT ID: 1310673990 CO: COLUMBIA GAS OH Entry
+                                                                 Class Code: TEL
+    12/05/2018              -1,918.12                   3,734.75 Withdrawal ACH CHASE CREDIT CRD
+                                                                 TYPE: EPAY ID: 5760039224 CO: CHASE CREDIT CRD Entry Class
+                                                                 Code: WEB
+    12/05/2018                    -9.99                 3,724.76 Withdrawal at ATM #120412350755
+                                                                 POS GOOGLE *musiXmatch spa Mountain View CA 64923881
+
+
+
+
+                                                              Page 1 of 3
+   B
+   A
+   C
+ID 80 - CHOICE CASHBACK (Continued)
+Date         Withdrawal      Deposit     Balance
+                                                          .
+                                         2955 University Drive Auburn Hills, MI 48326
+                                         CCFinancial.com P: (800) 777-6728
+
+
+
+
+                                                                          Transaction Description
+12/06/2018          -20.00                 3,704.76 Withdrawal Debit Card
+                                                    12/06 14248188340653401534012 VENMO* Visa Direct NY CNP TX
+12/07/2018         -21.00                  3,683.76 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/08/2018         -41.77                  3,641.99 Withdrawal Bill Payment #1T5JU6LX6TCD
+                                                    BP AMAZON.COM*M03KM76Q2 SEATTLE WA 00000101
+12/09/2018        -120.00                  3,521.99 Withdrawal Debit Card
+                                                    12/09 04248188343658104581049 VENMO* Visa Direct NY CNP TX
+12/10/2018        -203.76                  3,318.23 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/10/2018        -299.97                  3,018.26 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/10/2018        -207.91                  2,810.35 Withdrawal Bill Payment #3F5YPNO37B47
+                                                    BP AMAZON.COM*M044F7900 SEATTLE WA 00000101
+12/11/2018         -10.00                  2,800.35 Withdrawal ACH Acorns Investing
+                                                    TYPE: Transfer ID: 9000142693 CO: Acorns Investing Entry Class
+                                                    Code: WEB
+12/11/2018         -37.54                  2,762.81 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/11/2018         -49.32                  2,713.49 Withdrawal Bill Payment #2SMEUGLQV3CZ
+                                                    BP AMAZON.COM*M01EU6W71 SEATTLE WA 00000101
+12/14/2018                    2,130.11     4,843.60 Deposit ACH FCA US LLC
+                                                    TYPE: DIR DEP ID: 9401810085 CO: FCA US LLC Entry Class
+                                                    Code: PPD
+12/14/2018         -39.99                  4,803.61 Withdrawal ACH BUCKEYEROADACH
+                                                    TYPE: CABLE BILL ID: 1340963631 CO: BUCKEYEROADACH
+                                                    Entry Class Code: WEB
+12/14/2018        -350.00                  4,453.61 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/17/2018         -21.50                  4,432.11 Withdrawal ACH PLANET FIT
+                                                    TYPE: CLUB FEES ID: 1710602737 CO: PLANET FIT Entry Class
+                                                    Code: PPD
+12/17/2018         -21.40                  4,410.71 Withdrawal Debit Card
+                                                    12/17 24445008351100152761150 CCI FITNESS PYMT
+                                                    419-476-8340 OH 15276115
+12/19/2018      -1,019.13                  3,391.58 Withdrawal ACH CHASE CREDIT CRD
+
+
+
+
+                                                                         A
+                                                    TYPE: EPAY ID: 5760039224 CO: CHASE CREDIT CRD Entry Class
+                                                    Code: WEB
+12/24/2018         -42.89                  3,348.69 Withdrawal ACH PAYPAL
+                                                    TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                    WEB
+12/26/2018        -400.00                  2,948.69 Withdrawal ACH GREAT LAKES
+                                                    TYPE: STUDENT LN ID: 9102000901 CO: GREAT LAKES Entry
+                                                    Class Code: PPD
+12/26/2018        -950.00                  1,998.69 Withdrawal ACH PNC BANK, OHIO
+                                                    TYPE: TRANSFER ID: 0272477429 CO: PNC BANK, OHIO Entry
+                                                    Class Code: WEB
+12/28/2018                    2,136.56     4,135.25 Deposit ACH FCA US LLC
+                                                    TYPE: DIR DEP ID: 9401810085 CO: FCA US LLC Entry Class
+                                                    Code: PPD
+
+
+                                                    Page 2 of 3
+   B
+   A
+   C
+ID 80 - CHOICE CASHBACK (Continued)
+Date           Withdrawal       Deposit           Balance
+                                                                  .
+                                                2955 University Drive Auburn Hills, MI 48326
+                                                CCFinancial.com P: (800) 777-6728
+
+
+
+
+                                                                                   Transaction Description
+12/28/2018            -41.21                        4,094.04 Withdrawal ACH NORTHWESTERN MU
+                                                             TYPE: ISA PAYMNT ID: 9000596067 CO: NORTHWESTERN MU
+                                                             Entry Class Code: PPD
+12/29/2018           -20.68                         4,073.36 Withdrawal Debit Card
+                                                             12/29 24492158363713963700356 UBER TRIP 2PG2I
+                                                             HELP.UBER.COM CA VBASE2
+12/29/2018             -3.00                        4,070.36 Withdrawal Debit Card
+                                                             12/29 24492158363715966431517 UBER TRIP 2PG2I
+                                                             HELP.UBER.COM CA VBASE2
+12/31/2018           -70.70                         3,999.66 Withdrawal ACH CAPITAL ONE
+                                                             TYPE: CRCARDPMT ID: 9541719018 CO: CAPITAL ONE Entry
+                                                             Class Code: WEB
+12/31/2018           -93.69                         3,905.97 Withdrawal ACH PAYPAL
+                                                             TYPE: INST XFER ID: PAYPALSI77 CO: PAYPAL Entry Class Code:
+                                                             WEB
+12/31/2018          -200.00                         3,705.97 Withdrawal ACH MERRILL LYNCH
+                                                             TYPE: FUNDS TRFR ID: 1066026814 CO: MERRILL LYNCH Entry
+                                                             Class Code: PPD
+12/31/2018                                          3,705.97 Ending Balance
+
+                                          Total For This Period    Total Year-to-Date
+              Total Overdraft Fees                        0.00                  0.00
+              Total Returned Item Fees                    0.00                  0.00
+
+YEAR TO DATE SUMMARY
+              Total Year To Date Dividends Paid                              0.40
+              Total Year To Date Interest Paid                               0.00
+
+If you are protected by federal Bankruptcy law or your obligation to pay has been discharged under federal Bankruptcy
+law, this letter is being sent for informational purposes and not as an attempt to collect a debt.
+
+
+
+
+                                                           Page 3 of 3
+                                                                                A
+

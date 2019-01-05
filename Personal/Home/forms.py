@@ -1,7 +1,13 @@
+# System Imports
+import os
+import sys
+
+# Django Imports
 from django import forms
 
+
 # local imports
-from .models import Connector
+from .models import Connector, PDF_Uploader
 
 class ConnectForm(forms.Form):
     first_name = forms.CharField(label="First Name", max_length=50)
@@ -28,5 +34,6 @@ class PDF_Upload_Form(forms.Form):
     file.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_file_upload'})
 
     class Meta:
+        model = PDF_Uploader
         fields = {'title', 'file'}
 

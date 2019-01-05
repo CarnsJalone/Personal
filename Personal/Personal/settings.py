@@ -124,3 +124,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+
+PERSONAL_ROOT_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+HOME_DIRECTORY = os.path.join(PERSONAL_ROOT_DIRECTORY, 'Home')
+UPLOADED_FILES_DIRECTORY = os.path.join(HOME_DIRECTORY, 'Uploaded_Files')
+
+MEDIA_ROOT = UPLOADED_FILES_DIRECTORY
+
+MEDIA_URL = '/Uploaded_Files/'

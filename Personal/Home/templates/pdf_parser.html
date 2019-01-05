@@ -3,7 +3,7 @@
 
 {% block pdf_parser %}
 
-<form id="pdf_parser_file_upload_form_form" action="{% url 'upload_pdf' %}" method="post">
+<form id="pdf_parser_file_upload_form_form" action="{% url 'upload_pdf' %}" method="post" enctype="multipart/form-data">
 
     {% csrf_token %}
     {{ form }}
@@ -12,6 +12,7 @@
 
 </form>
 
-
+<section>
+    <p>{{ invalid_warning }}<p>
 
 {% endblock %}
