@@ -1,4 +1,5 @@
 from os import path, system, remove, listdir, rename
+import time
 
 class PDF_Handler():
 
@@ -55,18 +56,21 @@ class PDF_Handler():
 
         pdf_files = self.find_pdf_files()
 
-        for each_file in pdf_files:
-           for pdf_file_path, pdf_file in each_file.items():
-               
-                # Create a linux-based conversion command
-                # pdftotext -layout NAME_OF_PDF.pdf
-                formatted_conversion_command = '{} {} {}'.format(
-                    'pdftotext',
-                    '-layout',
-                    pdf_file_path
-                )
-                system(formatted_conversion_command)
-                print(pdf_file,'converted to .txt')
+        if pdf_files == None:
+            print('There are no PDF Files in this directory.')
+        else:
+            for each_file in pdf_files:
+                for pdf_file_path, pdf_file in each_file.items():
+                    
+                        # Create a linux-based conversion command
+                        # pdftotext -layout NAME_OF_PDF.pdf
+                        formatted_conversion_command = '{} {} {}'.format(
+                            'pdftotext',
+                            '-layout',
+                            pdf_file_path
+                        )
+                        system(formatted_conversion_command)
+                        print(pdf_file,'converted to .txt')
 
     def delete_unecessary_txt_files(self):
 
@@ -79,6 +83,50 @@ class PDF_Handler():
                     remove(file_path)
                     print(file_name,'at',file_path,'removed.')
 
+
+    # Empty the converted folder
+    def clean_converted_folder(self):
+
+        converted_file_with_directory = []
+
+        converted_dir = self.CONVERTED_FILE_DIRECTORY
+
+        converted_dir_files = listdir(converted_dir)
+
+        for file in converted_dir_files:
+            temp_name = path.join(converted_dir, file)
+            converted_file_with_directory.append(temp_name)
+
+        for file in converted_file_with_directory:
+            remove(file)
+
+    def clean_upload_folder(self):
+
+        uploaded_file_with_directory = []
+
+        uploaded_dir = self.UPLOADED_FILE_DIRECTORY
+
+        uploaded_dir_files = listdir(uploaded_dir)
+
+        for file in uploaded_dir_files:
+            temp_name = path.join(uploaded_dir, file)
+            uploaded_file_with_directory.append(temp_name)
+
+        for file in uploaded_file_with_directory:
+            remove(file)
+
+    def verify_upload_folder_contents(self):
+
+        uploaded_dir = self.UPLOADED_FILE_DIRECTORY
+
+        uploaded_dir_files = listdir(uploaded_dir)
+
+        if len(uploaded_dir_files) < 1:
+            print('There is nothing in this folder for exhange.')
+            self.convert_pdf_to_txt()
+        else:
+            self.move_converted_files_into_converted_folder()
+
     def move_converted_files_into_converted_folder(self):
 
         current_dir = self.UPLOADED_FILE_DIRECTORY
@@ -87,7 +135,7 @@ class PDF_Handler():
 
         file_existence_check = 0
 
-        while file_existence_check < 3:
+        while file_existence_check < 5:
             for file in current_dir_contents:
                 file_name, extension = path.splitext(file)
                 if extension == '.txt': 
@@ -100,20 +148,12 @@ class PDF_Handler():
                         print('Destination file already exists, removing current file and reiterating through check.')
                         remove(destination_file)
                 file_existence_check += 1   
+
+pdf_handler = PDF_Handler()
+# pdf_handler.clean_converted_folder()
+# pdf_handler.convert_pdf_to_txt()
+pdf_handler.verify_upload_folder_contents()
                 
-    def upload_file(self, file):
-
-        uploads_directory = self.UPLOADED_FILE_DIRECTORY
-
-        print(path.dirname(path.abspath(file)))
-
-
-    def main(self):
-        self.find_txt_files()
-        self.delete_unecessary_txt_files()
-        self.find_pdf_files()
-        self.convert_pdf_to_txt()
-        self.move_converted_files_into_converted_folder()
 
 
 

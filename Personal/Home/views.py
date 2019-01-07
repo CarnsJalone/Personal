@@ -79,18 +79,52 @@ def random_name_generator(request):
     return JsonResponse(json_formatted_random_randomly_generated_name) 
 
 def upload_pdf(request):
+
+    pdf_handler = PDF_Handler()
     
     if request.method == 'POST':
+
         form = PDF_Upload_Form(request.POST, request.FILES)
 
         if form.is_valid():
 
+            # Identify Uploaded File
             uploaded_file = request.FILES['file']
-            uploaded_file_name = request.FILES['file'].name
 
+            # Dictate where file is to be uploaded
+            fs = FileSystemStorage(
+                location=uploaded_files_directory,
+                base_url = '/media/'
+                )
+            
+            # Provide Uploaded file a name
+            fs.save(
+                name=uploaded_file.name,
+                content=uploaded_file
+            )
+
+            # Feed variaable into template engine
             context = {
                 'file' : uploaded_file,
             }
+
+            # Find Text Files
+            # pdf_handler.find_txt_files()
+
+            # Delete Text Files
+            # pdf_handler.delete_unecessary_txt_files()
+
+            # # Clear Converted Folder
+            # pdf_handler.clean_converted_folder
+
+            # Find PDF Files
+            pdf_handler.find_pdf_files()
+
+            # Convert PDF Files into TXT
+            pdf_handler.convert_pdf_to_txt()
+
+            # Move Converted TXT File into Converted Folder
+            pdf_handler.verify_upload_folder_contents()
 
             return render(request, 'display_content.html', context)
         else:
