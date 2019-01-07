@@ -23,11 +23,14 @@ class Connector(models.Model):
     body = models.CharField(max_length=100)
 
     def __str__(self):
-        return '{} {} at {} sent you: \n {}'.format(first_name, last_name, email, body)
+        return '{} {} at {} sent you: \n {}'.format(self.first_name, self.last_name, self.email, self.body)
 
 class PDF_Uploader(models.Model):
 
     title = models.CharField(max_length=50)
-    file = models.FileField(upload_to=fs, storage=fs)
+    file = models.FileField(default="")
+
+    def __str__(self):
+        return '{}'.format(self.title)
 
 

@@ -79,8 +79,6 @@ def random_name_generator(request):
     return JsonResponse(json_formatted_random_randomly_generated_name) 
 
 def upload_pdf(request):
-
-    upload_handler = PDF_Handler()
     
     if request.method == 'POST':
         form = PDF_Upload_Form(request.POST, request.FILES)
@@ -93,9 +91,6 @@ def upload_pdf(request):
             context = {
                 'file' : uploaded_file,
             }
-
-            fs = FileSystemStorage()
-            fs.save(uploaded_file_name, uploaded_file)
 
             return render(request, 'display_content.html', context)
         else:
