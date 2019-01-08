@@ -7,8 +7,12 @@ import sys
 current_directory = os.path.dirname(os.path.abspath(__file__))
 pdf_parser_directory = os.path.join(current_directory, 'PDF_Parser')
 uploaded_files_directory = os.path.join(pdf_parser_directory, 'Uploaded_Files')
+converted_files_directory = os.path.join(pdf_parser_directory, 'Converted_Files')
+
+# Append them to the path so Django will recognize them
 sys.path.append(pdf_parser_directory)
 sys.path.append(uploaded_files_directory)
+sys.path.append(converted_files_directory)
 
 # Django Imports
 from django.shortcuts import render, redirect
@@ -20,7 +24,7 @@ from django.core.files.storage import FileSystemStorage
 from . forms import ConnectForm, PDF_Upload_Form
 from . random_word_generator import generate_random_word, ajax_random_word
 from . random_name_generator import Generator
-from PDF_Parser import PDF_Handler
+from PDF_Parser import PDF_Handler, TextHandler
 
 def home(request):
     return render(request, 'home.html', {})
@@ -96,6 +100,7 @@ def upload_pdf(request):
 
             # Identify Uploaded File
             uploaded_file = request.FILES['file']
+            uploaded_file_name = request.FILES['file'].name
 
             # Dictate where file is to be uploaded
             fs = FileSystemStorage(
@@ -112,6 +117,7 @@ def upload_pdf(request):
             # Feed variaable into template engine
             context = {
                 'file' : uploaded_file,
+                'name' : uploaded_file.name
             }
 
             # Find Text Files
@@ -145,6 +151,19 @@ def upload_pdf(request):
 
 def display_content(request):
 
-    return render(request, 'display_content.html', {})
+    # Identify the file in the directory
+    converted_directory_contents = os.listdir(converted_files_directory)
+    converted_file = os.path.join(converted_files_directory, converted_directory_contents[0])
+    converted_file_name = converted_directory_contents[0]
+
+    f = open(converted_file, 'r')
+
+    file_content = f.read()
+
+    f.close()
+
+    context = {'contents' : file_content, 'file_name' : converted_file_name}
+
+    return render(request, 'display_content.html', context)
 
     

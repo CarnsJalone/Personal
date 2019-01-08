@@ -121,9 +121,9 @@ class PDF_Handler():
 
         for file in uploaded_file_with_directory:
             remove(file)
-            print(file,'cleared from Upload Directory...')
+            print(file,'cleared from Upload Folder...')
            
-        print('Upload Directory cleared.')
+        print('Upload Folder cleared.')
 
     def verify_upload_folder_contents(self):
 

@@ -12,5 +12,5 @@ urlpatterns = [
     path('projects/random_word_generator_ajax', views.random_word_generator_ajax, name="random_word_generator_ajax"),
     path('projects/random_name_generator', views.random_name_generator, name="random_name_generator"),
     path('projects/upload_pdf', views.upload_pdf, name="upload_pdf"), 
-    path('projects/upload_pdf/display_content', views.display_content, name="display_content"),
+    path('projects/display_content', views.display_content, name="display_content"),
 ]

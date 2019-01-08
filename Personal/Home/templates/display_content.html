@@ -3,6 +3,22 @@
 
 {% block display_content %}
 
-<p>You/'re file upload successfully!</p>
+<div id="display_contents_file_name_display" class="container">
+
+    <p>Contents of {{ file_name }}</p>
+
+</div>
+
+<div id="display_contents_uploaded_data_search_bar_container" class="container">
+
+    <input type="text" id="display_contents_uploaded_data_search_bar_input" class="form-control" placeholder="Find a desired value...">
+
+</div>
+
+<div id="display_contents_uploaded_data_container" class="container">
+
+    <pre id="display_contents_upload_data_pre">{{ contents|linebreaks }}</pre>
+
+</div>
 
 {% endblock %}
