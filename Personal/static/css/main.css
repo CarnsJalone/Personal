@@ -625,3 +625,7 @@ div#display_contents_uploaded_data_search_bar_container {
 input#display_contents_uploaded_data_search_bar_input {
   width: 100%;
 }
+
+span#immediate_search_terms {
+  background-color: #6e73ab;
+}
