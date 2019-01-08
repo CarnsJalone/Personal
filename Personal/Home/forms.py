@@ -28,7 +28,7 @@ class ConnectForm(forms.Form):
 
 class PDF_Upload_Form(forms.Form):
     title = forms.CharField(max_length=50)
-    title.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_title'})
+    title.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_title', 'placeholder' : 'Please Enter a Title to associate with this upload.'})
 
     file = forms.FileField()
     file.widget.attrs.update({'class' : 'form-control', 'id' : 'pdf_parser_file_upload_form_file_upload'})

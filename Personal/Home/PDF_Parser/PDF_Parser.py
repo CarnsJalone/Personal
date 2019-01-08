@@ -48,6 +48,9 @@ class PDF_Handler():
                 filename, extension = path.splitext(file)
                 if extension == '.pdf':
                     pdf_files.append({file_path : file})
+                    print(filename,'appended to Array...')
+            
+        print('All available PDF files located.')
 
         return pdf_files
    
@@ -99,6 +102,10 @@ class PDF_Handler():
 
         for file in converted_file_with_directory:
             remove(file)
+            print(file,'cleared from Converted Folder...')
+        
+        print('Converted Folder cleared.')
+        
 
     def clean_upload_folder(self):
 
@@ -114,6 +121,9 @@ class PDF_Handler():
 
         for file in uploaded_file_with_directory:
             remove(file)
+            print(file,'cleared from Upload Directory...')
+           
+        print('Upload Directory cleared.')
 
     def verify_upload_folder_contents(self):
 
@@ -135,7 +145,7 @@ class PDF_Handler():
 
         file_existence_check = 0
 
-        while file_existence_check < 5:
+        while file_existence_check < 2:
             for file in current_dir_contents:
                 file_name, extension = path.splitext(file)
                 if extension == '.txt': 
@@ -143,11 +153,29 @@ class PDF_Handler():
                     destination_file = path.join(destination_dir, file)
                     if path.isdir(destination_dir) and not path.isfile(destination_file):
                         rename(current_file, destination_file)
-                        print('Moving source file into destination folder.')
+                        print('{} {} {} {}'.format('Moving', file, 'into', destination_dir))
                     else:
                         print('Destination file already exists, removing current file and reiterating through check.')
                         remove(destination_file)
                 file_existence_check += 1   
+
+class TextHandler():
+
+    def __init__(self):
+
+        self.CURRENT_FILE_DIRECTORY = path.dirname(path.abspath(__file__))
+        self.CONVERTED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files')
+
+    def find_txt_files(self):
+
+        converted_files_dir = self.CONVERTED_FILE_DIRECTORY
+
+        converted_files = listdir(converted_files_dir)
+
+        for file in converted_files:
+            print(file)
+
+
 
 pdf_handler = PDF_Handler()
 # pdf_handler.clean_converted_folder()

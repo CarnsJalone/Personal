@@ -88,6 +88,13 @@ body {
   div#random_word_generator_inner_div {
     width: 90%;
   }  
+
+  /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 90%;
+  }
+
 }
 
 @media (min-width: 551px) and (max-width: 767px) {
@@ -138,6 +145,13 @@ body {
   div#random_word_generator_inner_div {
     width: 87.5%;
   }  
+
+    /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 70%;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -182,6 +196,13 @@ body {
   div#random_word_generator_inner_div {
     width: 72.5%;
   }  
+
+  /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 60%;
+  }
+
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -226,6 +247,13 @@ body {
   div#random_word_generator_inner_div {
     width: 55%;
   }  
+
+  /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 55%;
+  }
+
 }
 
 @media (min-width: 1201px) and (max-width: 1500px) {
@@ -270,6 +298,13 @@ body {
   div#random_word_generator_inner_div {
     width: 50%;
   }
+
+  /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 45%;
+  }
+
 }
 
 @media (min-width: 1501px) {
@@ -313,6 +348,12 @@ body {
 
   div#random_word_generator_inner_div {
     width: 50%;
+  }
+
+  /* PDF Upload Page */
+
+  div#pdf_parser_file_upload_form_container {
+    max-width: 40%;
   }
 }
 
@@ -444,4 +485,30 @@ h3#random_word_generator_random_word {
 hr.random_word_generator_page_hrs {
   margin: 0 auto;
   padding: 0px;
+}
+
+/* PDF Parser Page */
+
+div#pdf_parser_outer_div {
+
+  max-width: 100%;
+}
+
+div#pdf_parser_file_upload_form_container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+  border: 1px #6e73ab solid;
+  border-radius: .375rem;
+  transform: translateY(50%)
+}
+
+div#pdf_parser_file_upload_form_form {}
+
+div#pdf_parser_file_upload_form_submit_button {}
+
+input#pdf_parser_file_upload_form_title,
+input#pdf_parser_file_upload_form_file_upload {
+  padding: 3px;
+  margin-bottom: 10px;
 }

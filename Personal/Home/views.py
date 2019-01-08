@@ -88,6 +88,12 @@ def upload_pdf(request):
 
         if form.is_valid():
 
+            # Clear Converted Folder
+            pdf_handler.clean_converted_folder()
+
+            # Clear Uploaded Folder
+            pdf_handler.clean_upload_folder()
+
             # Identify Uploaded File
             uploaded_file = request.FILES['file']
 
@@ -114,9 +120,6 @@ def upload_pdf(request):
             # Delete Text Files
             # pdf_handler.delete_unecessary_txt_files()
 
-            # # Clear Converted Folder
-            # pdf_handler.clean_converted_folder
-
             # Find PDF Files
             pdf_handler.find_pdf_files()
 
@@ -124,9 +127,9 @@ def upload_pdf(request):
             pdf_handler.convert_pdf_to_txt()
 
             # Move Converted TXT File into Converted Folder
-            pdf_handler.verify_upload_folder_contents()
+            pdf_handler.move_converted_files_into_converted_folder()
 
-            return render(request, 'display_content.html', context)
+            return redirect('display_content')
         else:
             form = PDF_Upload_Form()
             print('Form Invalid')
@@ -141,8 +144,7 @@ def upload_pdf(request):
     return render(request, 'pdf_parser.html', {})
 
 def display_content(request):
-    # uploaded_file = request.FILES['file'].name
-    # context = {'uploaded_file' : uploaded_file}
-    return render(request, 'display_content.html')
+
+    return render(request, 'display_content.html', {})
 
     
