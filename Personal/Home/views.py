@@ -151,6 +151,8 @@ def upload_pdf(request):
 
 def display_content(request):
 
+    html_formatted_file = []
+
     # Identify the file in the directory
     converted_directory_contents = os.listdir(converted_files_directory)
     converted_file = os.path.join(converted_files_directory, converted_directory_contents[0])
@@ -165,5 +167,6 @@ def display_content(request):
     context = {'contents' : file_content, 'file_name' : converted_file_name}
 
     return render(request, 'display_content.html', context)
+    # return HttpResponse("Check Kernel")
 
     

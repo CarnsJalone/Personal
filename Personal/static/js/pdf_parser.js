@@ -4,47 +4,116 @@ $(document).ready(function(){
     var $container = $('#display_contents_uploaded_data_container');
     var $data = $('#display_contents_upload_data_pre');
 
+    var pre = $('pre')
+
+    var children = pre.children()
+    
     $input.keyup(function(event){
         search();
     })
 
     function search() {
 
+        data = $data.html()
 
-        var data = $data.html()
+        children.css({
+            'background-color' : 'red'
+        })
 
-        data = data.replace("<p>", "").replace("</p>", "").replace(/[.\w\d\s]*-<\/p><p>[.\w\d\s]*/g, "\n").replace(/\n/ig, '')
+        children.each(function(){
+            console.log($(this))
+        })
 
-        var each_line = data.split("<br>")
+ 
 
-        // console.log(each_line)
+        // console.log(children.html())
 
-        for (i=0; i<each_line.length; i++) {
+        console.log(grandchildren.html())
 
-            var trimmed_lines = each_line[i].split(" ")
+        // for (a=0; a<data.length; a++) {
+        //     console.log(data[a])
+        // }
 
-            // trimmed_lines.innerHTML = "<p>" + trimmed_lines + "</p>"
-
-            for (j=0; j<trimmed_lines.length; j++) {
-
-                seperated_words = trimmed_lines[j].trim()
-
-                // seperated_words = seperated_words.toUpperCase()
-
-                if ($input.val().length >=3) {
-
-                    var substring = seperated_words.includes($input.val().toUpperCase())
-
-                    if (substring) {
+    }
 
 
+    //     var data = $data.html()
+
+    //     console.log(data[0])
+
+    //     br_replace_regex = /[a-zA-Z0-9.\n]*<br>[a-zA-Z0-9.\n]*/g;
+
+    //     // TODO - need to fix this regex function so it only puts a </p> at the end of a line
+    //     // end_line_replace_regex = /[\w\d\s\W\D\S]+\n/g
+
+    //     data = data.replace('\n', '<p></p>')
+    //     data = data.replace(br_replace_regex, '</p>\n<p>')
+
+    //     var each_line = data.split("\n")
+
+    //     for (i=0; i<each_line.length; i++) {
+
+    //         var trimmed_lines = each_line[i].split(" ");
+
+    //         for (j=0; j<trimmed_lines.length; j++) {
+
+    //             seperated_words = trimmed_lines[j].trim()
+
+    //             if ($input.val().length >=3) {
+
+    //                 var substring = seperated_words.toUpperCase().includes($input.val().toUpperCase())
+
+    //                 if (substring) {
+
+    //                     // console.log($data.html()[j])
+
+    //                     // console.log(trimmed_lines[0])
+    //                     // trimmed_lines = trimmed_lines[0].replace("<p>", "<p id='highlighted'>")
+    //                     // trimmed_lines.css({
+    //                     //     'id' : 'highlighted'
+    //                     // })
+    //                     // console.log(trimmed_lines)
+
+    //                     document.body.innerHTML = trimmed_lines[j]
+
+    //                 }
+
+    //             }
+
+    //             // console.log(seperated_words)
+
+    //         }
+
+    //     }
+
+
+    //     // for (i=0; i<each_line.length; i++) {
+
+    //     //     var trimmed_lines = each_line[i].split(" ")
+
+    //     //     // trimmed_lines.innerHTML = "<p>" + trimmed_lines + "</p>"
+
+    //     //     for (j=0; j<trimmed_lines.length; j++) {
+
+    //     //         seperated_words = trimmed_lines[j].trim()
+
+    //     //         // seperated_words = seperated_words.toUpperCase()
+
+    //     //         if ($input.val().length >=3) {
+
+    //     //             var substring = seperated_words.toUpperCase().includes($input.val().toUpperCase())
+
+    //     //             if (substring) {
+
+    //     //                 console.log(each_line)
+    //     //                 // console.log(typeof(seperated_words))
         
  
-                    }
-                }
-            }
+    //     //             }
+    //     //         }
+    //     //     }
 
-        }
+    //     }
 
         //     for (j=0; j<trimmed_lines.length; j++) {
 
@@ -74,7 +143,7 @@ $(document).ready(function(){
         //     }
 
 
-        }
+        // }
 
         // console.log(data)
 

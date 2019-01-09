@@ -560,8 +560,22 @@ hr.random_word_generator_page_hrs {
 /* PDF Parser Page */
 
 div#pdf_parser_outer_div {
-
   max-width: 100%;
+}
+
+div#pdf_parser_file_uploader_header {
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+div#pdf_parser_file_uploader_header p,
+div#pdf_parser_file_uploader_header h3
+ {
+  padding: 0px;
+  margin: 0px;
 }
 
 div#pdf_parser_file_upload_form_container {
@@ -570,7 +584,6 @@ div#pdf_parser_file_upload_form_container {
   padding: 10px;
   border: 1px #6e73ab solid;
   border-radius: .375rem;
-  transform: translateY(50%)
 }
 
 div#pdf_parser_file_upload_form_form {}
@@ -583,19 +596,40 @@ input#pdf_parser_file_upload_form_file_upload {
   margin-bottom: 10px;
 }
 
+div#pdf_extension_verification_div {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  transition: .9s;
+  border: 1px solid red;
+  border-radius: .375rem;
+  display: none;
+}
+
+div#pdf_extension_verification_div p {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  color: red;
+}
+
 /* Display Content Page */
 
 div#display_contents_file_name_display {
   margin: 0 auto;
   text-align: center;
-  padding: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 div#display_contents_file_name_display p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 0px;
+  margin: 0px;
 }
 
 div#display_contents_uploaded_data_container {
@@ -603,6 +637,8 @@ div#display_contents_uploaded_data_container {
   padding: 10px;
   border: 1px #6e73ab solid;
   border-radius: .25rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 div#display_contents_uploaded_data_container pre {
@@ -628,4 +664,14 @@ input#display_contents_uploaded_data_search_bar_input {
 
 span#immediate_search_terms {
   background-color: #6e73ab;
+}
+
+/* Return Links */
+
+div.return_link_container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
