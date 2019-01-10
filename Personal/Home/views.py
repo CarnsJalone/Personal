@@ -2,6 +2,7 @@
 import json
 import os
 import sys
+import re
 
 # Add additional directories for imports
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -85,6 +86,8 @@ def random_name_generator(request):
 def upload_pdf(request):
 
     pdf_handler = PDF_Handler()
+
+    sanitize_filename_regex = r'[\\/:"*?<>|()]+'
     
     if request.method == 'POST':
 
@@ -101,6 +104,7 @@ def upload_pdf(request):
             # Identify Uploaded File
             uploaded_file = request.FILES['file']
             uploaded_file_name = request.FILES['file'].name
+            # uploaded_file_name = re.sub(sanitize_filename_regex, "", uploaded_file_name)
 
             # Dictate where file is to be uploaded
             fs = FileSystemStorage(
@@ -110,7 +114,7 @@ def upload_pdf(request):
             
             # Provide Uploaded file a name
             fs.save(
-                name=uploaded_file.name,
+                name=uploaded_file_name,
                 content=uploaded_file
             )
 

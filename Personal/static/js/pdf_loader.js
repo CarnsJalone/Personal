@@ -17,12 +17,22 @@ $(document).ready(function(){
     file_input.change(function(event){
 
         console.log($(this))
-        var extension = file_input.val().split('.').pop()
+        // var extension = file_input.val().split('.').pop()
+
+        var file = event.target.files[0];
+        
+        var filename = file.name
+        var extension = filename.split('.').pop()
+        var file_size = file.size
 
         if (extension != 'pdf') {
             verification_div.css({
                 'display' : 'block'
             })
+
+            verification_div.html(
+                "<p>The file you are attempting to upload is in ." + extension + " format. The server side processing will not be able to properly parse the document. Please upload a file with a .pdf extension.</p>"
+            )
             file_submit.prop(
                 'disabled', true
                 )
@@ -34,6 +44,19 @@ $(document).ready(function(){
             file_submit.prop(
                 'disabled', false
             )
+        }
+
+        if (file_size < 1) {
+            verification_div.css({
+                'display' : 'block'
+            })
+
+            verification_div.html(
+                "<p>The file you are attempting to upload is " + file_size + " bytes. Please upload a file with data in it.</p>"
+            )
+            file_submit.prop(
+                'disabled', true
+                )
         }
     })
 

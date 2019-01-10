@@ -1,6 +1,8 @@
 from os import path, system, remove, listdir, rename
 import time
 
+from slugify import slugify
+
 class PDF_Handler():
 
     def __init__(self):
@@ -142,6 +144,8 @@ class PDF_Handler():
         current_dir = self.UPLOADED_FILE_DIRECTORY
         destination_dir = self.CONVERTED_FILE_DIRECTORY
         current_dir_contents = listdir(current_dir)
+
+        # filename_replace_regex = r'[\\/:"*?<>|]+'
 
         file_existence_check = 0
 
