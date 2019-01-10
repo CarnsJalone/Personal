@@ -1,5 +1,6 @@
 from os import path, system, remove, listdir, rename
 import time
+import subprocess
 
 from slugify import slugify
 
@@ -66,16 +67,15 @@ class PDF_Handler():
         else:
             for each_file in pdf_files:
                 for pdf_file_path, pdf_file in each_file.items():
+
+                    # subprocess.call(['pdftotext', '-layout', 'somefile.pdf'])
                     
-                        # Create a linux-based conversion command
-                        # pdftotext -layout NAME_OF_PDF.pdf
-                        formatted_conversion_command = '{} {} {}'.format(
-                            'pdftotext',
-                            '-layout',
-                            pdf_file_path
-                        )
-                        system(formatted_conversion_command)
-                        print(pdf_file,'converted to .txt')
+                    formatted_conversion_command = ['pdftotext', '-layout', pdf_file_path]
+                    conversion_call = subprocess.call(formatted_conversion_command)
+                    if conversion_call != 0:
+                        print('There was an error. The subprocess returned a code of ' + conversion_call)
+                    else:
+                        print('Conversion properly called. -> ' + pdf_file,'converted to .txt.')
 
     def delete_unecessary_txt_files(self):
 
