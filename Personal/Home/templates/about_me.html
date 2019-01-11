@@ -37,9 +37,9 @@
     problem-solving skills to attack any problem!</p>
     </div>
 
-    <div id="resume_page_img_div">
+   <div id="resume_page_img_div" class="minimized_resume_img_div">
 
-        <img id="resume_page_img_img" src="{% static 'img/Jarret_Laberdee_Resume.jpg' %}" alt="Jarret Laberdee Resume" id="resume_page_img_img">
+        <img id="resume_page_img_img" class="minimized_resume_img_img" src="{% static 'img/Jarret_Laberdee_Resume.jpg' %}" alt="Jarret Laberdee Resume" id="resume_page_img_img">
 
     </div>
 
@@ -49,6 +49,9 @@
 
     </div>
 
-    <div id="about_me_full_page_modal_cover"></div>
+    <div id="full_page_modal" class="minimized_modal"></div>
+    <span id="full_page_modal_close" class="hidden_close_button">
+        <i id="close_button_close_button" class="fas fa-times fa-3x"></i>
+    </span>
 
 {% endblock %}
