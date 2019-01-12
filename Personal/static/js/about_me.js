@@ -9,12 +9,16 @@ $(document).ready(function(){
     var modal_container = $('#about_me_click_for_full_size_modal_container');
     var modal_span = $('#about_me_click_for_full_size_modal_span');
 
+    // var download_resume = $('#resume_page_download_resume_button');
+    var resume_form = $('#resume_page_download_resume_form')
+
 
     function enlarge() {
         image.attr('class', 'enlarged_resume_img_img');
         resume.attr('class', 'enlarged_resume_img_div');
         modal.attr('class', 'enlarged_modal');
         close_button.attr('class', 'enlarged_close_button');
+        modal_container.fadeOut(50);
     }
 
     function minimize() {
@@ -22,6 +26,14 @@ $(document).ready(function(){
         resume.attr('class', 'minimized_resume_img_div');
         modal.attr('class', 'minimized_modal');
         close_button.attr('class' , 'minimized_close_button');
+        modal_container.fadeOut(50);
+    }
+
+    function display_help_box() {
+        if (image.hasClass("minimized_resume_img_img")){
+            modal_container.fadeIn(250);
+            modal_container.html("<p>Click inside the r&#233sum&#233 to enlarge.</p>")
+        }
     }
 
 
@@ -29,6 +41,16 @@ $(document).ready(function(){
         if (image.hasClass("minimized_resume_img_img")){
             enlarge()
         } 
+    })
+
+    image.hover(function(event){
+        display_help_box()
+    });
+
+    image.mouseleave(function(event){
+        if (image.hasClass("minimized_resume_img_img")){
+            minimize()
+        }
     })
 
     close_button.click(function(event){
@@ -46,59 +68,25 @@ $(document).ready(function(){
     })
 
     $(document).mouseleave(function(event){
-        minimize()
+        if (image.hasClass("enlarged_resume_img_img")){
+            minimize()
+        }
     })
 
-    image.hover(function(event){
-        if (image.hasClass("minimized_resume_img_img")) {
-            setTimeout(function(){
-                alert('Hello')
-            }, 5000
-        });
+    resume_form.submit(function(event){
+        // event.preventDefault();
+        // console.log(event)
+        $.ajax({
+            type: "GET",
+            url: "/about_me/download_resume",
+            dataType: 'text', 
+            contentType: 'application/pdf',
+            success: function(data){
+                console.dir(data)
+                // console.log(data.name)
+                console.log(data['Content-Disposition'])
+            }
+
+        })
     })
-
-
-    // image.hover(function(event){
-    //     modal_container.fadeIn(250)
-    //     modal_span.html('<p>Click on resume for view full page image.</p>')
-    //     image.css({
-    //         'cursor' : 'zoom-in'
-    //     })
-    // })
-
-    // image.mouseleave(function(event){
-    //     modal_container.fadeOut(250)
-    //     modal_span.html('<p>Click on resume for view full page image.</p>')
-    //     resume.css({
-    //         'transform' : 'scale(1)',
-    //         'cursor' : 'pointer'
-    //     })
-    // })
-
-    // // Function handling clicking on resume
-    // image.click(function(event){
-    //     if (image.hasClass("enlarged")) {
-    //         minimize_resume()
-    //     }
-    //     else {
-    //         enlarge_resume()
-    //     }
-    // })
-
-    // function enlarge_resume(){
-    //     resume.css({
-    //         'cursor' : 'zoom-out',
-    //     })
-    //     modal_span.html("<p>Click again or move mouse outside enlarged r&#233sum&#233 to resume browsing.")
-    //     image.addClass("enlarged")
-    // }
-
-    // function minimize_resume(){
-    //     resume.css({
-    //         'cursor' : 'zoom-in',
-    //     })
-    //     modal_span.html("<p>Click on resume for view full page image.</p>")
-    //     image.removeClass("enlarged")
-    // }
-
 })

@@ -5,21 +5,32 @@ import sys
 import re
 
 # Add additional directories for imports
+# Directories for PDF Parser application
 current_directory = os.path.dirname(os.path.abspath(__file__))
 pdf_parser_directory = os.path.join(current_directory, 'PDF_Parser')
 uploaded_files_directory = os.path.join(pdf_parser_directory, 'Uploaded_Files')
 converted_files_directory = os.path.join(pdf_parser_directory, 'Converted_Files')
 
+# Directories for Resume download
+personal_directory = os.path.dirname(current_directory)
+static_files_directory = os.path.join(personal_directory, 'static')
+static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
+resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
+
+
 # Append them to the path so Django will recognize them
 sys.path.append(pdf_parser_directory)
 sys.path.append(uploaded_files_directory)
 sys.path.append(converted_files_directory)
+sys.path.append(static_files_directory)
+sys.path.append(static_pdf_file_directory)
 
 # Django Imports
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.core.serializers import serialize
 from django.core.files.storage import FileSystemStorage
+from django.utils.encoding import smart_str
 
 # Local Imports
 from . forms import ConnectForm, PDF_Upload_Form
@@ -32,6 +43,21 @@ def home(request):
 
 def about_me(request):
     return render(request, 'about_me.html', {})
+
+def download_resume(request):
+
+    with open(resume_file_path, 'rb') as pdf:
+
+        file = pdf.read()
+
+        downloaded_file_name = 'Jarret-Laberdee-Resume.pdf'
+
+        response = HttpResponse(content=file, content_type='application/pdf')
+        response['Content-Disposition'] = 'attachment; filename={}'.format(downloaded_file_name)
+
+        pdf.close()
+
+        return response
 
 def connect(request):
     if request.method == 'POST':
@@ -155,8 +181,6 @@ def upload_pdf(request):
 
 def display_content(request):
 
-    html_formatted_file = []
-
     # Identify the file in the directory
     converted_directory_contents = os.listdir(converted_files_directory)
     converted_file = os.path.join(converted_files_directory, converted_directory_contents[0])
@@ -171,6 +195,5 @@ def display_content(request):
     context = {'contents' : file_content, 'file_name' : converted_file_name}
 
     return render(request, 'display_content.html', context)
-    # return HttpResponse("Check Kernel")
 
     

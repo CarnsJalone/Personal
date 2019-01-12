@@ -6,6 +6,7 @@ body {
   background-color: #FFF8BE;
 }
 
+/* Header - Flex Column (Will Adjust Downwards) */
 @media only screen and (max-width: 400px) {
   div#main_header_inner {
     flex-direction: column;
@@ -32,7 +33,7 @@ body {
 
   div#about_me_click_for_full_size_modal_container {
     width: 85%;
-    top: 13.5%;
+    top: 148.75px;
   }
 
   .enlarged_modal {
@@ -43,6 +44,11 @@ body {
     width: calc(100% - 43.33px);
     top: 158.332px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 179.997px;
+    right: 43.33px;
   }
 
     /* Project Home Page */
@@ -73,6 +79,7 @@ body {
   }
 }
 
+/* Header - Flex Column (Will Adjust Downwards) */
 @media (min-width: 401px) and (max-width: 550px) {
   div#main_header_inner {
     flex-direction: column;
@@ -97,7 +104,7 @@ body {
 
   div#about_me_click_for_full_size_modal_container {
     width: 75%;
-    top: 13.5%;
+    top: 148.75px;
   }
 
   .enlarged_modal {
@@ -108,6 +115,11 @@ body {
     width: calc(100% - 43.33px);
     top: 158.332px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 179.997px;
+    right: 43.33px;
   }
 
   /* Project Home Page */
@@ -152,6 +164,7 @@ body {
 
 }
 
+/* Header - Flex Column (Will Adjust Downwards) */
 @media (min-width: 551px) and (max-width: 767px) {
 
   /* Base */
@@ -178,7 +191,7 @@ body {
 
   div#about_me_click_for_full_size_modal_container {
     width: 62.5%;
-    top: 13.5%;
+    top: 148.75px;
   }
 
   .enlarged_modal {
@@ -189,6 +202,11 @@ body {
     width: calc(100% - 43.33px);
     top: 158.332px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 179.997px;
+    right: 43.33px;
   }
 
   /* Project Home Page */
@@ -239,6 +257,7 @@ body {
 
 }
 
+/* Header - Flex Row */
 @media (min-width: 768px) and (max-width: 992px) {
   div#main_header_inner {
     flex-direction: row;
@@ -274,6 +293,11 @@ body {
     width: calc(100% - 43.33px);
     top: 64.995px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 81.24375px;
+    right: 43.33px;
   }
 
   /* Project Home Page */
@@ -318,6 +342,7 @@ body {
 
 }
 
+/* Header - Flex Row */
 @media (min-width: 993px) and (max-width: 1200px) {
   div#main_header_inner {
     flex-direction: row;
@@ -353,6 +378,11 @@ body {
     width: calc(100% - 43.33px);
     top: 64.995px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 81.24375px;
+    right: 43.33px;
   }
 
   /* Project Home Page */
@@ -397,6 +427,7 @@ body {
 
 }
 
+/* Header - Flex Row */
 @media (min-width: 1201px) and (max-width: 1500px) {
   div#main_header_inner {
     display: flex;
@@ -432,6 +463,11 @@ body {
     width: calc(100% - 43.33px);
     top: 64.995px;
     left: 21.665px;
+  }
+
+  span#full_page_modal_close {
+    top: 81.24375px;
+    right: 43.33px;
   }
 
   /* Project Home Page */
@@ -476,6 +512,7 @@ body {
 
 }
 
+/* Header - Flex Column */
 @media (min-width: 1501px) {
   div#main_header_inner {
     display: flex;
@@ -513,6 +550,10 @@ body {
     left: 21.665px;
   }
 
+  span#full_page_modal_close {
+    top: 81.24375px;
+    right: 43.33px;
+  }
 
   /* Project Home Page */
 
@@ -622,7 +663,6 @@ div#main_header_right_half a {
   height: 200vh;
   position: absolute;
   background: linear-gradient(0.375turn,#6e73ab, #000);
-  /* background-color: #6e73ab; */
   opacity: .75;
   z-index: 1;
 }
@@ -650,10 +690,13 @@ div#about_me_click_for_full_size_modal_container {
   border: 1px solid #6e73ab;
   border-radius: .375rem;
   display: none;
-  z-index: -1;
+  z-index: 4;
 }
 
-span#about_me_click_for_full_size_modal_span {}
+div#about_me_click_for_full_size_modal_container p {
+  padding: 0px;
+  margin: 0px;
+}
 
 span#about_me_click_for_full_size_modal_span p {
   padding: 0px;
@@ -664,8 +707,6 @@ span#full_page_modal_close {
   position: absolute;
   color: #6e73ab;
   z-index: 4;
-  top: 81.24375px;
-  right: 43.33px;
 }
 
 span#full_page_modal_close:hover {
@@ -681,6 +722,21 @@ i#close_button_close_button {
 }
 .enlarged_close_button {
   display: block;
+}
+
+div#resume_page_download_resume_container {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0px;
+  text-align: center;
+  width: auto;
+}
+
+button#resume_page_download_resume_button {
+  background-color: #6e73ab;
+  color: #cfc259;
+  border: 1px solid #cfc259;
 }
 
 

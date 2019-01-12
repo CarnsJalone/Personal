@@ -5,14 +5,18 @@ $(document).ready(function(){
 
     var verification_div = $('#pdf_extension_verification_div')
 
-    file_submit.click(function(event){
-        var extension = file_input.val().split('.').pop()
+    // file_submit.click(function(event){
+    //     var extension = file_input.val().split('.').pop()
 
-        if (extension != 'pdf') {
-            event.preventDefault()
-            alert('This is not a PDF, it will not parse properly.')
-        } 
-    })
+    //     if (extension == '') {
+
+    //     }
+
+    //     if (extension != 'pdf') {
+    //         event.preventDefault()
+    //         alert('This is not a PDF, it will not parse properly.')
+    //     } 
+    // })
 
     file_input.change(function(event){
 
@@ -25,7 +29,24 @@ $(document).ready(function(){
         var extension = filename.split('.').pop()
         var file_size = file.size
 
-        if (extension != 'pdf') {
+        if (extension == '') {
+            verification_div.css({
+                'display' : 'block'
+            })
+            verification_div.html(
+                "<p>The verification script has not detected a file format. Please be aware that if this is not a .pdf, the conversion will not take place successfully.</p>"
+            )
+            file_submit.prop(
+                'disabled', false
+                )
+        } else if (extension == 'pdf') {
+            verification_div.css({
+                'display' : 'none'
+            })
+            file_submit.prop(
+                'disabled', false
+            )
+        } else {
             verification_div.css({
                 'display' : 'block'
             })
@@ -36,15 +57,7 @@ $(document).ready(function(){
             file_submit.prop(
                 'disabled', true
                 )
-        }
-        else {
-            verification_div.css({
-                'display' : 'none'
-            })
-            file_submit.prop(
-                'disabled', false
-            )
-        }
+            }
 
         if (file_size < 1) {
             verification_div.css({
