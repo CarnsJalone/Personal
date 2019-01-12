@@ -610,6 +610,7 @@ div#main_header_right_half a {
   margin: 10px;
   transition: .1;
   z-index: 1;
+  cursor: pointer;
 }
 
 /* Header is 43.33px */
@@ -640,7 +641,7 @@ div#main_header_right_half a {
 }
 
 div#about_me_click_for_full_size_modal_container {
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -660,23 +661,25 @@ span#about_me_click_for_full_size_modal_span p {
 }
 
 span#full_page_modal_close {
-  position: fixed;
+  position: absolute;
   color: #6e73ab;
   z-index: 4;
-  height: 200%;
-  top: 86.66px;
-  /* left: calc(100% - 21.655px) */
+  top: 81.24375px;
   right: 43.33px;
+}
+
+span#full_page_modal_close:hover {
+  cursor: pointer;
 }
 
 i#close_button_close_button {
   font-weight: 9000px;
 }
 
-span.minimized_close_button {
+.minimized_close_button {
   display: none;
 }
-span.enlarged_close_button {
+.enlarged_close_button {
   display: block;
 }
 

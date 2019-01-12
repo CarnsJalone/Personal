@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
-    var image = $('#resume_page_img_img')
-    var resume = $('#resume_page_img_div')
-    var modal = $('#full_page_modal')
+    var image = $('#resume_page_img_img');
+    var resume = $('#resume_page_img_div');
+    var modal = $('#full_page_modal');
+    var close_button = $('#full_page_modal_close');
+    var close_button_i = $('#close_button_close_button');
 
     var modal_container = $('#about_me_click_for_full_size_modal_container');
     var modal_span = $('#about_me_click_for_full_size_modal_span');
@@ -12,37 +14,49 @@ $(document).ready(function(){
         image.attr('class', 'enlarged_resume_img_img');
         resume.attr('class', 'enlarged_resume_img_div');
         modal.attr('class', 'enlarged_modal');
+        close_button.attr('class', 'enlarged_close_button');
     }
 
     function minimize() {
         image.attr('class', 'minimized_resume_img_img');
         resume.attr('class', 'minimized_resume_img_div');
-        modal.attr('class', 'minimized_modal')
+        modal.attr('class', 'minimized_modal');
+        close_button.attr('class' , 'minimized_close_button');
     }
+
 
     image.click(function(event){
         if (image.hasClass("minimized_resume_img_img")){
             enlarge()
         } 
-        else if (image.hasClass("enlarged_resume_img_img")) {
-            minimize()
-        }
-        else {
-            alert('Something happened...')
-        }
     })
 
-    modal.click(function(){
+    close_button.click(function(event){
         if (image.hasClass("enlarged_resume_img_img")) {
             minimize()
         }
     })
 
-    modal.mouseleave(function(){
-        if (image.hasClass("enlarged_resume_img_img")) {
-            minimize()
-        }
+    close_button.hover(function(event){
+        close_button_i.attr('class', 'fas fa-times fa-3x');
     })
+
+    close_button.mouseleave(function(event){
+        close_button_i.attr('class', 'fas fa-times fa-2x');
+    })
+
+    $(document).mouseleave(function(event){
+        minimize()
+    })
+
+    image.hover(function(event){
+        if (image.hasClass("minimized_resume_img_img")) {
+            setTimeout(function(){
+                alert('Hello')
+            }, 5000
+        });
+    })
+
 
     // image.hover(function(event){
     //     modal_container.fadeIn(250)
