@@ -9,7 +9,7 @@ from django import forms
 # local imports
 from .models import Connector, PDF_Uploader
 
-class ConnectForm(forms.Form):
+class ConnectForm(forms.ModelForm):
     first_name = forms.CharField(label="First Name", max_length=50)
     first_name.widget.attrs.update({'class': 'form-control', 'id' : 'connect_page_form_first_name'})
 

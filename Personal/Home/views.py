@@ -60,13 +60,23 @@ def download_resume(request):
         return response
 
 def connect(request):
+    
     if request.method == 'POST':
+
+        first_name = None
+        last_name = None
+        email = None
+        body = None
+
         form = ConnectForm(request.POST)
+
         if form.is_valid():
             first_name = form.cleaned_data['first_name']
             last_name = form.cleaned_data['last_name']
             email = form.cleaned_data['email']
             body = form.cleaned_data['body']
+
+            form.save()
 
             form_variables = {
                 'first_name' : first_name, 
@@ -74,6 +84,7 @@ def connect(request):
                 'email' : email, 
                 'body' : body
                 }
+
 
             return render(request, 'thank_you.html', {'form_variables' : form_variables})
         
