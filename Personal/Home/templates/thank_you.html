@@ -2,10 +2,21 @@
 
 {% block thank_you %}
 
-<p> Thanks for getting ahold of me {{form_variables.first_name}}.</p>
-<p>I got your comment: {{form_variables.body}}</p>
-<p>I'm delighted you took the time to contact me. For a faster line of communication,
- you can always contact me at (419)-206-8550. Otherwise I will reach out to you at 
- {{form_variables.email}}</p>
+<div id="thank_you_page_outer_container" class="container">
+
+    <div id="thank_you_page_inner_container_1">
+        <p> Thanks for getting ahold of me {{form_variables.first_name}}.</p>
+        <p>I got your comment: <i>{{form_variables.body}}</i></p>
+    </div>
+
+    <div id="thank_you_page_inner_container_2">
+        <p>I'm delighted you took the time to contact me. For a faster line of communication,
+        you can always contact me at (419)-206-8550. This is my daytime (cell) number or shoot 
+        me a personal email at <a href="mailto:JLamborghini22@gmail.com?Subject=Hey%20Jarret%2C%20this%20is%20{{form_variables.first_name}}!%0A&body=Just%20want%20to%20say%20that%20you%20rock!%20(Just%20kidding%20put%20your%20own%20message%20here.)" target="_top">Jlamborghini22@gmail.com</a></span>. I'm usually 
+        very responsive so don't hesitate in reaching out to me! 
+        Otherwise I will get ahold of you at {{form_variables.email}}.</p>
+    </div>
+
+ </div>
 
 {% endblock %}

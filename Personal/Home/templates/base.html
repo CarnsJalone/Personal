@@ -25,10 +25,10 @@
       <div id="main_header_inner">
         <div id="main_header_left_half"><p>Hey, I'm Jarret</p></div>
         <div id="main_header_right_half">
-          <a href="{% url 'home' %}"><p>Home</p></a>
-          <a href="{% url 'about_me' %}"><p>About Me</p></a>
-          <a href="{% url 'connect' %}"><p>Connect</p></a>
-          <a href="{% url 'projects_home_page' %}"><p>Projects</p></a>
+          <a href="{% url 'home' %}" class="{% if navbar == 'home' %} active_header_link {% else %} inactive_header_link {% endif %}"><p>Home</p></a>
+          <a href="{% url 'about_me' %}" class="{% if navbar == 'about_me' %} active_header_link {% else %} inactive_header_link {% endif %}"><p>About Me</p></a>
+          <a href="{% url 'projects_home_page' %}" class="{% if navbar == 'projects' %} active_header_link {% else %} inactive_header_link {% endif %}"><p>Projects</p></a>
+          <a href="{% url 'connect' %}" class="{% if navbar == 'connect' %} active_header_link {% else %} inactive_header_link {% endif %}"><p>Connect</p></a>
         </div>
       </div>
     </div>

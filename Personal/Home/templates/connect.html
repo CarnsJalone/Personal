@@ -2,15 +2,42 @@
 
 {% block connect %}
 
-    <h1>Hello Again</h1>
+    <div class="page_header_container container">
+        <div class="page_header_text">
+            <h3>Let me know what you think!</p>
+        </div>
 
-    <div id="connect_page_form_div">
-         <form id="connect_page_form_form" action="/connect/thanks_for_reaching_out/" method="POST">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit" id="connect_page_form_submit_button">
-         </form>
+        <hr style="width:50%">
+    </div>
 
+    <div id="connect_page_outer_container">
+
+        <div id="connect_page_introductory_text_container" class="container">
+            <p>Hey! So hopefully you've gotten to know me a little from my About Me section. 
+            In any case, please feel free to reach out to me!</p>
+            
+            <p>The most reliable method of communication would be by phone. My daytime cell number is <a href="tel://14192068550" target="_top">(419)-206-8550</a>. I'm 
+            usually very responsive (although, like a lot of people, I have the bad habit on not answering numbers I don't know). If I don't answer the call, 
+            please leave me a voicemail. I will absolutely reply, usually within a very short period of time.</p>
+
+            <p>If that doesn't suite your needs (different strokes for different folks), shoot me an email. My main email is 
+            <a href="mailto:JLamborghini22@gmail.com?Subject=Hey%20Jarret%2C%20this%20is%20(tell%20me%20your%20name%20here)...&body=Just%20want%20to%20say%20that%20you%20rock!%20(Just%20kidding%20put%20your%20own%20message%20here.)">Jlamborghini22@gmail.com</a>. I check this very frequently and have automatic notifications set up so I will definitely see it!</p>
+
+            <p>If that doesn't strike you, I've put in a quick contact form below. Just simply fill that out with the requested information and I'll receive 
+            an automatically generated email with your contact information.</p>
+
+        </div>
+
+        <hr id="connect_page_text_form_seperation_hr">
+
+        <div id="connect_page_form_div">
+            <form id="connect_page_form_form" action="/connect/thanks_for_reaching_out/" method="POST">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" id="connect_page_form_submit_button" class="btn">
+            </form>
+
+        </div>
     </div>
 
 {% endblock %}

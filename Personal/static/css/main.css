@@ -38,6 +38,7 @@ body {
 
   .enlarged_modal {
     top: 136.667px;
+    height: 
   }
   
   .enlarged_resume_img_div {
@@ -598,6 +599,8 @@ body {
 
 /* Dimensions outside Reponsiveness */
 
+/* Base */
+
 div#main_header_outer {
   width: 100%;
   height: auto;
@@ -625,9 +628,34 @@ div#main_header_right_half {
 
 div#main_header_right_half p,
 div#main_header_right_half a {
-  color: #cfc259;
   text-align: center;
   margin: 0 auto;
+}
+
+div#main_header_right_half p:hover,
+div#main_header_right_half a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.active_header_link p {
+  font-weight: bold;
+  color: #fff;
+  font-style: italic;
+}
+
+.active_header_link p::before {
+  content: '~ ';
+  color: #cfc259;
+}
+
+.active_header_link p::after {
+  content: ' ~';
+  color: #cfc259;
+}
+
+.inactive_header_link p {
+  color: #cfc259;
 }
 
 /* About Me Page */
@@ -649,7 +677,7 @@ div#main_header_right_half a {
   height: 100%;
   border: 1px solid #6e73ab;
   margin: 10px;
-  transition: .1;
+  transition: .075s;
   z-index: 1;
   cursor: pointer;
 }
@@ -659,7 +687,7 @@ div#main_header_right_half a {
 
 .enlarged_modal {
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 200vh;
   position: absolute;
   background: linear-gradient(0.375turn,#6e73ab, #000);
@@ -671,7 +699,6 @@ div#main_header_right_half a {
   height: auto;
   position: absolute;
   z-index: 2;
-
 }
 
 .enlarged_resume_img_img {
@@ -681,7 +708,7 @@ div#main_header_right_half a {
 }
 
 div#about_me_click_for_full_size_modal_container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -739,11 +766,73 @@ button#resume_page_download_resume_button {
   border: 1px solid #cfc259;
 }
 
+button#resume_page_download_resume_button:hover {
+  color: #fff;
+  border: 1px solid #000;
+}
+
 
 /* Connect Page */
 
+div#connect_page_outer_container {
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div#connect_page_introductory_text_container a {
+  text-decoration: none;
+  color: inherit;
+  border-radius: .175rem;
+  border: 2px solid #9FA3CC;
+  background-color: #9FA3CC;
+}
+
+div#connect_page_introductory_text_container a:hover {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
 div#connect_page_form_div {
   margin: 0 auto;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div#connect_page_form_div input[type="text"],
+div#connect_page_form_div input[type="email"],
+div#connect_page_form_div textarea {
+  padding: 0px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+}
+
+div#connect_page_form_div label {
+  padding: 0px;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+}
+
+input#connect_page_form_submit_button {
+  margin: 0 auto;
+  background-color: #6e73ab;
+  color: #cfc259;
+  border: 1px solid #cfc259;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input#connect_page_form_submit_button:hover {
+  color: #fff;
+  border: 1px solid #000;
 }
 
 ul#about_me_page_ul {
@@ -757,6 +846,50 @@ ul#about_me_page_ul {
 ul#about_me_page_ul li h5 {
   text-align: center;
 }
+
+hr#connect_page_text_form_seperation_hr {
+  margin: 0 auto;
+  width: 75%;
+}
+
+/* Thank You Page */
+
+div#thank_you_page_outer_container {
+  margin: 0 auto;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div#thank_you_page_outer_container p {
+  padding: 10px;
+  margin: 0px;
+}
+
+div#thank_you_page_outer_container a {
+  text-decoration: none;
+  color: inherit;
+  border-radius: .175rem;
+  border: 2px solid #9FA3CC;
+  background-color: #9FA3CC;
+}
+
+div#thank_you_page_outer_container a:hover {
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+
+div#thank_you_page_outer_container a:hover {
+  color: #FFF8BE;
+}
+
+div#thank_you_page_inner_container_1 {
+  text-align: center;
+}
+
+div#thank_you_page_inner_container_2 {}
+
 
 /* Projects Home Page */
 
@@ -796,6 +929,24 @@ a.project_home_project_description_links:active {
 
 a#random_word_generator_link p {
   margin: 0px;
+}
+
+/* Page Headers */
+
+div.page_header_container {
+  margin: 0 auto;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+div.page_header_text {}
+
+div.page_header_container h3 {
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 

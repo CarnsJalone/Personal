@@ -39,10 +39,10 @@ from . random_name_generator import Generator
 from PDF_Parser import PDF_Handler, TextHandler
 
 def home(request):
-    return render(request, 'home.html', {})
+    return render(request, 'home.html', {'navbar' : 'home'})
 
 def about_me(request):
-    return render(request, 'about_me.html', {})
+    return render(request, 'about_me.html', {'navbar' : 'about_me'})
 
 def download_resume(request):
 
@@ -82,7 +82,8 @@ def connect(request):
                 'first_name' : first_name, 
                 'last_name' : last_name, 
                 'email' : email, 
-                'body' : body
+                'body' : body,
+                'navbar' : 'connect',
                 }
 
 
@@ -90,23 +91,23 @@ def connect(request):
         
         else:
             form = ConnectForm()
-            return render(request, 'connect.html', {'form' : form})
+            return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect'})
     else: 
         form = ConnectForm()
-        return render(request, 'connect.html', {'form' : form})
+        return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect'})
 
 
-    return render(request, 'connect.html', {'form':form})
+    return render(request, 'connect.html', {'form':form, 'navbar' : 'connect'})
 
 def projects(request):
-    return render(request, 'project_home_page.html', {})
+    return render(request, 'project_home_page.html', {'navbar' : 'projects'})
 
 def random_word_generator(request):
-    context = {'random_word' : generate_random_word}
+    context = {'random_word' : generate_random_word, 'navbar' : 'projects'}
     if request.method == 'GET':
         return render(request, 'random_word_generator.html', context)
     else:
-        return render(request, 'random_word_generator.html', {})
+        return render(request, 'random_word_generator.html', {'navbar' : 'projects'})
 
 def random_word_generator_ajax(request):
     generate_random_word()
@@ -180,11 +181,11 @@ def upload_pdf(request):
         else:
             form = PDF_Upload_Form()
             print('Form Invalid')
-            return render(request, 'pdf_parser.html', {'form' : form})
+            return render(request, 'pdf_parser.html', {'form' : form, 'navbar' : 'projects'})
 
     else:
         form = PDF_Upload_Form()
-        return render(request, 'pdf_parser.html', {'form' : form})
+        return render(request, 'pdf_parser.html', {'form' : form, 'navbar' : 'projects'})
 
 
 
@@ -203,7 +204,7 @@ def display_content(request):
 
     f.close()
 
-    context = {'contents' : file_content, 'file_name' : converted_file_name}
+    context = {'contents' : file_content, 'file_name' : converted_file_name, 'navbar' : 'projects'}
 
     return render(request, 'display_content.html', context)
 

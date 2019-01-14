@@ -20,7 +20,7 @@ class ConnectForm(forms.ModelForm):
     email.widget.attrs.update({ 'class' : 'form-control', 'id' : 'connect_page_form_email'})
     
     body = forms.CharField(widget=forms.Textarea, label="Subject")
-    body.widget.attrs.update({ 'class' : 'form-control', 'id' : 'connect_page_form_body'})
+    body.widget.attrs.update({ 'class' : 'form-control', 'id' : 'connect_page_form_body', 'rows' : '5'})
 
     class Meta:
         model = Connector
