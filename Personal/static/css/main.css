@@ -640,18 +640,19 @@ div#main_header_right_half a:hover {
 
 .active_header_link p {
   font-weight: bold;
-  color: #fff;
-  font-style: italic;
+  color: #FFF8BE;
 }
 
 .active_header_link p::before {
   content: '~ ';
   color: #cfc259;
+  font-style: normal;
 }
 
 .active_header_link p::after {
   content: ' ~';
   color: #cfc259;
+  font-style: normal;
 }
 
 .inactive_header_link p {
@@ -771,7 +772,6 @@ button#resume_page_download_resume_button:hover {
   border: 1px solid #000;
 }
 
-
 /* Connect Page */
 
 div#connect_page_outer_container {
@@ -783,16 +783,14 @@ div#connect_page_outer_container {
 
 div#connect_page_introductory_text_container a {
   text-decoration: none;
-  color: inherit;
-  border-radius: .175rem;
-  border: 2px solid #9FA3CC;
-  background-color: #9FA3CC;
+  color: #6e73ab;
+  transition: .5s;
 }
 
 div#connect_page_introductory_text_container a:hover {
-  border: 2px solid #000;
-  background-color: #000;
-  color: #fff;
+  border: 2px solid #6e73ab;
+  background-color: #6e73ab;
+  color: #cfc259;
 }
 
 div#connect_page_form_div {
@@ -868,16 +866,14 @@ div#thank_you_page_outer_container p {
 
 div#thank_you_page_outer_container a {
   text-decoration: none;
-  color: inherit;
+  color: #6e73ab;
   border-radius: .175rem;
-  border: 2px solid #9FA3CC;
-  background-color: #9FA3CC;
 }
 
 div#thank_you_page_outer_container a:hover {
-  border: 2px solid #000;
-  background-color: #000;
-  color: #fff;
+  border: 2px solid #6e73ab;
+  background-color: #6e73ab;
+  color: #cfc259;
 }
 
 div#thank_you_page_outer_container a:hover {
