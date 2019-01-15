@@ -1032,9 +1032,9 @@ div#pdf_extension_verification_div {
   margin-bottom: 10px;
   padding: 10px;
   text-align: center;
-  background-color: #fff;
+  background-color: #6e73ab;
   transition: .9s;
-  border: 1px solid red;
+  border: 1px solid #cfc259;
   border-radius: .375rem;
   display: none;
 }
@@ -1042,8 +1042,7 @@ div#pdf_extension_verification_div {
 div#pdf_extension_verification_div p {
   padding: 0px;
   margin: 0px;
-  font-weight: bold;
-  color: red;
+  color: #cfc259;
 }
 
 /* Display Content Page */

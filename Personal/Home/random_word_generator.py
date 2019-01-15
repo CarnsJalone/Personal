@@ -33,8 +33,6 @@ def generate_random_word():
     random_consonant_pool = []
     random_consonant_pool.append(random.sample(consonant_conjunctions, chain_selection))
 
-    print(chain_selection)
-
     # Generate a random sequence of consonants and vowels beginning with a consonant
     random_name_list_consonant_start = []
 

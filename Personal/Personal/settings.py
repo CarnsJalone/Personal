@@ -133,3 +133,12 @@ PDF_PARSER_DIRECTORY = os.path.join(HOME_DIRECTORY, 'PDF_Parser')
 MEDIA_ROOT = os.path.join(PDF_PARSER_DIRECTORY, 'Uploaded_Files')
 
 MEDIA_URL = '/media/'
+
+# Email Preferences
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'Jlamborghini22@gmail.com'
+EMAIL_HOST_PASSWORD = 'Mygrandma22$'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

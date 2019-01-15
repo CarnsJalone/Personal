@@ -31,6 +31,8 @@ from django.http import HttpResponse, JsonResponse
 from django.core.serializers import serialize
 from django.core.files.storage import FileSystemStorage
 from django.utils.encoding import smart_str
+from django.core.mail import send_mail
+from django.template.loader import get_template, render_to_string
 
 # Local Imports
 from . forms import ConnectForm, PDF_Upload_Form
@@ -85,6 +87,24 @@ def connect(request):
                 'body' : body,
                 'navbar' : 'connect',
                 }
+
+            # Email Preferences
+            connect_response_email_to_submitter = render_to_string('email/connect_response.html', form_variables)
+
+            personal_email = 'Jlamborghini22@gmail.com'
+
+            # Send email to the submitter
+            submitter_email_subject = '*Ding Ding*'
+            submitter_text_argument = 'For some reason a text file was submitted. Uh oh.'
+
+            send_mail(
+                submitter_email_subject,
+                submitter_text_argument,
+                personal_email,
+                [email],
+                html_message=connect_response_email_to_submitter,
+                fail_silently=False
+            )
 
 
             return render(request, 'thank_you.html', {'form_variables' : form_variables})
