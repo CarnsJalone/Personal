@@ -89,4 +89,17 @@ $(document).ready(function(){
 
         })
     })
+
+
+    // Employment Calculator Function
+
+    $.ajax({
+        type: "GET",
+        url: "/about_me/",
+        dataType: "json",
+        data: { 'elapsed_time' : elapsed_time },
+        success: function(data){
+            console.log(data)
+        }
+    })
 })

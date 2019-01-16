@@ -17,6 +17,10 @@ static_files_directory = os.path.join(personal_directory, 'static')
 static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
 resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
 
+# Directories for Employment Calculator
+employment_calculator_dir = os.path.join(current_directory, 'Employment_Calculator')
+employment_calculator_file = os.path.join(employment_calculator_dir, 'Employment_Calculator.py')
+
 
 # Append them to the path so Django will recognize them
 sys.path.append(pdf_parser_directory)
@@ -24,6 +28,7 @@ sys.path.append(uploaded_files_directory)
 sys.path.append(converted_files_directory)
 sys.path.append(static_files_directory)
 sys.path.append(static_pdf_file_directory)
+sys.path.append(employment_calculator_dir)
 
 # Django Imports
 from django.shortcuts import render, redirect
@@ -39,12 +44,22 @@ from . forms import ConnectForm, PDF_Upload_Form
 from . random_word_generator import generate_random_word, ajax_random_word
 from . random_name_generator import Generator
 from PDF_Parser import PDF_Handler, TextHandler
+from Employment_Calculator import Employment_Calculator
 
 def home(request):
     return render(request, 'home.html', {'navbar' : 'home'})
 
 def about_me(request):
-    return render(request, 'about_me.html', {'navbar' : 'about_me'})
+
+    calculator = Employment_Calculator()
+    elapsed_time = calculator.calculate_elapsed_time()
+
+    rendered_variables = {
+        'navbar' : 'about_me',
+        'elapsed_time' : elapsed_time
+    }
+
+    return render(request, 'about_me.html', rendered_variables)
 
 def download_resume(request):
 
