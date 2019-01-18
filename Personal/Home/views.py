@@ -56,7 +56,7 @@ def about_me(request):
 
     rendered_variables = {
         'navbar' : 'about_me',
-        'elapsed_time' : elapsed_time
+        'elapsed_time' : elapsed_time,
     }
 
     return render(request, 'about_me.html', rendered_variables)

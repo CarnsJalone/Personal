@@ -31,6 +31,8 @@ class Employment_Calculator():
 
     def calculate_elapsed_time(self):
 
+        # plural_years, plural_months, plural_weeks, plural_days, plural_minutes, plural_seconds
+
         elapsed_time = self.create_time_delta()
         total_seconds = int(elapsed_time.total_seconds())
         
@@ -41,9 +43,41 @@ class Employment_Calculator():
         hours, hours_remainder = divmod(days_remainder, 3600)
         minutes, seconds = divmod(hours_remainder, 60)
 
-        formatted_time_elapsed = '{} years, {} months, {} weeks, {} days, {} hours, {} minutes and {} seconds ago'.format(years, months, weeks, days, hours, minutes, seconds)
+        if years == 1:
+            years_string = 'year'
+        else:
+            years_string = 'years'
+
+        if months == 1:
+            months_string = 'month'
+        else: 
+            months_string = 'months'
+        
+        if weeks == 1:
+            weeks_string = 'week'
+        else:
+            weeks_string = 'weeks'
+
+        if days == 1:
+            days_string = 'day'
+        else:
+            days_string = 'days'
+
+        if hours == 1:
+            hours_string = 'hour'
+        else: 
+            hours_string = 'hours'
+
+        if minutes == 1:
+            minutes_string = 'minute'
+        else:
+            minutes_string = 'minutes'
+
+        if seconds == 1:
+            seconds_string = 'second'
+        else:
+            seconds_string = 'seconds'
+
+        formatted_time_elapsed = '{} {}, {} {}, {} {}, {} {}, {} {}, {} {} and {} {} ago'.format(years, years_string, months, months_string, weeks, weeks_string, days, days_string, hours, hours_string, minutes, minutes_string, seconds, seconds_string)
 
         return formatted_time_elapsed
-
-calc = Employment_Calculator()
-calc.calculate_elapsed_time()

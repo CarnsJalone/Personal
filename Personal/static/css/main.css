@@ -718,6 +718,13 @@ body {
   margin-bottom: 5px;
 }
 
+.standard_size label {
+  font-size: 11.5pt;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .about_me_hr {
   width: 65%;
   background-color: #6e73ab;
@@ -740,6 +747,9 @@ body {
 
 .about_me_blue_text_highlight {
   color: #6e73ab;
+  /* background-color: #fff; */
+  background: linear-gradient(0.25turn, #FFF8BE 15%, #fff, #FFF8BE 85%);
+  text-align: center;
 }
 
 .about_me_blue_text_highlight::before {
@@ -749,6 +759,114 @@ body {
 .about_me_blue_text_highlight::after {
   content: ' -'
 }
+
+div#about_me_introduction_container {
+  text-align: center;
+}
+
+span#about_me_peace_icon {
+  font-size: 17.25pt;
+}
+
+a#connect_noclass_link {
+  text-decoration: none;
+  font-size: inherit;
+  border: none;
+  transition: none;
+  color: inherit;
+}
+
+/* Hover Animations for Icons */
+
+/* Phone Animation */
+
+span#connect_by_phone_span:hover {
+  cursor: pointer;
+}
+
+.phone_animation {
+  animation-name: phonemotion;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+}
+
+.emboldened_font {
+  color: #6e73ab;
+  font-weight: bold;
+}
+
+@keyframes phonemotion {
+  0% {
+    transform: rotate(-15deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(15deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Email Animation */
+
+i#connect_by_email_i {
+  position: relative;
+}
+
+span#connect_by_mail_span:hover {
+  cursor: pointer;
+}
+
+.mail_animation {
+  animation-name: mailmotion;
+  animation-duration: .75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mailmotion {
+  0% {left: 0}
+  5% {left: 2.5%}
+  10% {left: 5%}
+  15% {left: 7.5%}
+  20% {left: 10%;}
+  25% {left: 12.5%}
+  30% {left: 15%;}
+  35% {left: 17.5%}
+  40% {left: 20%;}
+  45% {left: 22.5%}
+  50% {left: 25%}
+  55% {left: 27.5%}
+  60% {left: 30%}
+  65% {left: 32.5%}
+  70% {left: 35%}
+  75% {left: 37.5%}
+  80% {left: 40%;}
+  85% {left: 42.5%}
+  90% {left: 45%}
+  95% {left: 47.5%}
+  100% {left: 50%}
+}
+
+/* Contact Form Animation */
+
+i#connect_by_contact_form_i {
+  position: relative;
+}
+
+.contact_form_animation {
+  animation-name: contactformanimation;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes contactformanimation {
+  0% {}
+  25% {transform: rotate(45deg);}
+  50% {transform: rotate(90deg);}
+  75% {transform: rotate(135deg);}
+  100% {transform: rotate(180deg);}
+}
+
+
 
 /* Base */
 
@@ -795,13 +913,13 @@ div#main_header_right_half a:hover {
 }
 
 .active_header_link p::before {
-  content: '~ ';
+  content: '- ';
   color: #cfc259;
   font-style: normal;
 }
 
 .active_header_link p::after {
-  content: ' ~';
+  content: ' -';
   color: #cfc259;
   font-style: normal;
 }
@@ -932,6 +1050,10 @@ div#connect_page_outer_container {
   margin-bottom: 5px;
 }
 
+div#connect_heaeder_h5 {
+  text-align: center;
+}
+
 div#connect_page_introductory_text_container a {
   text-decoration: none;
   color: #6e73ab;
@@ -942,6 +1064,10 @@ div#connect_page_introductory_text_container a:hover {
   border: 2px solid #6e73ab;
   background-color: #6e73ab;
   color: #cfc259;
+}
+
+h5#connect_contact_form_header {
+  text-align: center;
 }
 
 div#connect_page_form_div {
@@ -1000,6 +1126,11 @@ hr#connect_page_text_form_seperation_hr {
   margin: 0 auto;
   width: 75%;
 }
+
+p.connect_centered_li {
+  text-align: center;
+}
+
 
 /* Thank You Page */
 
@@ -1079,13 +1210,6 @@ a#random_word_generator_link p {
 }
 
 /* Page Headers */
-
-div.page_header_container {
-  margin: 0 auto;
-  padding: 0px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
 
 div.page_header_text {}
 

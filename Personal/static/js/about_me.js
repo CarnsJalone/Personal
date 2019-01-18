@@ -12,7 +12,6 @@ $(document).ready(function(){
     // var download_resume = $('#resume_page_download_resume_button');
     var resume_form = $('#resume_page_download_resume_form')
 
-
     function enlarge() {
         image.attr('class', 'enlarged_resume_img_img');
         resume.attr('class', 'enlarged_resume_img_div');
@@ -90,16 +89,106 @@ $(document).ready(function(){
         })
     })
 
+    // Phone Animation
 
-    // Employment Calculator Function
+    var phone_span = $('#connect_by_phone_span');
+    var phone_text = $('#connect_by_phone_p');
+    var phone_icon = $('#connect_by_phone_i');
 
-    $.ajax({
-        type: "GET",
-        url: "/about_me/",
-        dataType: "json",
-        data: { 'elapsed_time' : elapsed_time },
-        success: function(data){
-            console.log(data)
-        }
+    phone_span.hover(function(event){
+        activate_phone_animation()
     })
+
+    phone_span.mouseleave(function(event){
+        deactivate_phone_animation()
+    })
+
+    function activate_phone_animation() {
+        phone_icon.attr('class', 'fas fa-mobile-alt phone_animation');
+        phone_text.attr('class', 'emboldened_font connect_centered_li');
+    }
+
+    function deactivate_phone_animation() {
+        phone_icon.attr('class', 'fas fa-mobile-alt');
+        phone_text.attr('class', 'connect_centered_li');
+    }
+
+    // Email Animation
+
+    var email_span = $('#connect_by_mail_span');
+    var email_text = $('#connect_by_mail_p');
+    var email_icon = $('#connect_by_email_i');
+
+    email_span.hover(function(event){
+        activate_mail_animation()
+    })
+
+    email_span.mouseleave(function(event){
+        deactivate_mail_animation()
+    })
+
+    function activate_mail_animation() {
+        email_icon.attr('class', 'far fa-envelope mail_animation');
+        email_text.attr('class' , 'emboldened_font connect_centered_li');
+    }
+
+    function deactivate_mail_animation() {
+        email_icon.attr('class', 'far fa-envelope-open');
+        email_text.attr('class', 'connect_centered_li');
+    }
+
+    // Contact Form Animation
+
+    var contact_form_span = $('#connect_by_contact_form');
+    var contact_form_i = $('#connect_by_contact_form_i');
+    var contact_form_p = $('#connect_by_contact_form_p');
+    var first_name_field = $('#connect_page_form_first_name')
+
+    contact_form_span.hover(function(event){
+        activate_placeholder_animation();
+        activate_contact_form_animation();
+    })
+
+    contact_form_span.mouseleave(function(event){
+        deactivate_placeholder_animation();
+        deactivate_contact_form_animation();
+    })
+
+    function activate_placeholder_animation(){
+
+        var placeholder_string = 'Give Me A Shout!!';
+        var placeholder_array = placeholder_string.split('');
+        var ph = 0;
+
+        while (placeholder_array[ph] < placeholder_array[placeholder_array.length]) {
+            setTimeout(function(){
+                console.log(placeholder_array[ph]);
+                ph++;
+            }, 1000)
+        }
+
+        first_name_field.attr('placeholder', 'Tell Me Your Name!')
+        // first_name_field.focus();
+    }
+
+    function deactivate_placeholder_animation(){
+        first_name_field.attr('placeholder', '');
+        // first_name_field.blur()
+    }
+    
+    function activate_contact_form_animation(){
+        contact_form_i.attr('class', 'far fa-file-alt contact_form_animation')
+        contact_form_p.attr('class', 'emboldened_font connect_centered_li');
+    }
+
+    function deactivate_contact_form_animation(){
+        contact_form_i.attr('class', 'far fa-file-alt');
+        contact_form_p.attr('class', 'connect_centered_li');
+    }
+
+
+
+
+
+
 })

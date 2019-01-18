@@ -2,35 +2,68 @@
 
 {% block connect %}
 
-    <div class="page_header_container container standard_size">
-        <div class="page_header_text standard_size">
-            <h5>Let me know what you think!</h5>
+    <div class="page_header_container standard_size">
+        <div id ="connect_heaeder_h5" class="page_header_text standard_size">
+            <br>
+            <h5>Give me a shout!</h5>
+            <br>
         </div>
-
-        <hr style="width:50%">
     </div>
 
-    <div id="connect_page_outer_container" class="standard_size">
+    <div id="connect_page_outer_container">
 
-        <div id="connect_page_introductory_text_container" class="container">
+        <div id="connect_page_introductory_text_container" class="standard_size">
             <p>Hey! So hopefully you've gotten to know me a little from my About Me section. 
-            In any case, please feel free to reach out to me!</p>
+            In any case, I'd love to hear from you!
+
+            <br>
             
-            <p>The most reliable method of communication would be by phone. My daytime cell number is <a href="tel://14192068550" class="hvr-sweep-to-bottom" target="_top">(419)-206-8550</a>. I'm 
-            usually very responsive (although, like a lot of people, I have the bad habit on not answering numbers I don't know). If I don't answer the call, 
-            please leave me a voicemail. I will absolutely reply, usually within a very short period of time.</p>
+            Not being from a software/web development background, I lack (what I consider) the necessary <i>network</i> of people who I can lean on and who can lean on me. This is really the primary goal of 
+            releasing all of my personal information to the world; I would like to extend my web of resources into the professional realm for a better chance for the right 
+            employment.
+            </p>
 
-            <p>If that doesn't suite your needs (different strokes for different folks), shoot me an email. My main email is 
-            <a href="mailto:JLamborghini22@gmail.com?Subject=Hey%20Jarret%2C%20this%20is%20(tell%20me%20your%20name%20here)...&body=Just%20want%20to%20say%20that%20you%20rock!%20(Just%20kidding%20put%20your%20own%20message%20here.)" class="hvr-sweep-to-right">Jlamborghini22@gmail.com</a>. I check this very frequently and have automatic notifications set up so I will definitely see it!</p>
+            <br>
 
-            <p>If that doesn't strike you, I've put in a quick contact form below. Just simply fill that out with the requested information and I'll receive 
-            an automatically generated email with your contact information.</p>
+            <hr class="about_me_hr">
+            <h5 class="about_me_blue_text_highlight">Methods of Communication</h5>
+            <hr class="about_me_hr">
+
+            <span id="connect_by_phone_span"><p id="connect_by_phone_p" class="connect_centered_li">By Phone   <i id="connect_by_phone_i" class="fas fa-mobile-alt"></i></p></span>
+            <p>
+            Like most people, my cell phone has become a sort of extension to my persons. I usally have it with me at all times. My daytime cell number is <a href="tel://14192068550" class="hvr-sweep-to-bottom" target="_top">(419)-206-8550</a>. 
+            The only issue with this is that, like most people, I sometimes hesitate answering a number I don't know. (I worked for a call center at one point, I know the tricks of the trade) 
+            I have a voicemail service that I use, so if I ever don't pick up, please leave me a voicemail with your information!
+            </p>
+
+            <span id="connect_by_mail_span"><p id="connect_by_mail_p" class="connect_centered_li">By Email   <i id="connect_by_email_i" class="far fa-envelope-open"></i></p></span>
+            <p>
+            
+            In some cases, I am more apt to responding to an email than a cell phone call. My primary personal email is <a href="mailto:JLamborghini22@gmail.com?Subject=Hey%20Jarret%2C%20this%20is%20(tell%20me%20your%20name%20here)...&body=Just%20want%20to%20say%20that%20you%20rock!%20(Just%20kidding%20put%20your%20own%20message%20here.)" class="hvr-sweep-to-right">Jlamborghini22@gmail.com</a>. 
+            I am extremely responsive when it comes to emails, so this is an equally ideal method of communication.
+
+            <br>
+            </p>
+
+            <span id="connect_by_contact_form"><p id="connect_by_contact_form_p" class="connect_centered_li">Contact Form (Below)   <i id="connect_by_contact_form_i" class="far fa-file-alt"></i></p></span>
+            
+            <p>
+            Just a quick form I've created with Django, it basically sends you a receipt of the email, me the content of the email and also logs your information in my SQLite database (not that I would ever lose your information). In the form, 
+            I didn't request that the sender provide a phone number (I know some people are rustled by giving out that information), so if you choose to leave it in the body of the form, I can acquire it that way. 
+            
+            </p>
+
+            <br>
+
+            <hr class="about_me_hr">
+            <h5 class="about_me_blue_text_highlight">Contact Form</h5>
+            <hr class="about_me_hr">
 
         </div>
 
-        <hr id="connect_page_text_form_seperation_hr">
+        <br>
 
-        <div id="connect_page_form_div">
+        <div id="connect_page_form_div" class="standard_size">
             <form id="connect_page_form_form" action="/connect/thanks_for_reaching_out/" method="POST">
                 {% csrf_token %}
                 {{ form }}
