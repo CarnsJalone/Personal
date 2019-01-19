@@ -146,7 +146,7 @@ $(document).ready(function(){
     var input_string = 'Give Me A Shout!';
     var current_index = 0;
 
-    contact_form_span.hover(function(event){
+    contact_form_span.mouseover(function(event){
         activate_placeholder_animation();
         activate_contact_form_animation();
     })
@@ -216,6 +216,33 @@ $(document).ready(function(){
     function deactivate_contact_form_animation(){
         contact_form_i.attr('class', 'far fa-file-alt');
         contact_form_p.attr('class', 'connect_centered_li');
+    }
+
+    var input_field_position = first_name_field.position();
+
+    contact_form_p.click(function(event){
+        scroll(0, input_field_position.top);
+    })
+
+    // Dancing MJ Animation Code Block
+
+    var modal_with_opacity = $('#connect_full_page_loader_background');
+    var modal_without_opacity = $('#connect_full_page_loader_no_opacity');
+    var dancing_mj_loader = $('#connect_dancing_mj_gif');
+    var curtain_1 = $('#connect_mj_curtain_1');
+    var curtain_2 = $('#connect_mj_curtain_2');
+    var submit_button = $('#connect_page_form_submit_button');
+
+    submit_button.click(function(event){
+        engage_loader();
+    })
+
+    function engage_loader(){
+        modal_with_opacity.attr('class', 'modal_background_engaged');
+        modal_without_opacity.attr('class', 'modal_no_opacity_engaged');
+        dancing_mj_loader.attr('class', 'modal_gif_engaged');
+        curtain_1.attr('class', 'modal_curtain_1_engaged');
+        curtain_2.attr('class', 'modal_curtain_2_engaged');
     }
 
 

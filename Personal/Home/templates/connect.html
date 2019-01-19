@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block connect %}
 
     <div class="page_header_container standard_size">
         <div id ="connect_heaeder_h5" class="page_header_text standard_size">
             <br>
-            <h5>Give me a shout!</h5>
+            <hr class="about_me_hr">
+            <h5 class="about_me_blue_text_highlight">Give me a shout!</h5>
+            <hr class="about_me_hr">
         </div>
     </div>
 
@@ -71,6 +75,17 @@
             </form>
 
         </div>
+
     </div>
+
+    <div id="connect_full_page_loader_background" class="modal_background_disengaged">
+    </div>
+
+    <div id="connect_full_page_loader_no_opacity" class="modal_no_opacity_disengaged">
+        <img id="connect_dancing_mj_gif" class="modal_gif_disengaged" src="{% static 'gif/Dancing_MJ_Animated.gif' %}" />
+        <div id="connect_mj_curtain_1" class="modal_curtain_1_disengaged"></div>
+        <div id="connect_mj_curtain_2" class="modal_curtain_2_disengaged"></div>
+    </div> 
+
 
 {% endblock %}

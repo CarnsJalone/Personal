@@ -38,7 +38,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 140px;
+    top: 136.667px;
   }
 
   /* About Me Page */
@@ -122,7 +122,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 140px;
+    top: 136.667px;
   }
 
   /* About Me Page */
@@ -219,7 +219,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 140px;
+    top: 136.667px;
   }
 
   /* About Me Page */
@@ -322,7 +322,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 44px;
+    top: 43.333px;
   }
 
   /* About Me Page */
@@ -419,7 +419,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 44px;
+    top: 43.333px;
   }
 
   /* About Me Page */
@@ -516,7 +516,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 44px;
+    top: 43.333px;
   }
 
   /* About Me Page */
@@ -620,7 +620,7 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 44px;
+    top: 43.333px;
   }
 
   /* About Me Page */
@@ -775,101 +775,6 @@ a#connect_noclass_link {
   transition: none;
   color: inherit;
 }
-
-/* Hover Animations for Icons */
-
-/* Phone Animation */
-
-span#connect_by_phone_span:hover {
-  cursor: pointer;
-}
-
-.phone_animation {
-  animation-name: phonemotion;
-  animation-duration: .2s;
-  animation-iteration-count: infinite;
-}
-
-.emboldened_font {
-  color: #6e73ab;
-  font-weight: bold;
-}
-
-@keyframes phonemotion {
-  0% {
-    transform: rotate(-15deg);
-    animation-timing-function: ease-in;
-  }
-  50% {
-    transform: rotate(15deg);
-    animation-timing-function: ease-out;
-  }
-}
-
-/* Email Animation */
-
-i#connect_by_email_i {
-  position: relative;
-}
-
-span#connect_by_mail_span:hover {
-  cursor: pointer;
-}
-
-.mail_animation {
-  animation-name: mailmotion;
-  animation-duration: .75s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes mailmotion {
-  0% {left: 0}
-  5% {left: 2.5%}
-  10% {left: 5%}
-  15% {left: 7.5%}
-  20% {left: 10%;}
-  25% {left: 12.5%}
-  30% {left: 15%;}
-  35% {left: 17.5%}
-  40% {left: 20%;}
-  45% {left: 22.5%}
-  50% {left: 25%}
-  55% {left: 27.5%}
-  60% {left: 30%}
-  65% {left: 32.5%}
-  70% {left: 35%}
-  75% {left: 37.5%}
-  80% {left: 40%;}
-  85% {left: 42.5%}
-  90% {left: 45%}
-  95% {left: 47.5%}
-  100% {left: 50%}
-}
-
-/* Contact Form Animation */
-
-span#connect_by_contact_form:hover {
-  cursor: pointer;
-}
-
-i#connect_by_contact_form_i {
-  position: relative;
-}
-
-.contact_form_animation {
-  animation-name: contactformanimation;
-  animation-duration: .5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes contactformanimation {
-  0% {}
-  25% {transform: rotate(45deg);}
-  50% {transform: rotate(90deg);}
-  75% {transform: rotate(135deg);}
-  100% {transform: rotate(180deg);}
-}
-
 
 
 /* Base */
@@ -1135,6 +1040,289 @@ p.connect_centered_li {
   text-align: center;
 }
 
+/* Connect Page - Communication Method Animations */
+
+/* Phone Animation */
+
+span#connect_by_phone_span:hover {
+  cursor: pointer;
+}
+
+.phone_animation {
+  animation-name: phonemotion;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+}
+
+.emboldened_font {
+  color: #6e73ab;
+  font-weight: bold;
+}
+
+@keyframes phonemotion {
+  0% {
+    transform: rotate(-15deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(15deg);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Email Animation */
+
+i#connect_by_email_i {
+  position: relative;
+}
+
+span#connect_by_mail_span:hover {
+  cursor: pointer;
+}
+
+.mail_animation {
+  animation-name: mailmotion;
+  animation-duration: .75s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mailmotion {
+  0% {left: 0}
+  5% {left: 2.5%}
+  10% {left: 5%}
+  15% {left: 7.5%}
+  20% {left: 10%;}
+  25% {left: 12.5%}
+  30% {left: 15%;}
+  35% {left: 17.5%}
+  40% {left: 20%;}
+  45% {left: 22.5%}
+  50% {left: 25%}
+  55% {left: 27.5%}
+  60% {left: 30%}
+  65% {left: 32.5%}
+  70% {left: 35%}
+  75% {left: 37.5%}
+  80% {left: 40%;}
+  85% {left: 42.5%}
+  90% {left: 45%}
+  95% {left: 47.5%}
+  100% {left: 50%}
+}
+
+/* Contact Form Animation */
+
+span#connect_by_contact_form:hover {
+  cursor: pointer;
+}
+
+i#connect_by_contact_form_i {
+  position: relative;
+}
+
+.contact_form_animation {
+  animation-name: contactformanimation;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes contactformanimation {
+  0% {}
+  25% {transform: rotate(45deg);}
+  50% {transform: rotate(90deg);}
+  75% {transform: rotate(135deg);}
+  100% {transform: rotate(180deg);}
+}
+
+/* Connect Page - Form Loader */
+
+.modal_background_engaged {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFF8BE;
+  opacity: .5;
+  z-index: 10;
+}
+
+.modal_background_disengaged {
+  display: none;
+}
+
+.modal_no_opacity_engaged {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 11;
+}
+
+.modal_no_opacity_disengaged {
+  display: none;
+}
+
+.modal_gif_engaged {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  z-index: 14;
+}
+
+.modal_gif_disengaged {
+  display: none;
+}
+
+.modal_curtain_1_engaged {
+  display: block;
+  position: fixed;
+  z-index: 12;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-color: #6e73ab;
+  border-radius: 50%;
+  animation-name: mj_curtain_1;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+}
+
+.modal_curtain_1_engaged::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.modal_curtain_1_disengaged {
+  display: none;
+}
+
+.modal_curtain_2_engaged {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-color: #FFF8BE;
+  border-radius: 50%;
+  animation-name: mj_curtain_2;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
+}
+
+.modal_curtain_2_engaged::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.modal_curtain_2_disengaged {
+  display: none;
+}
+
+/* Begin Animation */
+
+@keyframes mj_curtain_1 {
+
+  0% {
+    width: 17.5%;
+    z-index: 12;
+  }
+  49.99% {
+    width: 17.5%;
+    z-index: 12;
+  }
+  50% {
+    width: 0%;
+    z-index: 13;
+  }
+  56.25% {
+    width: 2.1875%;
+    z-index: 13;
+  }
+  62.5% {
+    width: 4.375%;
+    z-index: 13;
+  }
+  68.75% {
+    width: 6.5625%;
+    z-index: 13;
+  }
+  75% {
+    width: 8.75%;
+    z-index: 13;
+  }
+  81.25% {
+    width: 10.9375%;
+    z-index: 13;
+  }
+  87.5% {
+    width: 13.125%;
+    z-index: 13;
+  }
+  93.25% {
+    width: 15.3125%;
+    z-index: 13;
+  }
+  100% {
+    width: 17.5%;
+    z-index: 13;
+  }
+
+}
+
+@keyframes mj_curtain_2 {
+
+  0% {
+    width: 0%;
+    z-index: 13;
+  }
+  6.25% {
+    width: 2.1875%;
+    z-index: 13;
+  }
+  12.5% {
+    width: 4.375%;
+    z-index: 13;
+  }
+  18.75% {
+    width: 6.5625%;
+    z-index: 13;
+  }
+  25% {
+    width: 8.75%;
+    z-index: 13;
+  }
+  31.25% {
+    width: 10.9375%;
+    z-index: 13;
+  }
+  37.5% {
+    width: 13.125%;
+    z-index: 13;
+  }
+  43.75% {
+    width: 15.3125%;
+    z-index: 13;
+  }
+  50% {
+    width: 17.5%;
+    z-index: 12;
+  }
+  100% {
+    width: 17.5%;
+    z-index: 12;
+  }
+
+}
 
 /* Thank You Page */
 

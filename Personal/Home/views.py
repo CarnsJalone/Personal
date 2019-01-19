@@ -100,7 +100,6 @@ def connect(request):
                 'last_name' : last_name, 
                 'email' : email, 
                 'body' : body,
-                'navbar' : 'connect',
                 }
 
             # Email Preferences
@@ -122,7 +121,7 @@ def connect(request):
             )
 
 
-            return render(request, 'thank_you.html', {'form_variables' : form_variables})
+            return render(request, 'thank_you.html', {'form_variables' : form_variables, 'navbar' : 'connect'})
         
         else:
             form = ConnectForm()
