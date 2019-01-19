@@ -2,19 +2,24 @@
 
 {% block thank_you %}
 
-<div id="thank_you_page_outer_container" class="container">
+<div id="thank_you_page_outer_container">
 
-    <div id="thank_you_page_inner_container_1">
+    <div id="thank_you_page_inner_container_1" class="standard_size">
         <p> Thanks for getting ahold of me {{form_variables.first_name}}.</p>
         <p>I got your comment: <i>{{form_variables.body}}</i></p>
     </div>
 
-    <div id="thank_you_page_inner_container_2">
-        <p>I'm delighted you took the time to contact me. For a faster line of communication,
-        you can always contact me at (419)-206-8550. This is my daytime (cell) number or shoot 
-        me a personal email at <a href="mailto:JLamborghini22@gmail.com?Subject=Hey%20Jarret%2C%20this%20is%20{{form_variables.first_name}}!%0A&body=Just%20want%20to%20say%20that%20you%20rock!%20(Just%20kidding%20put%20your%20own%20message%20here.)" target="_top">Jlamborghini22@gmail.com</a></span>. I'm usually 
-        very responsive so don't hesitate in reaching out to me! 
-        Otherwise I will get ahold of you at {{form_variables.email}}.</p>
+    <div id="thank_you_page_inner_container_2" class="standard_size">
+
+        <p>
+        I'm delighted you took the time to contact me. I have your email as {{ form_variables.email }}. I should see your response immediately and depending upon my current whereabouts/working situation I will 
+        get back to you at my earliest convenience. If you require a faster line of communication, please see my <a href="{% url 'connect' %}">Connect</a> page. 
+
+        <br>
+
+        Be on the lookout for a response very soon!
+        </p>
+
     </div>
 
  </div>

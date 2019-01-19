@@ -143,6 +143,8 @@ $(document).ready(function(){
     var contact_form_i = $('#connect_by_contact_form_i');
     var contact_form_p = $('#connect_by_contact_form_p');
     var first_name_field = $('#connect_page_form_first_name')
+    var input_string = 'Give Me A Shout!';
+    var current_index = 0;
 
     contact_form_span.hover(function(event){
         activate_placeholder_animation();
@@ -154,25 +156,55 @@ $(document).ready(function(){
         deactivate_contact_form_animation();
     })
 
-    function activate_placeholder_animation(){
+    function verify_placeholder(){
+        
+        var current_placeholder = first_name_field.attr('placeholder');
 
-        var placeholder_string = 'Give Me A Shout!!';
-        var placeholder_array = placeholder_string.split('');
-        var ph = 0;
-
-        while (placeholder_array[ph] < placeholder_array[placeholder_array.length]) {
-            setTimeout(function(){
-                console.log(placeholder_array[ph]);
-                ph++;
-            }, 1000)
+        if (current_placeholder != input_string) {
+            first_name_field.attr('placeholder', '');
+        } else if (current_placeholder != '') {
+            first_name_field.attr('placeholder', '');
+        } else if (current_placeholder != None) {
+            first_name_field.attr('placeholder', '');
         }
+    }
 
-        first_name_field.attr('placeholder', 'Tell Me Your Name!')
-        // first_name_field.focus();
+    // Credit to Michael Smart (Sorry I took your function from codepen)
+    function randDelay(min, max) {
+        return Math.floor(Math.random() * (max-min+1)+min);
+    }
+
+    function ph_letter_tick(string, input_field) {
+        var placeholder_array = string.split('');
+        var original_string = string;
+        var input = input_field;
+        var current_letter = input_field.attr("placeholder");
+        var placeholder = current_letter + placeholder_array[current_index];
+
+        setTimeout(function(){
+            input_field.attr("placeholder", placeholder);
+            current_index++;
+
+            if (current_index < placeholder_array.length) {
+                ph_letter_tick(original_string, input)
+            }
+        }, randDelay(50,90));
+    }
+
+    function placeholder() {
+        first_name_field.attr("placeholder", "");
+        ph_letter_tick(input_string, first_name_field);
+    }
+
+    function activate_placeholder_animation(){
+        current_index = 0;
+        placeholder();
+        verify_placeholder();
     }
 
     function deactivate_placeholder_animation(){
         first_name_field.attr('placeholder', '');
+        verify_placeholder();
         // first_name_field.blur()
     }
     

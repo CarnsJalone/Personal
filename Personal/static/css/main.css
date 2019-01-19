@@ -848,6 +848,10 @@ span#connect_by_mail_span:hover {
 
 /* Contact Form Animation */
 
+span#connect_by_contact_form:hover {
+  cursor: pointer;
+}
+
 i#connect_by_contact_form_i {
   position: relative;
 }
@@ -1080,9 +1084,9 @@ div#connect_page_form_div {
 div#connect_page_form_div input[type="text"],
 div#connect_page_form_div input[type="email"],
 div#connect_page_form_div textarea {
-  padding: 0px;
   margin-top: 2.5px;
   margin-bottom: 2.5px;
+  color: #6e73ab;
 }
 
 div#connect_page_form_div label {
