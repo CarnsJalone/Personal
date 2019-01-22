@@ -15,3 +15,4 @@ urlpatterns = [
     path('projects/upload_pdf', views.upload_pdf, name="upload_pdf"), 
     path('projects/display_content', views.display_content, name="display_content"),
 ]
+

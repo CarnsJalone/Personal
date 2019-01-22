@@ -14,20 +14,29 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+import os
+import sys
+
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import handler400, handler403, handler404, handler500
 from django.conf.urls.static import static
 # from django.conf import settings
 
+# Local Imports
 from . import settings
-
+from Home import views as home_views 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Home.urls')),
 ]
 
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+handler404 = home_views.error_404
+handler500 = home_views.error_500

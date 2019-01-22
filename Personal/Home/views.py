@@ -242,4 +242,19 @@ def display_content(request):
 
     return render(request, 'display_content.html', context)
 
+# Create error views
+
+# 404 - Page Not Found
+
+def error_404(request):
+    return render(request, 'error/404.html', {})
+
+# 500 - Internal Server Error
+def error_500(request): 
+    return render(request, 'error/500.html', {})
+
+# 403 - Permission Denied
+
+# 400 - Bad Request
+
     
