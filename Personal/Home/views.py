@@ -31,12 +31,13 @@ sys.path.append(static_pdf_file_directory)
 sys.path.append(employment_calculator_dir)
 
 # Django Imports
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, render_to_response
 from django.http import HttpResponse, JsonResponse
 from django.core.serializers import serialize
 from django.core.files.storage import FileSystemStorage
 from django.utils.encoding import smart_str
 from django.core.mail import send_mail
+from django.template import RequestContext
 from django.template.loader import get_template, render_to_string
 
 # Local Imports
@@ -244,14 +245,16 @@ def display_content(request):
 
 # Create error views
 
-# 404 - Page Not Found
+def test_404(request):
+    return render(request, 'error/500.html', {})
 
+# 404 - Page Not Found
 def error_404(request):
     return render(request, 'error/404.html', {})
 
 # 500 - Internal Server Error
-def error_500(request): 
-    return render(request, 'error/500.html', {})
+def error_500(request):
+    return render(request, 'error/500.html')
 
 # 403 - Permission Denied
 

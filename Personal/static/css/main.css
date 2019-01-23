@@ -1657,4 +1657,32 @@ div#right_curved_cover::after {
   border-top-right-radius: 50%;
 }
 
+/* 404 Page */
+
+div.error_page_container {
+  text-align: center;
+  padding: 25px;
+}
+
+div.error_page_container h3 {
+  font-size: 200%;
+}
+
+div#error_500_error_div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img#error_500_error_image {
+  opacity: .65;
+  width: 100%;
+  z-index: -1;
+}
+
+
 

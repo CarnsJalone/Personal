@@ -1,6 +1,7 @@
 from datetime import datetime
 import os
 import sys
+import logging
 
 class Employment_Calculator():
 
@@ -16,6 +17,7 @@ class Employment_Calculator():
         # Years - Months - Days - Hours - Minutes - Seconds
         datetime_hire_date = datetime.strptime(hire_date, '%Y-%m-%d %H:%M:%S')
 
+        logging.info('Hire-Date: {}'.format(datetime_hire_date))
         return datetime_hire_date
 
     def create_time_delta(self):

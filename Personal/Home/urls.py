@@ -1,4 +1,5 @@
 from django.urls import path
+from django.conf.urls import handler400, handler403, handler404, handler500
 
 from . import views 
 
@@ -14,5 +15,12 @@ urlpatterns = [
     path('projects/random_name_generator', views.random_name_generator, name="random_name_generator"),
     path('projects/upload_pdf', views.upload_pdf, name="upload_pdf"), 
     path('projects/display_content', views.display_content, name="display_content"),
+    path('test/404', views.test_404, name="404_test"),
 ]
+
+
+# handler404 = 'Home.views.error_404'
+# handler500 = 'Home.views.error_500'
+
+
 

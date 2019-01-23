@@ -19,8 +19,8 @@ import sys
 
 from django.contrib import admin
 from django.urls import path, include
-from django.conf.urls import handler400, handler403, handler404, handler500
 from django.conf.urls.static import static
+from django.conf.urls import handler400, handler403, handler404, handler500
 # from django.conf import settings
 
 # Local Imports
@@ -32,11 +32,13 @@ urlpatterns = [
     path('', include('Home.urls')),
 ]
 
+handler400 = 'Home.views.error_400'
+handler403 = 'Home.views.error_403'
+handler404 = 'Home.views.error_404'
+handler500 = 'Home.views.error_500'
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-handler404 = home_views.error_404
-handler500 = home_views.error_500

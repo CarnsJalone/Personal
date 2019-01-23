@@ -1,7 +1,23 @@
-{% extends base.html %}
+{% extends 'base.html' %}
+
+{% load static %}
 
 {% block 500 %}
 
-<h1>Can't seem to locate what you're seeking... Where'd I put that thing...</h1>
+<div class="standard_size error_page_container">
+
+    <h3>Oh god.. something went wrong...</h3>
+
+    <p>I'm not good with computer</p>
+
+    <p>Oh boy, I'm not good with computer</p>
+
+    <div id="error_500_error_div">
+
+        <img id="error_500_error_image" src="{% static 'png/500.png' %}" alt="500.png" />
+
+    </div>
+
+</div>
 
 {% endblock %}
