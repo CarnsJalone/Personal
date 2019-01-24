@@ -718,6 +718,13 @@ body {
   margin-bottom: 5px;
 }
 
+.standard_size h3 {
+  font-size: 18pt;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .standard_size label {
   font-size: 11.5pt;
   padding: 5px;
@@ -1657,20 +1664,23 @@ div#right_curved_cover::after {
   border-top-right-radius: 50%;
 }
 
-/* 404 Page */
+/* Error Pages */
+
+/* 500 Error */
 
 div.error_page_container {
   text-align: center;
   padding: 25px;
+  z-index: 2;
 }
 
 div.error_page_container h3 {
   font-size: 200%;
 }
 
-div#error_500_error_div {
+div.error_page_error_img_container {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
@@ -1678,10 +1688,29 @@ div#error_500_error_div {
   text-align: center;
 }
 
-img#error_500_error_image {
-  opacity: .65;
-  width: 100%;
+img.error_page_error_img_img {
+  position: relative;
+  opacity: .6;
+  width: 50%;
+  z-index: 2;
+}
+
+div.error_page_background_circle_container {
+  position: absolute;
+  width: 700px;  
+  height: 700px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6e73ab;
+  border: 1px solid #000;
+  border-radius: 50%;
   z-index: -1;
+  opacity: .075;
+}
+
+div.error_page_background_circle_container::before {
+  padding-bottom: 100%;
 }
 
 

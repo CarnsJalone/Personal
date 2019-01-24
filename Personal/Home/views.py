@@ -245,7 +245,7 @@ def display_content(request):
 
 # Create error views
 
-def test_404(request):
+def test_500(request):
     return render(request, 'error/500.html', {})
 
 # 404 - Page Not Found
