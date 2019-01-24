@@ -5,11 +5,25 @@ import logging
 
 class Employment_Calculator():
 
+
     def __init__(self):
 
+        # Locate additional, necessary directories, probably not needed within class
         self.home_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.employment_calculator_dir = os.path.dirname(os.path.abspath(__file__))
-        sys.path.append(self.home_dir)
+        self.logging_dir = os.path.join(self.home_dir, 'Logging')
+        self.logger_txt_file = os.path.join(self.logging_dir, 'employment_calculator_logger.txt')
+
+        # Create logging file
+        logging.basicConfig(filename=self.logger_txt_file, level=logging.DEBUG)
+
+        # Append Home directory
+        sys.path.append(self.home_dir)  
+
+    # Get rid of the contents of the file before writing to it. 
+    def clear_logging_file(self):
+        text_file = open(self.logger_txt_file, 'w')
+        text_file.close()
 
     def get_date_time_object(self):
 
@@ -17,7 +31,7 @@ class Employment_Calculator():
         # Years - Months - Days - Hours - Minutes - Seconds
         datetime_hire_date = datetime.strptime(hire_date, '%Y-%m-%d %H:%M:%S')
 
-        logging.info('Hire-Date: {}'.format(datetime_hire_date))
+        logging.info('Date Succesfully Acquired; Hire-Date: {}'.format(datetime_hire_date))
         return datetime_hire_date
 
     def create_time_delta(self):
@@ -28,6 +42,8 @@ class Employment_Calculator():
         elapsed_time = now - hire_date
 
         print(elapsed_time)
+
+        logging.info('Time Delta Created')
 
         return elapsed_time
 
@@ -82,4 +98,5 @@ class Employment_Calculator():
 
         formatted_time_elapsed = '{} {}, {} {}, {} {}, {} {}, {} {}, {} {} and {} {} ago'.format(years, years_string, months, months_string, weeks, weeks_string, days, days_string, hours, hours_string, minutes, minutes_string, seconds, seconds_string)
 
+        logging.info('Formatted Date Created')
         return formatted_time_elapsed

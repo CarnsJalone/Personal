@@ -53,6 +53,7 @@ def home(request):
 def about_me(request):
 
     calculator = Employment_Calculator()
+    calculator.clear_logging_file()
     elapsed_time = calculator.calculate_elapsed_time()
 
     rendered_variables = {
