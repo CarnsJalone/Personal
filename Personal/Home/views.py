@@ -246,15 +246,24 @@ def display_content(request):
 # Create error views
 
 def test_500(request):
-    return render(request, 'error/500.html', {})
+
+    url_var = request.get_full_path()
+    print(url_var)
+    return render(request, 'error/500.html', {'url_var' : url_var})
 
 # 404 - Page Not Found
 def error_404(request):
-    return render(request, 'error/404.html', {})
+
+    url_var = request.get_full_path()
+    print(url_var)
+    return render(request, 'error/404.html', {'url_var' : url_var})
 
 # 500 - Internal Server Error
 def error_500(request):
-    return render(request, 'error/500.html')
+    url_var = request.get_full_path()
+    print(url_var)
+    return render(request, 'error/500.html', {'url_var' : url_var})
+
 
 # 403 - Permission Denied
 

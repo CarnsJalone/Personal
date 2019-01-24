@@ -18,6 +18,7 @@ $(document).ready(function(){
         modal.attr('class', 'enlarged_modal');
         close_button.attr('class', 'enlarged_close_button');
         modal_container.fadeOut(50);
+        $(window).scrollTop(0);
     }
 
     function minimize() {
@@ -26,6 +27,7 @@ $(document).ready(function(){
         modal.attr('class', 'minimized_modal');
         close_button.attr('class' , 'minimized_close_button');
         modal_container.fadeOut(50);
+        $(window).scrollTop(image.offset().top);
     }
 
     function display_help_box() {
