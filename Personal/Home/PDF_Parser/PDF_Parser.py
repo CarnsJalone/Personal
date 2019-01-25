@@ -1,8 +1,7 @@
-from os import path, system, remove, listdir, rename
+from os import path, system, remove, listdir, rename, mkdir
 import time
 import subprocess
-
-from slugify import slugify
+import logging
 
 class PDF_Handler():
 
@@ -14,6 +13,25 @@ class PDF_Handler():
         self.CONVERTED_FILE_DIRECTORY = path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files')
 
         self.UPLOADED_FILE = ''
+
+    def check_and_create_folders(self):
+
+        if path.isdir(self.UPLOADED_FILE_DIRECTORY):
+            logging.info('Uploaded File Directory Exists at ' + self.UPLOADED_FILE_DIRECTORY)
+        else:
+            logging.critical('Uploaded File Directory Does Not Exist, Creating Directory at ' + self.UPLOADED_FILE_DIRECTORY)
+            mkdir(path.join(self.CURRENT_FILE_DIRECTORY, 'Uploaded_Files'))
+            logging.info('Uploaded File Directory Created at ' + self.UPLOADED_FILE_DIRECTORY)
+
+
+        if path.isdir(self.CONVERTED_FILE_DIRECTORY):
+            logging.info('Converted File Directory Exists at ' + self.CONVERTED_FILE_DIRECTORY)
+
+        else:
+            logging.critical('Converted File Directory Does Not Exist, Creating Directory at ' + self.CONVERTED_FILE_DIRECTORY)
+            mkdir(path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files'))
+            logging.info('Converted File Directory Created at ' + self.CONVERTED_FILE_DIRECTORY)
+
 
     # Search folder for TXT
     def find_txt_files(self):

@@ -167,6 +167,8 @@ def upload_pdf(request):
 
         form = PDF_Upload_Form(request.POST, request.FILES)
 
+        pdf_handler.check_and_create_folders()
+
         if form.is_valid():
 
             # Clear Converted Folder
