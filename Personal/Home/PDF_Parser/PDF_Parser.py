@@ -31,7 +31,7 @@ class PDF_Handler():
     def write_logging_header(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\nLogging Begun at ' + now + '\n\n')
+        logging_file.write('\nPDF Parser Logging Begun at ' + now + '\n\n')
         logging_file.close()
 
     def check_and_create_folders(self):
@@ -204,7 +204,7 @@ class PDF_Handler():
     def write_logging_footer(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\nLogging Completed at ' + now)
+        logging_file.write('\nPDF Parser Logging Completed at ' + now + '\n')
         logging_file.close()
 
 class TextHandler():

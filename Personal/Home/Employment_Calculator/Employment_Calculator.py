@@ -3,6 +3,9 @@ import os
 import sys
 import logging
 
+now = datetime.now()
+now = str(now)
+
 class Employment_Calculator():
 
 
@@ -21,9 +24,11 @@ class Employment_Calculator():
         sys.path.append(self.home_dir)  
 
     # Get rid of the contents of the file before writing to it. 
-    def clear_logging_file(self):
-        text_file = open(self.logger_txt_file, 'w')
-        text_file.close()
+    def write_logging_header(self):
+
+        logging_file = open(self.logger_txt_file, 'a')
+        logging_file.write('\nEmployment Calculator Logging Begun at ' + now + '\n\n')
+        logging_file.close()
 
     def get_date_time_object(self):
 
@@ -100,3 +105,9 @@ class Employment_Calculator():
 
         logging.info('Formatted Date Created')
         return formatted_time_elapsed
+
+    def write_logging_footer(self):
+
+        logging_file = open(self.logger_txt_file, 'a')
+        logging_file.write('\nEmployment Calculator Logging Completed at ' + now + '\n')
+        logging_file.close()

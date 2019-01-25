@@ -53,8 +53,9 @@ def home(request):
 def about_me(request):
 
     calculator = Employment_Calculator()
-    calculator.clear_logging_file()
+    calculator.write_logging_header()
     elapsed_time = calculator.calculate_elapsed_time()
+    calculator.write_logging_footer()
 
     rendered_variables = {
         'navbar' : 'about_me',
