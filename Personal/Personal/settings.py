@@ -25,7 +25,7 @@ SECRET_KEY = '9c)ja^@a$&&%yuc9$2hxo@1uv=r!_7t6*(xwd972&iksc+2v)4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['206.81.4.37:80', '127.0.0.1']
 
 
 # Application definition
@@ -126,6 +126,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, 'Home/Logging')
 ]
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
