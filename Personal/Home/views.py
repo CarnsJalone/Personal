@@ -167,6 +167,8 @@ def upload_pdf(request):
 
         form = PDF_Upload_Form(request.POST, request.FILES)
 
+        pdf_handler.write_logging_header()
+
         pdf_handler.check_and_create_folders()
 
         if form.is_valid():
@@ -214,6 +216,8 @@ def upload_pdf(request):
 
             # Move Converted TXT File into Converted Folder
             pdf_handler.move_converted_files_into_converted_folder()
+
+            pdf_handler.write_logging_footer()
 
             return redirect('display_content')
         else:

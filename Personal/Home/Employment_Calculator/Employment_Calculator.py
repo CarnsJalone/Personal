@@ -12,7 +12,7 @@ class Employment_Calculator():
         self.home_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.employment_calculator_dir = os.path.dirname(os.path.abspath(__file__))
         self.logging_dir = os.path.join(self.home_dir, 'Logging')
-        self.logger_txt_file = os.path.join(self.logging_dir, 'employment_calculator_logger.txt')
+        self.logger_txt_file = os.path.join(self.logging_dir, 'logger.txt')
 
         # Create logging file
         logging.basicConfig(filename=self.logger_txt_file, level=logging.DEBUG)

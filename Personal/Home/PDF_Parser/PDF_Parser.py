@@ -1,7 +1,21 @@
 from os import path, system, remove, listdir, rename, mkdir
+import sys
 import time
 import subprocess
 import logging
+import datetime
+
+now = datetime.datetime.now()
+now = str(now)
+
+HOME_DIR = path.dirname(path.dirname(path.abspath(__file__)))
+LOGGING_DIR = path.join(HOME_DIR, 'Logging')
+
+sys.path.append(LOGGING_DIR)
+
+PDF_PARSER_LOG_FILE = path.join(LOGGING_DIR, 'logger.txt')
+
+logging.basicConfig(filename=PDF_PARSER_LOG_FILE, level=logging.DEBUG)
 
 class PDF_Handler():
 
@@ -14,23 +28,29 @@ class PDF_Handler():
 
         self.UPLOADED_FILE = ''
 
+    def write_logging_header(self):
+
+        logging_file = open(PDF_PARSER_LOG_FILE, 'a')
+        logging_file.write('\nLogging Begun at ' + now + '\n\n')
+        logging_file.close()
+
     def check_and_create_folders(self):
 
         if path.isdir(self.UPLOADED_FILE_DIRECTORY):
-            logging.info('Uploaded File Directory Exists at ' + self.UPLOADED_FILE_DIRECTORY)
+            logging.info('Uploaded File Directory Exists at ' + self.UPLOADED_FILE_DIRECTORY + ' at ' + now)
         else:
-            logging.critical('Uploaded File Directory Does Not Exist, Creating Directory at ' + self.UPLOADED_FILE_DIRECTORY)
+            logging.critical('Uploaded File Directory Does Not Exist, Creating Directory at ' + self.UPLOADED_FILE_DIRECTORY + 'at ' + now)
             mkdir(path.join(self.CURRENT_FILE_DIRECTORY, 'Uploaded_Files'))
-            logging.info('Uploaded File Directory Created at ' + self.UPLOADED_FILE_DIRECTORY)
+            logging.info('Uploaded File Directory Created at ' + self.UPLOADED_FILE_DIRECTORY + ' at ' + now)
 
 
         if path.isdir(self.CONVERTED_FILE_DIRECTORY):
-            logging.info('Converted File Directory Exists at ' + self.CONVERTED_FILE_DIRECTORY)
+            logging.info('Converted File Directory Exists at ' + self.CONVERTED_FILE_DIRECTORY + ' at ' + now)
 
         else:
-            logging.critical('Converted File Directory Does Not Exist, Creating Directory at ' + self.CONVERTED_FILE_DIRECTORY)
+            logging.critical('Converted File Directory Does Not Exist, Creating Directory at ' + self.CONVERTED_FILE_DIRECTORY + 'at ' + now)
             mkdir(path.join(self.CURRENT_FILE_DIRECTORY, 'Converted_Files'))
-            logging.info('Converted File Directory Created at ' + self.CONVERTED_FILE_DIRECTORY)
+            logging.info('Converted File Directory Created at ' + self.CONVERTED_FILE_DIRECTORY + ' at ' + now)
 
 
     # Search folder for TXT
@@ -180,6 +200,12 @@ class PDF_Handler():
                         print('Destination file already exists, removing current file and reiterating through check.')
                         remove(destination_file)
                 file_existence_check += 1   
+
+    def write_logging_footer(self):
+
+        logging_file = open(PDF_PARSER_LOG_FILE, 'a')
+        logging_file.write('\nLogging Completed at ' + now)
+        logging_file.close()
 
 class TextHandler():
 

@@ -1,3 +1,0 @@
-INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
-INFO:root:Time Delta Created
-INFO:root:Formatted Date Created
