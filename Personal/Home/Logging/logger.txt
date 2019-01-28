@@ -43,3 +43,18 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 
 Employment Calculator Logging Completed at 2019-01-25 15:48:30.362016
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+ERROR:django.security.DisallowedHost:Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+
+-----PDF Parser Logging Begun at 2019-01-28 20:45:35.123562-----
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-28 20:45:35.123562
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-28 20:45:35.123562
+
+-----PDF Parser Logging Completed at 2019-01-28 20:45:35.123562-----

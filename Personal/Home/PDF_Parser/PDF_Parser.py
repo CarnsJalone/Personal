@@ -61,7 +61,7 @@ class PDF_Handler():
         txt_files = []
 
         if len(all_uploaded_files) == 0:
-            print('There is nothing inside this directory')
+            logging.warning('There is nothing inside this directory')
             return
         else:
             for file in all_uploaded_files:
@@ -81,7 +81,7 @@ class PDF_Handler():
         pdf_files = []
 
         if len(all_uploaded_files) == 0:
-            print('There is nothing inside this directory')
+            logging.warning('There is nothing inside this directory')
             return
         else:
             for file in all_uploaded_files:
@@ -89,9 +89,9 @@ class PDF_Handler():
                 filename, extension = path.splitext(file)
                 if extension == '.pdf':
                     pdf_files.append({file_path : file})
-                    print(filename,'appended to Array...')
+                    logging.info(filename,'appended to Array...')
             
-        print('All available PDF files located.')
+        logging.info('All available PDF files located.')
 
         return pdf_files
    
@@ -101,7 +101,7 @@ class PDF_Handler():
         pdf_files = self.find_pdf_files()
 
         if pdf_files == None:
-            print('There are no PDF Files in this directory.')
+            logging.debug('There are no PDF Files in this directory.')
         else:
             for each_file in pdf_files:
                 for pdf_file_path, pdf_file in each_file.items():
@@ -111,9 +111,9 @@ class PDF_Handler():
                     formatted_conversion_command = ['pdftotext', '-layout', pdf_file_path]
                     conversion_call = subprocess.call(formatted_conversion_command)
                     if conversion_call != 0:
-                        print('There was an error. The subprocess returned a code of ' + conversion_call)
+                        logging.critical('There was an error. The subprocess returned a code of ' + conversion_call)
                     else:
-                        print('Conversion properly called. -> ' + pdf_file,'converted to .txt.')
+                        logging.info('Conversion properly called. -> ' + pdf_file,'converted to .txt.')
 
     def delete_unecessary_txt_files(self):
 
@@ -124,7 +124,7 @@ class PDF_Handler():
                 name, extension = path.splitext(file_name)
                 if extension == '.txt':
                     remove(file_path)
-                    print(file_name,'at',file_path,'removed.')
+                    logging.info(file_name,'at',file_path,'removed.')
 
 
     # Empty the converted folder
@@ -142,9 +142,9 @@ class PDF_Handler():
 
         for file in converted_file_with_directory:
             remove(file)
-            print(file,'cleared from Converted Folder...')
+            logging.info(file,'cleared from Converted Folder...')
         
-        print('Converted Folder cleared.')
+        logging.info('Converted Folder Cleared, Ready For Move...')
         
 
     def clean_upload_folder(self):
@@ -163,7 +163,7 @@ class PDF_Handler():
             remove(file)
             print(file,'cleared from Upload Folder...')
            
-        print('Upload Folder cleared.')
+        logging.info('Upload Folder Cleared, Ready For Upload...')
 
     def verify_upload_folder_contents(self):
 

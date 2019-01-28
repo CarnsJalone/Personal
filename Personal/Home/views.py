@@ -241,7 +241,7 @@ def display_content(request):
     converted_file = os.path.join(converted_files_directory, converted_directory_contents[0])
     converted_file_name = converted_directory_contents[0]
 
-    f = open(converted_file, 'r')
+    f = open(converted_file, 'r', encoding='utf-8')
 
     file_content = f.read()
 
