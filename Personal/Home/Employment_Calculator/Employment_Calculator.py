@@ -27,7 +27,7 @@ class Employment_Calculator():
     def write_logging_header(self):
 
         logging_file = open(self.logger_txt_file, 'a')
-        logging_file.write('\nEmployment Calculator Logging Begun at ' + now + '\n\n')
+        logging_file.write('\n------Employment Calculator Logging Begun at ' + now + '\n\n-----')
         logging_file.close()
 
     def get_date_time_object(self):
@@ -109,5 +109,5 @@ class Employment_Calculator():
     def write_logging_footer(self):
 
         logging_file = open(self.logger_txt_file, 'a')
-        logging_file.write('\nEmployment Calculator Logging Completed at ' + now + '\n')
+        logging_file.write('\n-----Employment Calculator Logging Completed at ' + now + '-----\n')
         logging_file.close()

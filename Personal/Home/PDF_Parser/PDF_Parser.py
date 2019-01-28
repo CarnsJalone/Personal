@@ -31,7 +31,7 @@ class PDF_Handler():
     def write_logging_header(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\nPDF Parser Logging Begun at ' + now + '\n\n')
+        logging_file.write('\n-----PDF Parser Logging Begun at ' + now + '-----\n\n')
         logging_file.close()
 
     def check_and_create_folders(self):
@@ -187,24 +187,27 @@ class PDF_Handler():
 
         file_existence_check = 0
 
-        while file_existence_check < 2:
-            for file in current_dir_contents:
-                file_name, extension = path.splitext(file)
-                if extension == '.txt': 
-                    current_file = path.join(current_dir, file)
-                    destination_file = path.join(destination_dir, file)
-                    if path.isdir(destination_dir) and not path.isfile(destination_file):
-                        rename(current_file, destination_file)
-                        print('{} {} {} {}'.format('Moving', file, 'into', destination_dir))
-                    else:
-                        print('Destination file already exists, removing current file and reiterating through check.')
-                        remove(destination_file)
-                file_existence_check += 1   
+        try:
+            while file_existence_check < 2:
+                for file in current_dir_contents:
+                    file_name, extension = path.splitext(file)
+                    if extension == '.txt': 
+                        current_file = path.join(current_dir, file)
+                        destination_file = path.join(destination_dir, file)
+                        if path.isdir(destination_dir) and not path.isfile(destination_file):
+                            rename(current_file, destination_file)
+                            print('{} {} {} {}'.format('Moving', file, 'into', destination_dir))
+                        else:
+                            print('Destination file already exists, removing current file and reiterating through check.')
+                            remove(destination_file)
+                    file_existence_check += 1   
+        except Exception as e:
+            logging.critical('There was an error with moving the converted file. Error: ' + e)
 
     def write_logging_footer(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\nPDF Parser Logging Completed at ' + now + '\n')
+        logging_file.write('\n-----PDF Parser Logging Completed at ' + now + '-----\n')
         logging_file.close()
 
 class TextHandler():
