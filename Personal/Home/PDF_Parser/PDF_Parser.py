@@ -196,9 +196,9 @@ class PDF_Handler():
                         destination_file = path.join(destination_dir, file)
                         if path.isdir(destination_dir) and not path.isfile(destination_file):
                             rename(current_file, destination_file)
-                            print('{} {} {} {}'.format('Moving', file, 'into', destination_dir))
+                            logging.info('{} {} {} {}'.format('Moving', file, 'into', destination_dir))
                         else:
-                            print('Destination file already exists, removing current file and reiterating through check.')
+                            logging.info('Destination file already exists, removing current file and reiterating through check.')
                             remove(destination_file)
                     file_existence_check += 1   
         except Exception as e:
