@@ -1,0 +1,19 @@
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Logging Begun at 2019-01-25 15:33:45.412551
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-25 15:33:45.412551
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-25 15:33:45.412551
+
+Logging Completed at 2019-01-25 15:33:45.412551INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Logging Begun at 2019-01-25 15:33:45.412551
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-25 15:33:45.412551
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-25 15:33:45.412551
+
+Logging Completed at 2019-01-25 15:33:45.412551

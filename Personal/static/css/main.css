@@ -959,6 +959,29 @@ div#main_header_right_half a:hover {
   color: #cfc259;
 }
 
+/* Home Page */
+
+div#home_me_living_life_div {
+  position: fixed;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
+}
+
+img#home_me_living_life_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* top: 50%;
+  left: 50%;
+  transform: translateX(-50%); */
+  opacity: .075;
+
+}
+
 /* About Me Page */
 
 .minimized_modal {

@@ -1,0 +1,45 @@
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Employment Calculator Logging Begun at 2019-01-25 15:45:53.620438
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Employment Calculator Logging Completed at 2019-01-25 15:45:53.620438
+PDF Parser Logging Begun at 2019-01-25 15:45:53.618308
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-25 15:45:53.618308
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-25 15:45:53.618308
+
+PDF Parser Logging Completed at 2019-01-25 15:45:53.618308
+Employment Calculator Logging Begun at 2019-01-25 15:47:03.769815
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Employment Calculator Logging Completed at 2019-01-25 15:47:03.769815
+
+PDF Parser Logging Begun at 2019-01-25 15:47:03.767097
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-25 15:47:03.767097
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-25 15:47:03.767097
+
+PDF Parser Logging Completed at 2019-01-25 15:47:03.767097
+PDF Parser Logging Begun at 2019-01-25 15:48:30.359731
+
+INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Uploaded_Files at 2019-01-25 15:48:30.359731
+INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-25 15:48:30.359731
+
+PDF Parser Logging Completed at 2019-01-25 15:48:30.359731
+
+Employment Calculator Logging Begun at 2019-01-25 15:48:30.362016
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+Employment Calculator Logging Completed at 2019-01-25 15:48:30.362016

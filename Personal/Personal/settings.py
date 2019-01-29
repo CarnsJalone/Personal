@@ -147,3 +147,6 @@ EMAIL_HOST_USER = 'Jlamborghini22@gmail.com'
 EMAIL_HOST_PASSWORD = 'Mygrandma22$'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+
+# Error Reporting
+SERVER_EMAIl = 'Jlamborghini22@gmail.com'
