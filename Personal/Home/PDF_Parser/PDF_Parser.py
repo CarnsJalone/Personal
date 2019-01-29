@@ -207,7 +207,7 @@ class PDF_Handler():
     def write_logging_footer(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\n-----PDF Parser Logging Completed at ' + now + '-----\n')
+        logging_file.write('\n-----PDF Parser Logging Completed at ' + now + '-----\n\n')
         logging_file.close()
 
 class TextHandler():

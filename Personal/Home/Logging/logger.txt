@@ -58,3 +58,51 @@ INFO:root:Uploaded File Directory Exists at /home/jarret/Documents/Python/Projec
 INFO:root:Converted File Directory Exists at /home/jarret/Documents/Python/Projects/Personal/Personal/Home/PDF_Parser/Converted_Files at 2019-01-28 20:45:35.123562
 
 -----PDF Parser Logging Completed at 2019-01-28 20:45:35.123562-----
+INFO:root:Email Sent To Jlamborghini22@gmail.com
+INFO:root:Email Sent To Jarret.Laberdee@fcagroup.com
+INFO:root:Email Sent To Jlamborghini22@gmail.com
+INFO:root:Email Sent To Jarret.Laberdee@fcagroup.com
+INFO:root:
+
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:01:22.173182
+INFO:root:
+
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:01:22.173182
+INFO:root:
+
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:01:37.891204
+INFO:root:
+
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:01:37.891204
+INFO:root:
+
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:02:47.591737
+INFO:root:
+
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:02:47.591737
+INFO:root:
+
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:03:03.477583
+INFO:root:
+
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:03:03.477583
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:03:45.206434
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:03:45.206434
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:03:49.491424
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:03:49.491424
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:11:51.327483
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:11:51.327483
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:13:43.444277
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:13:43.444277
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-01-28 19:14:48.582164
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-01-28 19:14:48.582164
