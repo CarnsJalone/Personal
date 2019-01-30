@@ -41,6 +41,15 @@ body {
     top: 136.667px;
   }
 
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 50%;
+  }
+
+
   /* About Me Page */
 
   div#about_me_click_for_full_size_modal_container {
@@ -137,6 +146,14 @@ body {
   div#left_curved_cover,
   div#right_curved_cover {
     top: 136.667px;
+  }
+
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 55%;
   }
 
   /* About Me Page */
@@ -248,6 +265,14 @@ body {
   div#left_curved_cover,
   div#right_curved_cover {
     top: 136.667px;
+  }
+
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 55%;
   }
 
   /* About Me Page */
@@ -370,6 +395,14 @@ body {
     top: 43.333px;
   }
 
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 52.5%;
+  }
+
   /* About Me Page */
 
   div#about_me_click_for_full_size_modal_container {
@@ -482,6 +515,14 @@ body {
   div#left_curved_cover,
   div#right_curved_cover {
     top: 43.333px;
+  }
+
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 52.5%;
   }
 
   /* About Me Page */
@@ -597,6 +638,14 @@ body {
   div#left_curved_cover,
   div#right_curved_cover {
     top: 43.333px;
+  }
+
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 52.5%;
   }
 
   /* About Me Page */
@@ -718,6 +767,14 @@ body {
   div#left_curved_cover,
   div#right_curved_cover {
     top: 43.333px;
+  }
+
+  /* Home Page */
+
+  div#home_me_living_life_div {
+    width: auto;
+    height: auto;
+    top: 52.5%;
   }
 
   /* About Me Page */
@@ -963,10 +1020,7 @@ div#main_header_right_half a:hover {
 
 div#home_me_living_life_div {
   position: fixed;
-  width: auto;
-  height: auto;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   z-index: -5;
 }
