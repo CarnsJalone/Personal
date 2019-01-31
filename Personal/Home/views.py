@@ -48,7 +48,12 @@ from PDF_Parser import PDF_Handler, TextHandler
 from Employment_Calculator import Employment_Calculator
 
 def home(request):
-    return render(request, 'home.html', {'navbar' : 'home'})
+
+    rendered_variables = {
+        'navbar' : 'home',
+    }
+
+    return render(request, 'home.html', rendered_variables)
 
 def about_me(request):
 
@@ -247,9 +252,13 @@ def display_content(request):
 
     f.close()
 
-    context = {'contents' : file_content, 'file_name' : converted_file_name, 'navbar' : 'projects'}
+    rendered_variables = {
+        'contents' : file_content, 
+        'file_name' : converted_file_name,
+        'navbar' : 'projects'
+        }
 
-    return render(request, 'display_content.html', context)
+    return render(request, 'display_content.html', rendered_variables)
 
 # Create error views
 
@@ -263,14 +272,25 @@ def test_500(request):
 def error_404(request):
 
     url_var = request.get_full_path()
-    print(url_var)
-    return render(request, 'error/404.html', {'url_var' : url_var})
+
+    rendered_variables = {
+        'url_var' : url_var,
+        'me_living_life' : False
+    }
+    
+    return render(request, 'error/404.html', rendered_variables)
 
 # 500 - Internal Server Error
 def error_500(request):
+
     url_var = request.get_full_path()
-    print(url_var)
-    return render(request, 'error/500.html', {'url_var' : url_var})
+
+    rendered_variables = {
+        'url_var' : url_var,
+        'me_living_life' : False
+    }
+
+    return render(request, 'error/500.html', rendered_variables)
 
 
 # 403 - Permission Denied

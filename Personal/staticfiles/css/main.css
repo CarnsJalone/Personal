@@ -38,17 +38,16 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 136.667px;
+    top: 140px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 300px;
     height: auto;
-    top: 50%;
+    top: 52.5%;
   }
-
 
   /* About Me Page */
 
@@ -59,7 +58,7 @@ body {
 
   .enlarged_modal {
     top: 136.667px;
-    height: 
+    height: auto;
   }
   
   .enlarged_resume_img_div {
@@ -145,13 +144,13 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 136.667px;
+    top: 140px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 350px;
     height: auto;
     top: 55%;
   }
@@ -264,15 +263,15 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 136.667px;
+    top: 140px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 350px;
     height: auto;
-    top: 55%;
+    top: 57.5%;
   }
 
   /* About Me Page */
@@ -392,13 +391,13 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 43.333px;
+    top: 44px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 425px;
     height: auto;
     top: 52.5%;
   }
@@ -514,15 +513,15 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 43.333px;
+    top: 44px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 475px;
     height: auto;
-    top: 52.5%;
+    top: 55%;
   }
 
   /* About Me Page */
@@ -637,15 +636,15 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 43.333px;
+    top: 44px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 500px;
     height: auto;
-    top: 52.5%;
+    top: 55%;
   }
 
   /* About Me Page */
@@ -766,15 +765,15 @@ body {
 
   div#left_curved_cover,
   div#right_curved_cover {
-    top: 43.333px;
+    top: 44px;
   }
 
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: auto;
+    width: 510px;
     height: auto;
-    top: 52.5%;
+    top: 55%;
   }
 
   /* About Me Page */
@@ -1032,9 +1031,18 @@ img#home_me_living_life_img {
   /* top: 50%;
   left: 50%;
   transform: translateX(-50%); */
-  opacity: .075;
+  opacity: .0625;
 
 }
+
+.living_life_true {
+  display: block;
+}
+
+.living_life_false {
+  display: none;
+}
+
 
 /* About Me Page */
 
@@ -1160,18 +1168,6 @@ div#connect_page_outer_container {
 
 div#connect_heaeder_h5 {
   text-align: center;
-}
-
-div#connect_page_introductory_text_container a {
-  text-decoration: none;
-  color: #6e73ab;
-  transition: .5s;
-}
-
-div#connect_page_introductory_text_container a:hover {
-  border: 2px solid #6e73ab;
-  background-color: #6e73ab;
-  color: #cfc259;
 }
 
 h5#connect_contact_form_header {
@@ -1907,6 +1903,12 @@ div.error_page_background_circle_container {
 
 div.error_page_background_circle_container::before {
   padding-bottom: 100%;
+}
+
+/* Functional Links */
+
+.waved_letter {
+  font-weight: bold;
 }
 
 

@@ -43,13 +43,10 @@
     <div id="left_curved_cover"></div>
     <div id="right_curved_cover"></div>
 
-    <div id="home_me_living_life_div">
-
-    <img id="home_me_living_life_img" src="{% static 'png/me_living_life_edited.png' %}" alt="Jarret in motion...">
-
+    <div id="home_me_living_life_div" class="{% if me_living_life == False %} living_life_false {% else %} living_life_true {% endif %}">
+      <img id="home_me_living_life_img" class="{% if me_living_life == False %} living_life_false {% else %} living_life_true {% endif %}" src="{% static 'png/me_living_life_edited.png' %}" alt="Jarret in motion...">
     </div>
   
-
     {% block home %}{% endblock %} 
     {% block resume %}{% endblock %}
     {% block about_me %}{% endblock %}
