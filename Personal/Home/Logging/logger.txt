@@ -911,3 +911,741 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 
 -----Employment Calculator Logging Completed at 2019-01-31 18:29:10.047684-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+
+------Employment Calculator Logging Begun at 2019-01-31 20:13:34.083119-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 20:13:34.083119-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
+
+------Employment Calculator Logging Begun at 2019-01-31 21:12:43.799951-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-01-31 21:12:43.799951-----
