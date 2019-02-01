@@ -54,7 +54,7 @@ body {
   /* Home Page */
 
   div#home_me_living_life_div {
-    width: 150px;
+    width: 35%;
     height: auto;
     top: 47.5%;
   }
@@ -1045,7 +1045,7 @@ div#main_header_left_half {
 
 div#main_header_left_half p {
   margin: 0 auto;
-  color: #FFF8BE;
+  color: #1D3B57;
 }
 
 div#main_header_right_half {
