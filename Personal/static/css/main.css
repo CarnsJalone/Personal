@@ -1064,21 +1064,42 @@ div#main_header_right_half a:hover {
   font-weight: bold;
 }
 
+.active_header_link {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .active_header_link p {
   font-weight: bold;
   color: #FFF;
+  /* max-height: 25px; */
+  display: flex;
+  max-width: 100%;
+  margin-left: -10px;
+  margin-right: -50px;
 }
 
 .active_header_link p::before {
-  content: '- ';
-  color: #cfc259;
-  font-style: normal;
+  content: url('../png/living_life_before.png');
+  opacity: .5;
+  transform: scale(.1125);
+  background-size: 2px 2px;
+  display:flex;
+  height: 25px;
+  margin-top: -10px;
+  margin-right: -42.5px;
+  padding-right: -42.5px;
 }
 
 .active_header_link p::after {
-  content: ' -';
-  color: #cfc259;
-  font-style: normal;
+  content: url('../png/living_life_after.png');
+  opacity: .5;
+  transform: scale(.1125);
+  background-size: 2px 2px;
+  display: flex;
+  height: 25px;
+  margin-top: -10px;
+  margin-left: -42.5px;
 }
 
 .inactive_header_link p {
