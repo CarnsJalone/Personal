@@ -5,8 +5,15 @@ import sys
 import re
 
 # Add additional directories for imports
-# Directories for PDF Parser application
 current_directory = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(current_directory)
+
+# Directories for Mail application
+child_personal_directory = os.path.join(BASE_DIR, "Personal")
+# settings_file_path = os.path.join(child_personal_directory, "settings.py")
+
+
+# Directories for PDF Parser application
 pdf_parser_directory = os.path.join(current_directory, 'PDF_Parser')
 uploaded_files_directory = os.path.join(pdf_parser_directory, 'Uploaded_Files')
 converted_files_directory = os.path.join(pdf_parser_directory, 'Converted_Files')
@@ -23,6 +30,7 @@ employment_calculator_file = os.path.join(employment_calculator_dir, 'Employment
 
 
 # Append them to the path so Django will recognize them
+sys.path.append(child_personal_directory)
 sys.path.append(pdf_parser_directory)
 sys.path.append(uploaded_files_directory)
 sys.path.append(converted_files_directory)
@@ -46,6 +54,7 @@ from . random_word_generator import generate_random_word, ajax_random_word
 from . random_name_generator import Generator
 from PDF_Parser import PDF_Handler, TextHandler
 from Employment_Calculator import Employment_Calculator
+from Personal import settings
 
 def home(request):
 
@@ -113,7 +122,7 @@ def connect(request):
             # Email Preferences
             connect_response_email_to_submitter = render_to_string('email/connect_response.html', form_variables)
 
-            personal_email = 'Jlamborghini22@gmail.com'
+            personal_email = settings.EMAIL_HOST_USER
 
             # Send email to the submitter
             submitter_email_subject = '*Ding Ding*'

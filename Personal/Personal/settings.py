@@ -11,16 +11,37 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import sys
+import json
+import logging
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LOGGING_DIR = os.path.join(BASE_DIR, 'Home/Logging')
+
+sys.path.append(LOGGING_DIR)
+
+logging.basicConfig(filename=os.path.join(LOGGING_DIR, 'logger.txt'), level=logging.DEBUG)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
+# Function to read in credentials, this determines if we are on our local server
+# Or deployed
+if os.path.isfile('/home/jarret/Documents/Python/Credentials/Personal/credentials.json'):
+    with open('/home/jarret/Documents/Python/Credentials/Personal/credentials.json') as credentials:
+        data = json.loads(credentials.read())
+elif os.path.isfile('/opt/Credentials/Personal/credentials.json'):
+    with open('/opt/Credentials/Personal/credentials.json') as credentials:
+        data = json.loads(credentials.read())
+else:
+    logging.critical("Unable to read in necessary credentials, unable to proceed...")
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '9c)ja^@a$&&%yuc9$2hxo@1uv=r!_7t6*(xwd972&iksc+2v)4'
+
+SECRET_KEY = data["Personal_Credentials"][0]["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -143,10 +164,10 @@ MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'Jlamborghini22@gmail.com'
-EMAIL_HOST_PASSWORD = 'Mygrandma22$'
+EMAIL_HOST_USER = data["Personal_Credentials"][0]["Personal_Email_Username"]
+EMAIL_HOST_PASSWORD = data["Personal_Credentials"][0]["Personal_Email_Password"]
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
 # Error Reporting
-SERVER_EMAIl = 'Jlamborghini22@gmail.com'
+SERVER_EMAIl = data["Personal_Credentials"][0]["Personal_Email_Username"]

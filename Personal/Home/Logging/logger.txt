@@ -2444,3 +2444,69 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 
 -----Employment Calculator Logging Completed at 2019-02-01 18:44:31.112059-----
+
+------Employment Calculator Logging Begun at 2019-02-03 15:11:12.051653-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-02-03 15:11:12.051653-----
+INFO:django.request:OK: /connect/thanks_for_reaching_out/
+Traceback (most recent call last):
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jarret/Documents/Python/Projects/Personal/Personal/Home/views.py", line 128, in connect
+    fail_silently=False
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials n8sm1724635qtb.88 - gsmtp')
+INFO:django.request:OK: /connect/thanks_for_reaching_out/
+Traceback (most recent call last):
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/jarret/Documents/Python/Projects/Personal/Personal/Home/views.py", line 128, in connect
+    fail_silently=False
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/__init__.py", line 60, in send_mail
+    return mail.send()
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/message.py", line 291, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 103, in send_messages
+    new_conn_created = self.open()
+  File "/home/jarret/.local/lib/python3.6/site-packages/django/core/mail/backends/smtp.py", line 70, in open
+    self.connection.login(self.username, self.password)
+  File "/usr/lib/python3.6/smtplib.py", line 730, in login
+    raise last_exception
+  File "/usr/lib/python3.6/smtplib.py", line 721, in login
+    initial_response_ok=initial_response_ok)
+  File "/usr/lib/python3.6/smtplib.py", line 642, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials j59sm4630951qtb.70 - gsmtp')
+
+------Employment Calculator Logging Begun at 2019-02-03 16:36:00.234762-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-02-03 16:36:00.234762-----
