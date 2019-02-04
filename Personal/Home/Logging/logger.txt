@@ -2510,3 +2510,31 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 
 -----Employment Calculator Logging Completed at 2019-02-03 16:36:00.234762-----
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:32:15.841044
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:32:15.841044
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:36:09.184654
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:36:09.184654
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:37:17.374340
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:37:17.374340
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:37:49.506764
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:37:49.506764
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:38:22.178098
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:38:22.178098
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:40:25.294643
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:40:25.294643
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:41:03.847115
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:41:03.847115

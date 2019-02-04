@@ -48,7 +48,7 @@ def send_daily_logs():
 
 
     for recipient in receipients:
-            # Format Email
+        # Format Email
         msg = MIMEMultipart()
         msg['From'] = EMAIL_HOST_USER
         msg['To'] = recipient
@@ -63,7 +63,7 @@ def send_daily_logs():
         attachment = MIMEBase('application', 'octet-stream')
         attachment.set_payload((attached_logs).read())
         encoders.encode_base64(attachment)
-        attachment.add_header('Content-Disposition', "attachment; filename={}".format(filename))
+        attachment.add_header('Content-Disposition', "attachment; filename={}.txt".format(filename))
 
         msg.attach(attachment)
 
