@@ -48,7 +48,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['206.81.4.37', '127.0.0.1', 'localhost', 'carnsjalone.com', 'www.carnsjalone.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -147,7 +146,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, 'Home/Logging')
+    # os.path.join(BASE_DIR, 'Home/Logging')
 ]
 
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

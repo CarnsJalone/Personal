@@ -2538,3 +2538,11 @@ INFO:root:
 Email Sent To Jlamborghini22@gmail.com at 2019-02-03 20:41:03.847115
 INFO:root:
 Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-03 20:41:03.847115
+
+------Employment Calculator Logging Begun at 2019-02-05 18:13:52.089031-----
+
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+
+-----Employment Calculator Logging Completed at 2019-02-05 18:13:52.089031-----
