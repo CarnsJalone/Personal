@@ -4,17 +4,15 @@
 
 {% block connect %}
 
-    <div class="page_header_container standard_size">
-
-        <div id ="connect_heaeder_h5" class="page_header_text standard_size">
-            <br>
-            <hr class="about_me_hr">
-            <h5 class="target_header">Give me a shout!</h5>
-            <hr class="about_me_hr">
-        </div>
-    </div>
-
     <div id="connect_page_outer_container">
+
+       <div id ="connect_header_h5" class="page_header_text standard_size">
+            <br>
+            <hr class="target_hr about_me_hr">
+            <h5 class="target_header">Give me a shout!</h5>
+            <hr class="target_hr about_me_hr">
+            <br>
+        </div>
 
         <div id="connect_page_introductory_text_container" class="standard_size">
             <p>Hey! So hopefully you've gotten to know me a little from my About Me section. 
@@ -30,9 +28,9 @@
 
             <br>
 
-            <hr class="about_me_hr">
+            <hr class="target_hr about_me_hr">
             <h5 class="target_header">Methods of Communication</h5>
-            <hr class="about_me_hr">
+            <hr class="target_hr about_me_hr">
 
             <span id="connect_by_phone_span"><p id="connect_by_phone_p" class="connect_centered_li"><a href="tel://14192068550" class="connect_functional_links" target="_top">By Phone   <i id="connect_by_phone_i" class="fas fa-mobile-alt"></i></a></p></span>
             <p>
@@ -60,9 +58,9 @@
 
             <br>
 
-            <hr class="about_me_hr">
+            <hr class="target_hr about_me_hr">
             <h5 class="target_header">Contact Form</h5>
-            <hr class="about_me_hr">
+            <hr class="target_hr about_me_hr">
 
         </div>
 
@@ -90,4 +88,8 @@
 
 
 
+{% endblock %}
+
+{% block connect_script %}
+<script src="{% static 'js/connect.js' %}" type="text/javascript"></script>
 {% endblock %}

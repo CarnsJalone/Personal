@@ -51,6 +51,14 @@ body {
     bottom: -195px;
   }
 
+  .target_header {
+    width: 95%;
+  }
+
+  .target_hr {
+    width: 95%;
+  }
+
   /* Home Page */
 
   div#home_me_living_life_div {
@@ -169,6 +177,14 @@ body {
   div#vector_mountain_div {
     height: 425px;
     bottom: -160px;
+  }
+
+  .target_header {
+    width: 90%;
+  }
+
+  .target_hr {
+    width: 90%;
   }
 
   /* Home Page */
@@ -302,6 +318,14 @@ body {
   div#vector_mountain_div {
     height: 425px;
     bottom: -100px;
+  }
+
+  .target_header {
+    width: 85%;
+  }
+
+  .target_hr {
+    width: 85%;
   }
 
   /* Home Page */
@@ -446,6 +470,14 @@ body {
     bottom: 75px;
   }
 
+  .target_header {
+    width: 80%;
+  }
+
+  .target_hr {
+    width: 80%
+  }
+
   /* Home Page */
 
   div#home_me_living_life_div {
@@ -580,6 +612,14 @@ body {
   div#vector_mountain_div {
     height: 400px;
     bottom: 225px;
+  }
+
+  .target_header {
+    width: 75%;
+  }
+
+  .target_hr {
+    width: 75%
   }
 
   /* Home Page */
@@ -724,6 +764,14 @@ body {
     bottom: 300px;
   }
 
+  .target_header {
+    width: 75%;
+  }
+
+  .target_hr {
+    width: 75%
+  }
+
   /* Home Page */
 
   div#home_me_living_life_div {
@@ -835,17 +883,21 @@ body {
   div#main_header_inner {
     display: flex;
   }
+
   div#main_header_left_half {
     flex-direction: row;
     width: 50%;
   }
+
   div#main_header_right_half {
     flex-direction: row;
     width: 50%;
   }
+
   div#connect_page_form_div {
     width: 50%;
   }
+
   div.minimized_resume_img_div {
     width: 30%;
     height: auto;
@@ -869,6 +921,14 @@ body {
   div#vector_mountain_div {
     height: 450px;
     bottom: 300px;
+  }
+
+  .target_header {
+    width: 75%;
+  }
+
+  .target_hr {
+    width: 75%
   }
 
   /* Home Page */
@@ -1015,15 +1075,15 @@ body {
   margin-bottom: 5px;
 }
 
-.about_me_hr {
-  width: 65%;
-  background-color: #6e73ab;
-  height: 1px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: none;
-  opacity: .25;
+
+.blue_hr {
+  background-color: #78A091;
 }
+
+.off_white_hr {
+  background-color: #FFF8BE;
+}
+
 
 .about_me_hr_h5 {
   width: 50%;
@@ -1032,11 +1092,10 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   border: none;
-  opacity: .25;
 }
 
 .about_me_blue_text_highlight {
-  color: #4C8872;
+  color: #78A091;
   /* background-color: #fff; */
   /* background: linear-gradient(0.25turn, transparent 5%, #FFF8BE, transparent 95%); */
   background: #FFF8BE;
@@ -1054,7 +1113,7 @@ body {
 
 .about_me_off_white_text_highlight {
   color: #FFF8BE;
-  background: #4c8872;
+  background: #78A091;
   text-align: center;
 
 }
@@ -1210,8 +1269,17 @@ img#home_me_living_life_img {
 
 .target_header {
   transition: .5s;
+  margin: 0 auto;
 }
 
+.target_hr {
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  opacity: .25;
+  transition: .5s;
+}
 
 /* About Me Page */
 
@@ -1366,7 +1434,7 @@ div#connect_page_outer_container {
   margin-bottom: 5px;
 }
 
-div#connect_heaeder_h5 {
+div#connect_header_h5 {
   text-align: center;
 }
 
@@ -1398,9 +1466,9 @@ div#connect_page_form_div label {
 
 input#connect_page_form_submit_button {
   margin: 0 auto;
-  background-color: #6e73ab;
-  color: #cfc259;
-  border: 1px solid #cfc259;
+  background-color: #4c8872;
+  color: #FFF8BE;
+  border: 1px solid #FFF8BE;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
