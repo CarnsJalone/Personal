@@ -3,10 +3,6 @@ $(document).ready(function(){
     set_responsive_header_class()
 
     function detect_breakpoint(win_width) {
-
-        // var breakpoints_upper = [400, 550, 767, 992, 1200, 1500]
-        // var breakpoints_lower = [0, 401, 551, 768, 993, 1201, 1501]
-
         var breakpoint_upper, breakpoint_lower, breakpoint_case
     
         var breakpoints = [
@@ -31,24 +27,19 @@ $(document).ready(function(){
     }
 
     function set_trigger_height() {
-
         var breakpoint_case = detect_breakpoint($(window).width())
-        // console.log("Breakpoint Case: ", breakpoint_case)
         var trigger_height;
-        var mountain_img_height;
-        var body_height;
-
 
         if (breakpoint_case == 1) {
-            trigger_height = 700;
+            trigger_height = 50;
             // Between 0 and 400 pixels
             return trigger_height
         } else if (breakpoint_case == 2) {
-            trigger_height = 175;
+            trigger_height = 75;
             // Between 401 and 550 pixels
             return trigger_height
         } else if (breakpoint_case == 3) {
-            trigger_height = 200;
+            trigger_height = 150;
             // Between 551 and 767 pixels
             return trigger_height
         } else if (breakpoint_case == 4) {
@@ -72,32 +63,22 @@ $(document).ready(function(){
 
     }
 
-
-
     function set_responsive_header_class() {
         var trigger_height = set_trigger_height()
-        console.log(trigger_height)
-
         var mountain = $("#vector_mountain_img")
         var target_header = $(".target_header")
+
         // Iterate through headers to locate which we want to trigger
         target_header.each(function(index, each_header){
-            console.log($(each_header).offset().top)
             if ($(each_header).offset().top >= ($(mountain).offset().top + trigger_height)) {
                 $(each_header).attr("class", "target_header about_me_blue_text_highlight");
             } else {
                 $(each_header).attr("class", "target_header about_me_off_white_text_highlight")
             }
-            
         })
-        
     }
 
     $(window).scroll(function(event){
         set_responsive_header_class()
-      
     })
-
-
-
 })
