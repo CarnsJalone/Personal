@@ -82,6 +82,10 @@ body {
     right: 43.33px;
   }
 
+  div.about_me_languages_outer_div {
+    flex-direction: column;
+  }
+
     /* Project Home Page */
 
   div.project_home_section {
@@ -195,6 +199,10 @@ body {
   span#full_page_modal_close {
     top: 179.997px;
     right: 43.33px;
+  }
+
+  div.about_me_languages_outer_div {
+    flex-direction: column;
   }
 
   /* Project Home Page */
@@ -324,6 +332,10 @@ body {
   span#full_page_modal_close {
     top: 179.997px;
     right: 43.33px;
+  }
+
+  div.about_me_languages_outer_div {
+    flex-direction: column;
   }
 
   /* Project Home Page */
@@ -464,6 +476,10 @@ body {
     right: 43.33px;
   }
 
+  div.about_me_languages_outer_div {
+    flex-direction: column;
+  }
+
   /* Project Home Page */
 
   div.project_home_section {
@@ -596,6 +612,15 @@ body {
     right: 43.33px;
   }
 
+  div.about_me_languages_outer_div {
+    flex-direction:row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    width: 70%;
+  }
+
+
   /* Project Home Page */
 
   div.project_home_section {
@@ -727,6 +752,14 @@ body {
   span#full_page_modal_close {
     top: 81.24375px;
     right: 43.33px;
+  }
+
+  div.about_me_languages_outer_div {
+    flex-direction:row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    width: 45%;
   }
 
   /* Project Home Page */
@@ -868,6 +901,14 @@ body {
     right: 43.33px;
   }
 
+  div.about_me_languages_outer_div {
+    flex-direction: row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    width: 30%;
+  }
+
   /* Project Home Page */
 
   div.project_home_section {
@@ -950,6 +991,7 @@ body {
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+  color: black;
 }
 
 .standard_size h5 {
@@ -996,9 +1038,11 @@ body {
 .about_me_blue_text_highlight {
   color: #4C8872;
   /* background-color: #fff; */
-  background: linear-gradient(0.25turn, #FFF8BE 15%, #fff, #FFF8BE 85%);
+  /* background: linear-gradient(0.25turn, transparent 5%, #FFF8BE, transparent 95%); */
+  background: #FFF8BE;
   text-align: center;
 }
+
 
 .about_me_blue_text_highlight::before {
   content: '- ';
@@ -1006,6 +1050,21 @@ body {
 
 .about_me_blue_text_highlight::after {
   content: ' -'
+}
+
+.about_me_off_white_text_highlight {
+  color: #FFF8BE;
+  background: #4c8872;
+  text-align: center;
+
+}
+
+.about_me_off_white_text_highlight::before {
+  content: '- ';
+}
+
+.about_me_off_white_text_highlight::after {
+  content: ' -';
 }
 
 div#about_me_introduction_container {
@@ -1149,6 +1208,10 @@ img#home_me_living_life_img {
   display: none;
 }
 
+.target_header {
+  transition: .5s;
+}
+
 
 /* About Me Page */
 
@@ -1263,6 +1326,37 @@ button#resume_page_download_resume_button:hover {
   border: 1px solid #000;
 }
 
+
+div.about_me_languages_outer_div {
+  display: flex;
+}
+
+div.about_me_languages_inner_div_icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+div.about_me_languages_inner_div_icon img {
+  height: 40px;
+  width: auto;
+  margin-right: 7.5px;
+
+}
+
+div.about_me_languages_inner_div_icon caption {
+  margin-left: 50px;
+}
+
+div.about_me_languages_inner_div_text {
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 20px;
+}
+
+
 /* Connect Page */
 
 div#connect_page_outer_container {
@@ -1340,6 +1434,16 @@ hr#connect_page_text_form_seperation_hr {
 p.connect_centered_li {
   text-align: center;
 }
+
+a.connect_functional_links {
+  color: black;
+}
+
+a.connect_functional_links:hover {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* Connect Page - Communication Method Animations */
 
@@ -1841,7 +1945,7 @@ div#display_contents_uploaded_data_container pre {
   margin: 0 auto;
   height: 75vh;
   width: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 div#display_contents_uploaded_data_container p {
@@ -2013,6 +2117,14 @@ div.error_page_background_circle_container::before {
 
 .waved_letter {
   font-weight: bold;
+}
+
+.test {
+  color: black;
+}
+
+.test_1 {
+  color: white;
 }
 
 

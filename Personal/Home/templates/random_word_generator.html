@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block random_word_generator %}
 
 
@@ -78,4 +80,8 @@
         </div>
     </div>
 
+{% endblock %}
+
+{% block random_generator_script %}
+<script src="{% static 'js/random_word_generator.js' %}" type="text/javascript"></script>
 {% endblock %}

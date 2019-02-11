@@ -44,7 +44,7 @@
     <div id="right_curved_cover"></div>
 
     <div id="home_me_living_life_div" class="{% if me_living_life == False %} living_life_false {% else %} living_life_true {% endif %}">
-      <img id="home_me_living_life_img" class="{% if me_living_life == False %} living_life_false {% else %} living_life_true {% endif %}" src="{% static 'png/me_living_life_edited.png' %}" alt="Jarret in motion...">
+      <img id="home_me_living_life_img" class="{% if me_living_life == False %} living_life_false {% else %} living_life_true {% endif %}" src="{% static 'png/me_living_life_edited_cartoonized.png' %}" alt="Jarret in motion...">
     </div>
 
     <div id="vector_mountain_div">
@@ -69,9 +69,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="{% static 'js/random_word_generator.js' %}" type="text/javascript"></script>
-    <script src="{% static 'js/pdf_parser.js' %}" type="text/javascript"></script>
-    <script src="{% static 'js/pdf_loader.js' %}" type="text/javascript"></script>
-    <script src="{% static 'js/about_me.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+    {% block random_generator_script %}{% endblock %}
+    {% block pdf_parser_script %} {% endblock %}
+    {% block pdf_loader_script %} {% endblock %}
+    {% block about_me_script %} {% endblock %}
   </body>
 </html>

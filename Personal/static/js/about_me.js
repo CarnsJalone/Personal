@@ -293,9 +293,9 @@ $(document).ready(function(){
 
 
 
-    functional_link.hover(function(event){
-        reset_html()
-        inset_wave();
-    })
+    // functional_link.hover(function(event){
+    //     reset_html()
+    //     inset_wave();
+    // })
 
 })

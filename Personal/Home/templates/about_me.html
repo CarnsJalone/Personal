@@ -20,7 +20,7 @@
 
             <li>
                 <hr class="about_me_hr">
-                <h5 class="about_me_blue_text_highlight">Background</h5>
+                <h5 id="bk_test" class="target_header">Background</h5>
                 <hr class="about_me_hr">
                 <br>
                 <p>From a young age, I vividly recall being captivated by gadgetry. Due to my problem-solving nature and interest in how things work, I have always been the "go-to" guy for technologically-related issues (<i>primarily turning the router on and off again for 
@@ -35,39 +35,109 @@
             <hr class="about_me_hr">
 
             <li>
-                <h5 class="about_me_blue_text_highlight">Personally Acquired Experience</h5>
+                <h5 class="target_header">Personally Acquired Experience</h5>
                 <hr class="about_me_hr">
                 <br>
 
-                <p><strong>Front-End:</strong>
-                <br>
-                <br>
-                <i>HTML/CSS</i> - The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
-                graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
-                <br>
-                <br>
-                <i>Javascript</i> - The most popular language of the web?? Javascript feels natural to me. This is actually the first language that I sat down to learn and now I'm beginning to discover its true power. From simple 
-                DOM manipulations to extensive data verification algorithms, I will hold Javascript close to me for the rest of my career. As a framework I typically use jQuery and I plan on picking up either Angular or React 
-                as additional tools for my arsenal.
-                </p>
-                <p><strong>Back-End:</strong>
-                <br>
-                <br>
-                <i>Python</i> - Oh the readability. With Python's human-readable syntax, the absorption of Python for me has been stunningly intuitive. While Python boasts the strength of being readable, the fact that it's an interpreted 
-                language as opposed to a compiled language (like Java) sometimes causes cryptic diagnosis when an error arises. The bulk of my projects requiring some behind-the-scenes computation have been done 
-                with Python. (Including this very project) I currently utilize Django as my primary framework. 
-                <br>
-                <br>
-                <i>Node.js</i> - Javascript's plunge into backend? Using Chrome's V8 Engine this is an extremely powerful language, especially for firing up a web server and displaying some content. Node.js was the second 
-                language I invested any time into and I will definitely be returning to better familiarize myself with it. 
-                </p>
-            </li>
+                <center><p><strong>Front-End</strong></center>
+                <hr style="border-color: black; width: 75px; margin-top: -7.5px; margin-bottom: 1.5em;" />
 
-            <br>
-            <hr class="about_me_hr">
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/HTML_Icon.png' %}" alt="HTML Icon"></img>
+                        <caption>HTML</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/CSS_Icon.png' %}" alt="CSS Icon"></img>
+                        <caption>CSS</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/Javascript_Icon.png' %}" alt="Javascript Icon"></img>
+                        <caption>JavaScript</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+
+                <center><p><strong>Back-End</strong></center>
+                <hr style="border-color: black; width: 75px; margin-top: -7.5px; margin-bottom: 1.5em;" />
+
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/Python_Icon.png' %}" alt="Python Icon"></img>
+                        <caption>Python</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/NodeJS_Icon.png' %}" alt="Node JS Icon"></img>
+                        <caption>NodeJS</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/VBS_Icon.png' %}" alt="VBS Icon"></img>
+                        <caption>VBScript</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <div class="about_me_languages_outer_div">
+                    <div class="about_me_languages_inner_div_icon">
+                        <img class="marq" src="{% static 'languages_icons/VBA_Icon.png' %}" alt="VBA Icon"></img>
+                        <caption>VBA</caption>
+                    </div>
+                    <div class="about_me_languages_inner_div_text">
+                        <p>The power duo. While I feel very confident in my ability to convert a thought into a rendered product on a web page, I am constantly learning new tricks to improve my CSS. Having no background in 
+                        graphical design, I sometimes struggle in imagining what is actually possible and transposing that into code. With enough time, I will domineer the languages.
+
+                    </div>
+                </div>
+
+                <br>
+
 
             <li>
-                <h5 class="about_me_blue_text_highlight">Professionally Acquired Experience</h5>
+
+                <hr class="about_me_hr">
+                <h5 id="about_me_professional_exp" class="target_header">Professionally Acquired Experience</h5>
                 <hr class="about_me_hr">
                 <br>
 
@@ -87,7 +157,7 @@
             <hr class="about_me_hr">
 
             <li>
-                <h5 class="about_me_blue_text_highlight">Technological Goals</h5>
+                <h5 class="target_header">Technological Goals</h5>
                 <hr class="about_me_hr">
                 <br>
 
@@ -101,7 +171,7 @@
             <hr class="about_me_hr">
 
             <li>
-                <h5 class="about_me_blue_text_highlight">Resume</h5>
+                <h5 class="target_header">Resume</h5>
                 <hr class="about_me_hr">
                 <br>
 
@@ -137,4 +207,8 @@
         <i id="close_button_close_button" class="fas fa-times fa-2x"></i>
     </span>
 
+{% endblock %}
+
+{% block about_me_script %}
+<script src="{% static 'js/about_me.js' %}" type="text/javascript"></script>
 {% endblock %}
