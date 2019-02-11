@@ -1273,11 +1273,10 @@ img#home_me_living_life_img {
 }
 
 .target_hr {
-  height: 2px;
+  height: 1px;
   margin-top: 5px;
   margin-bottom: 5px;
   border: none;
-  opacity: .25;
   transition: .5s;
 }
 
@@ -1912,16 +1911,20 @@ div#random_word_generator_inner_div {
 }
 
 h3#random_word_generator_random_word {
-  color: #cfc259;
-  background-color: #6e73ab;
+  color: #FFF8BE;
+  background-color: #4C8872;
   padding: 5px;
   margin: 0px;
   border-radius: .25em;
+  border: 1px solid #FFF8BE;
 }
 
 hr.random_word_generator_page_hrs {
   margin: 0 auto;
-  padding: 0px;
+  padding-top: 2.5px;
+  margin-top: 2.5px;
+  border-top: 1px solid #FFF8BE;
+  width: 90%;
 }
 
 /* PDF Parser Page */

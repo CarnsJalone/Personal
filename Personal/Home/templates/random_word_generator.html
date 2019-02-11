@@ -5,79 +5,91 @@
 {% block random_word_generator %}
 
 
-    <div id="random_word_generator_outer_div" class="container">
-
-        <h3>Random Word/Name Generator</h3>
-
-        <p>Here are a few fun applications that I created. The first two randomly generate a sequence of consonants and vowels. 
-        While what they produce will unlikely be in the Merriam-Webster unabridged, it demonstrates the power, and potential 
-        application of random sequence generators. The third application is a simple random name generator. It looks at two texts files, 
-        first names and last names, and they randomly selects one entry from both, providing a completely random full name.</p>
-
-        <hr>
-
-        <p><strong>Random Word Generator (Django)</strong> - This function is done on the server side language that I am using for this application. 
-        In this example I am usiing a Python Web Framework called Django. 
-        Note that running this function will refresh the page as it is done on the backend.</p>
+    <div class="standard_size">
 
 
-        <form>
-            <button id="random_word_generator_submit_button_python" type="submit" action="{% url 'random_word_generator' %}" method="get">Generate a Random Word (Server Side - Python)</button>
-        </form>
+        <div id="random_word_generator_outer_div" class="container">
 
-        <div id="random_word_generator_inner_div">
+            <h3>Random Word/Name Generator</h3>
 
-            <h3 id="random_word_generator_random_word"> Random Word: 
-            <hr class="random_word_generator_page_hrs">
-            <span id="check" style="font-style:italic">{{random_word}}</span>
-            </h3>
+            <p>Here are a few fun applications that I created. The first two randomly generate a sequence of consonants and vowels. 
+            While what they produce will unlikely be in the Merriam-Webster unabridged, it demonstrates the power, and potential 
+            application of random sequence generators. The third application is a simple random name generator. It looks at two texts files, 
+            first names and last names, and they randomly selects one entry from both, providing a completely random full name.</p>
+
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <p><strong>Random Word Generator (Django)</strong> - This function is done on the server side language that I am using for this application. 
+            In this example I am usiing a Python Web Framework called Django. 
+            Note that running this function will refresh the page as it is done on the backend.</p>
+
+
+            <form>
+                <button id="random_word_generator_submit_button_python" type="submit" action="{% url 'random_word_generator' %}" method="get">Random Word - Python</button>
+            </form>
+
+            <div id="random_word_generator_inner_div">
+
+                <h3 id="random_word_generator_random_word"> Random Word: 
+                <hr class="random_word_generator_page_hrs">
+                <span id="check" style="font-style:italic">{{random_word}}</span>
+                </h3>
+            </div>
+
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <p><strong>Random Word Generator (Ajax)</strong> - This function is done on the client side language that I am using for this application. 
+            In this example I am using a Javascript Framework called jQuery. 
+            Running this function will not refresh the page as everything is done asynchronously between the front 
+            and backend languages communicating.</p>
+
+
+            <form>
+                <button id="random_word_generator_submit_button_ajax" type="submit" action="{% url 'random_word_generator_ajax' %}" method="get">Random Word - Javascript</button>
+            </form>
+
+            <div id="random_word_generator_inner_div">
+
+                <h3 id="random_word_generator_random_word"> Random Word: 
+                <hr class="random_word_generator_page_hrs">
+                <span id="random_word_generator_destination_span" style="font-style:italic">Click Button To Generate Word</span>
+                </h3>
+            </div>
+
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <p><strong>Random Name Generator (Ajax)</strong> - This function utilizes a name database (courtesy of <a href="https://github.com/smashew/NameDatabases" target="_blank">Erik Norvelle</a>) 
+            to randomly generate both a first and last name from a large dataset of multi-regional names. 
+            The function, like the one above, is called asynchronously through Ajax.</p>
+
+            <form>
+                <button id="random_name_generator_submit_button_ajax" type="submit" action="{% url 'random_name_generator' %}" method="get">Random Name - Javascript</button>
+            </form>
+
+            <div id="random_word_generator_inner_div">
+
+                <h3 id="random_word_generator_random_word"> Random Name: 
+                <hr class="random_word_generator_page_hrs">
+                <span id="random_name_generator_destination_span" style="font-style:italic">Click Button To Generate Name</span>
+                </h3>
+            </div>
+
+            <br>
+            <hr class="target_hr">
+
+            <div class="return_link_container">
+
+                <a class="project_home_project_description_links" href="{% url 'projects_home_page' %}"><p>Back To Projects Home</p></a>
+
+            </div>
         </div>
 
-        <hr>
-
-        <p><strong>Random Word Generator (Ajax)</strong> - This function is done on the client side language that I am using for this application. 
-        In this example I am using a Javascript Framework called jQuery. 
-        Running this function will not refresh the page as everything is done asynchronously between the front 
-        and backend languages communicating.</p>
-
-
-        <form>
-            <button id="random_word_generator_submit_button_ajax" type="submit" action="{% url 'random_word_generator_ajax' %}" method="get">Generate a Random Word (Client Side - Javascript)</button>
-        </form>
-
-        <div id="random_word_generator_inner_div">
-
-            <h3 id="random_word_generator_random_word"> Random Word: 
-            <hr class="random_word_generator_page_hrs">
-            <span id="random_word_generator_destination_span" style="font-style:italic">Click Button To Generate Word</span>
-            </h3>
-        </div>
-
-        <hr>
-
-        <p><strong>Random Name Generator (Ajax)</strong> - This function utilizes a name database (courtesy of <a href="https://github.com/smashew/NameDatabases" target="_blank">Erik Norvelle</a>) 
-        to randomly generate both a first and last name from a large dataset of multi-regional names. 
-        The function, like the one above, is called asynchronously through Ajax.</p>
-
-        <form>
-            <button id="random_name_generator_submit_button_ajax" type="submit" action="{% url 'random_name_generator' %}" method="get">Generate a Random Word (Client Side - Javascript)</button>
-        </form>
-
-        <div id="random_word_generator_inner_div">
-
-            <h3 id="random_word_generator_random_word"> Random Name: 
-            <hr class="random_word_generator_page_hrs">
-            <span id="random_name_generator_destination_span" style="font-style:italic">Click Button To Generate Name</span>
-            </h3>
-        </div>
-
-        <hr>
-
-        <div class="return_link_container">
-
-            <a class="project_home_project_description_links" href="{% url 'projects_home_page' %}"><p>Back To Projects Home</p></a>
-
-        </div>
     </div>
 
 {% endblock %}

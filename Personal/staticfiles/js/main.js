@@ -30,6 +30,8 @@ $(document).ready(function(){
         var breakpoint_case = detect_breakpoint($(window).width())
         var trigger_height;
 
+        console.log("Breakpoint Case: " + breakpoint_case)
+
         if (breakpoint_case == 1) {
             trigger_height = 50;
             // Between 0 and 400 pixels
@@ -67,6 +69,7 @@ $(document).ready(function(){
         var trigger_height = set_trigger_height()
         var mountain = $("#vector_mountain_img")
         var target_header = $(".target_header")
+        var target_hr = $(".target_hr")
 
         // Iterate through headers to locate which we want to trigger
         target_header.each(function(index, each_header){
@@ -75,6 +78,15 @@ $(document).ready(function(){
             } else {
                 $(each_header).attr("class", "target_header about_me_off_white_text_highlight")
             }
+        })
+
+        target_hr.each(function(index, each_hr){
+            if ($(each_hr).offset().top >= ($(mountain).offset().top + trigger_height)) {
+                $(each_hr).attr("class", "target_hr off_white_hr");
+            } else {
+                $(each_hr).attr("class", "target_hr blue_hr");
+            }
+
         })
     }
 
