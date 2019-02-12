@@ -33,7 +33,7 @@ body {
 
   div#left_window_border, 
   div#right_window_border {
-    height: 80%;
+    height: 85%;
   }
 
   div#left_window_border_box_shadow,
@@ -91,7 +91,15 @@ body {
   }
 
   div.about_me_languages_outer_div {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    padding-right: 21.875%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 21.875%;
   }
 
     /* Project Home Page */
@@ -218,7 +226,15 @@ body {
   }
 
   div.about_me_languages_outer_div {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    padding-right: 21.875%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 21.875%;
   }
 
   /* Project Home Page */
@@ -359,7 +375,15 @@ body {
   }
 
   div.about_me_languages_outer_div {
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  div.about_me_languages_inner_div_icon {
+    padding-right: 18.75%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 18.75%;
   }
 
   /* Project Home Page */
@@ -509,8 +533,17 @@ body {
   }
 
   div.about_me_languages_outer_div {
-    flex-direction: column;
+    flex-direction: row;
   }
+
+  div.about_me_languages_inner_div_icon {
+    padding-right: 18.75%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 18.75%;
+  }
+  
 
   /* Project Home Page */
 
@@ -657,7 +690,11 @@ body {
   }
 
   div.about_me_languages_inner_div_icon {
-    width: 70%;
+    padding-right: 18.75%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 18.75%;
   }
 
 
@@ -807,7 +844,11 @@ body {
   }
 
   div.about_me_languages_inner_div_icon {
-    width: 45%;
+    padding-right: 18.75%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 18.75%;
   }
 
   /* Project Home Page */
@@ -966,7 +1007,11 @@ body {
   }
 
   div.about_me_languages_inner_div_icon {
-    width: 30%;
+    padding-right: 18.75%;
+  }
+
+  div.about_me_languages_inner_div_text {
+    padding-right: 18.75%;
   }
 
   /* Project Home Page */
@@ -1369,6 +1414,7 @@ i#close_button_close_button {
 .minimized_close_button {
   display: none;
 }
+
 .enlarged_close_button {
   display: block;
 }
@@ -1383,9 +1429,9 @@ div#resume_page_download_resume_container {
 }
 
 button#resume_page_download_resume_button {
-  background-color: #6e73ab;
-  color: #cfc259;
-  border: 1px solid #cfc259;
+  background-color: #4c8872;
+  color: #FFF8BE;
+  border: 1px solid #FFF8BE;
 }
 
 button#resume_page_download_resume_button:hover {
@@ -1396,31 +1442,41 @@ button#resume_page_download_resume_button:hover {
 
 div.about_me_languages_outer_div {
   display: flex;
+  width: 100%;
 }
 
 div.about_me_languages_inner_div_icon {
+  margin: 0 auto;
+  width: 50%;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+div.about_me_languages_inner_div_icon img {
+  height: 35px;
+  margin-right: 0px;
   margin-left: auto;
-  margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 
-div.about_me_languages_inner_div_icon img {
-  height: 40px;
-  width: auto;
-  margin-right: 7.5px;
-
-}
-
-div.about_me_languages_inner_div_icon caption {
-  margin-left: 50px;
-}
-
 div.about_me_languages_inner_div_text {
   margin: 0 auto;
-  text-align: left;
-  margin-left: 20px;
+  width: 50%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div.about_me_languages_inner_div_text p {
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
@@ -1502,12 +1558,30 @@ p.connect_centered_li {
   text-align: center;
 }
 
-a.connect_functional_links {
+.target_methods_of_comm {
+  text-decoration: none;
+}
+
+.target_methods_of_comm a,
+.target_methods_of_comm p {
+  font-size: 12.5pt; */
+  padding: 5px;
+  text-decoration: none;
+}
+
+.target_methods_of_comm a:hover,
+.target_methods_of_comm p:hover {
+  text-decoration: none;
   color: black;
 }
 
-a.connect_functional_links:hover {
-  text-decoration: none;
+.blue_method_of_comm a,
+.blue_method_of_comm p {
+  color: #1D3B57;
+}
+
+.off_white_method_of_comm a,
+.off_white_method_of_comm p {
   color: black;
 }
 

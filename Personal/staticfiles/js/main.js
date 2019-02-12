@@ -70,6 +70,7 @@ $(document).ready(function(){
         var mountain = $("#vector_mountain_img")
         var target_header = $(".target_header")
         var target_hr = $(".target_hr")
+        var target_method_of_comm = $(".target_methods_of_comm")
 
         // Iterate through headers to locate which we want to trigger
         target_header.each(function(index, each_header){
@@ -80,6 +81,7 @@ $(document).ready(function(){
             }
         })
 
+        // Iterate through hrs
         target_hr.each(function(index, each_hr){
             if ($(each_hr).offset().top >= ($(mountain).offset().top + trigger_height)) {
                 $(each_hr).attr("class", "target_hr off_white_hr");
@@ -88,9 +90,23 @@ $(document).ready(function(){
             }
 
         })
+
+        // Iterate through methods of communication
+        target_method_of_comm.each(function(index, each_method){
+            if ($(each_method).offset().top >= ($(mountain).offset().top + trigger_height)) {
+                $(each_method).attr("class", "  target_methods_of_comm off_white_method_of_comm")
+            } else {
+                $(each_method).attr("class", "  target_methods_of_comm blue_method_of_comm") 
+            }
+        })
     }
 
     $(window).scroll(function(event){
         set_responsive_header_class()
     })
+
+    // Phone - connect_centered_li connect_functional_links target_methods_of_comm
+    // Email - connect_centered_li connect_functional_links target_methods_of_comm
+    // Contact Form - connect_centered_li connect_functional_links target_methods_of_comm
+
 })
