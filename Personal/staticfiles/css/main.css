@@ -33,7 +33,7 @@ body {
 
   div#left_window_border, 
   div#right_window_border {
-    height: 85%;
+    height: 87.5%;
   }
 
   div#left_window_border_box_shadow,
@@ -48,7 +48,7 @@ body {
 
   div#vector_mountain_div {
     height: 425px;
-    bottom: -195px;
+    bottom: -250px;
   }
 
   .target_header {

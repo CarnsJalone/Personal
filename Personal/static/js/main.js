@@ -30,7 +30,7 @@ $(document).ready(function(){
         var breakpoint_case = detect_breakpoint($(window).width())
         var trigger_height;
 
-        console.log("Breakpoint Case: " + breakpoint_case)
+        // console.log("Breakpoint Case: " + breakpoint_case)
 
         if (breakpoint_case == 1) {
             trigger_height = 50;
