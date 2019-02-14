@@ -145,8 +145,94 @@ $(document).ready(function(){
     var submit_button = $('#connect_page_form_submit_button');
 
     submit_button.click(function(event){
-        engage_loader();
+
+        var first_name_check = verify_first_name_field()
+        var last_name_check = verify_last_name_field()
+        var email_check = verify_email_field()
+        var body_check = verify_body_field()
+
+        var first_name = $("#connect_page_form_first_name");
+        var last_name = $("#connect_page_form_last_name");
+        var email = $("#connect_page_form_email");
+        var body = $("#connect_page_form_body");
+
+        if (first_name_check == true && last_name_check == true && email_check == true && body_check == true) {
+            engage_loader();
+        } else if (first_name_check == false) {
+            event.preventDefault()
+            first_name.attr({
+                class : "form-control input_issue",
+                placeholder : "You sure that's your first name?"
+                })
+        } else if (last_name_check == false) {
+            event.preventDefault()
+            last_name.attr({
+                class : "form-control input_issue",
+                placeholder : "You sure that's your last name?"
+                })
+        } else if (email_check == false) {
+            event.preventDefault()
+            if (email.val() != "") {
+                var incorrect_email_entry = email.val()
+                var temp_email_value = incorrect_email_entry
+                email.val("")
+                email.attr({
+                    class : "form-control input_issue",
+                    placeholder : `${temp_email_value} is a weird email...`
+                    })
+                
+            } else {
+                email.attr({
+                    class : "form-control input_issue",
+                    placeholder : "That's a strange looking email..."
+                    })
+            }
+        } else if (body_check == false) {
+            event.preventDefault()
+            body.attr({
+                class : "form-control input_issue",
+                placeholder : "Leave me something to go on!"
+                })
+        } else {
+            event.preventDefault();
+        }
+
     })
+
+    var first_name = $("#connect_page_form_first_name");
+    var last_name = $("#connect_page_form_last_name");
+    var email = $("#connect_page_form_email");
+    var body = $("#connect_page_form_body");
+
+    first_name.focus(function(event){
+        first_name.attr({
+            class : "form-control",
+            placeholder: ""
+        })
+    })
+
+    last_name.focus(function(event){
+        last_name.attr({
+            class : "form-control",
+            placeholder: ""
+        })
+    })
+
+    email.focus(function(event){
+        email.attr({
+            class : "form-control",
+            placeholder: ""
+        })
+    })
+
+    body.focus(function(event){
+        body.attr({
+            class : "form-control",
+            placeholder: ""
+        })
+    })
+    
+
 
     function engage_loader(){
         modal_with_opacity.attr('class', 'modal_background_engaged');
@@ -156,5 +242,64 @@ $(document).ready(function(){
         curtain_2.attr('class', 'modal_curtain_2_engaged');
     }
 
+    // Form Validation
+
+    function verify_email_field() {
+
+        var email_field = $("#connect_page_form_email")
+        var email_verification_regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|edu|mil|biz|info|int|mobi|mil|name|arpa|aero|jobs|museum)\b/;
+    
+        if (email_field.val() != "" && email_verification_regex.test(email_field.val())) {
+            return true;
+        } else {
+            return false
+        }
+    }
+
+    $("#connect_page_form_email").keypress(function(event){
+        $("#connect_page_form_email").css({"backgroundColor" : "#fff"})
+    })
+
+    function verify_first_name_field() {
+        var first_name_field = $("#connect_page_form_first_name");
+
+        if (first_name_field.val() != "") {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    $("#connect_page_form_first_name").keypress(function(event){
+        $("#connect_page_form_first_name").css({"backgroundColor" : "#fff"})
+    })
+
+    function verify_last_name_field() {
+        var last_name_field = $("#connect_page_form_last_name");
+
+        if (last_name_field.val() != "") {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    $("#connect_page_form_last_name").keypress(function(event){
+        $("#connect_page_form_last_name").css({"backgroundColor" : "#fff"})
+    })
+
+    function verify_body_field() {
+        var body_field = $("#connect_page_form_body");
+
+        if (body_field.val() != "") {
+            return true 
+        } else {
+            return false
+        }
+    }
+
+    $("#connect_page_form_body").keypress(function(event){
+        $("#connect_page_form_body").css({"backgroundColor" : "#fff"})
+    })
 
 })

@@ -52,11 +52,11 @@ body {
   }
 
   .target_header {
-    width: 95%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 95%;
+    width: 100%;
   }
 
   /* Home Page */
@@ -188,11 +188,11 @@ body {
   }
 
   .target_header {
-    width: 90%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 90%;
+    width: 100%;
   }
 
   /* Home Page */
@@ -337,11 +337,11 @@ body {
   }
 
   .target_header {
-    width: 85%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 85%;
+    width: 100%;
   }
 
   /* Home Page */
@@ -495,11 +495,11 @@ body {
   }
 
   .target_header {
-    width: 80%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 80%
+    width: 100%
   }
 
   /* Home Page */
@@ -648,11 +648,11 @@ body {
   }
 
   .target_header {
-    width: 75%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 75%
+    width: 100%
   }
 
   /* Home Page */
@@ -802,11 +802,11 @@ body {
   }
 
   .target_header {
-    width: 75%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 75%
+    width: 100%
   }
 
   /* Home Page */
@@ -965,11 +965,11 @@ body {
   }
 
   .target_header {
-    width: 75%;
+    width: 100%;
   }
 
   .target_hr {
-    width: 75%
+    width: 100%
   }
 
   /* Home Page */
@@ -1509,7 +1509,7 @@ div#connect_page_form_div input[type="email"],
 div#connect_page_form_div textarea {
   margin-top: 2.5px;
   margin-bottom: 2.5px;
-  color: #6e73ab;
+  color: #1D3B57 !important;
 }
 
 div#connect_page_form_div label {
@@ -1585,6 +1585,19 @@ p.connect_centered_li {
   color: black;
 }
 
+input[name="first_name"].input_issue,
+input[name="last_name"].input_issue,
+input[name="email"].input_issue,
+textarea[name="body"].input_issue {
+  background-color: red !important;
+}
+
+input[name="first_name"].input_issue::placeholder,
+input[name="last_name"].input_issue::placeholder,
+input[name="email"].input_issue::placeholder,
+textarea[name="body"].input_issue::placeholder {
+  color: white !important;
+}
 
 /* Connect Page - Communication Method Animations */
 
