@@ -14,14 +14,20 @@ class Employment_Calculator():
         # Locate additional, necessary directories, probably not needed within class
         self.home_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         self.employment_calculator_dir = os.path.dirname(os.path.abspath(__file__))
+        self.BASE_DIR = os.path.dirname(self.home_dir)
+        self.TXT_DIR = os.path.join(self.BASE_DIR, 'static/txt')
+        
         self.logging_dir = os.path.join(self.home_dir, 'Logging')
-        self.logger_txt_file = os.path.join(self.logging_dir, 'logger.txt')
+        self.logger_txt_file = os.path.join(self.TXT_DIR, 'logger.txt')
+
+        # Append Home directory
+        sys.path.append(self.home_dir) 
+        sys.path.append(self.TXT_DIR)
 
         # Create logging file
         logging.basicConfig(filename=self.logger_txt_file, level=logging.DEBUG)
 
-        # Append Home directory
-        sys.path.append(self.home_dir)  
+         
 
     # Get rid of the contents of the file before writing to it. 
     def write_logging_header(self):

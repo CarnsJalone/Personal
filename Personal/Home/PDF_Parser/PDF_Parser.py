@@ -9,11 +9,13 @@ now = datetime.datetime.now()
 now = str(now)
 
 HOME_DIR = path.dirname(path.dirname(path.abspath(__file__)))
+BASE_DIR = path.dirname(HOME_DIR)
+TXT_DIR = path.join(BASE_DIR, 'static/txt')
 LOGGING_DIR = path.join(HOME_DIR, 'Logging')
 
 sys.path.append(LOGGING_DIR)
 
-PDF_PARSER_LOG_FILE = path.join(LOGGING_DIR, 'logger.txt')
+PDF_PARSER_LOG_FILE = path.join(TXT_DIR, 'logger.txt')
 
 logging.basicConfig(filename=PDF_PARSER_LOG_FILE, level=logging.DEBUG)
 

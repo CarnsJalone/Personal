@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import re
+import logging
 
 # Add additional directories for imports
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -23,6 +24,7 @@ personal_directory = os.path.dirname(current_directory)
 static_files_directory = os.path.join(personal_directory, 'static')
 static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
 resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
+logger = os.path.join(static_files_directory, 'txt/logger.txt')
 
 # Directories for Employment Calculator
 employment_calculator_dir = os.path.join(current_directory, 'Employment_Calculator')
@@ -55,6 +57,8 @@ from . random_name_generator import Generator
 from PDF_Parser import PDF_Handler, TextHandler
 from Employment_Calculator import Employment_Calculator
 from Personal import settings
+
+logging.basicConfig(filename=logger, level=logging.DEBUG)
 
 def home(request):
 

@@ -10,14 +10,18 @@ from email.mime.multipart import MIMEMultipart
 
 now = datetime.datetime.now()
 
-logging.basicConfig(filename='logger.txt', level=logging.DEBUG)
-
 # Link directories to read in credentials
 LOGGING_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(LOGGING_DIR))
 PERSONAL_DIR = os.path.join(BASE_DIR, 'Personal')
+TXT_DIR = os.path.join(BASE_DIR, 'static/txt')
 
 sys.path.append(PERSONAL_DIR)
+sys.path.append(TXT_DIR)
+
+text_file_location = os.path.join(TXT_DIR, 'logger.txt')
+
+logging.basicConfig(filename=text_file_location, level=logging.DEBUG)
 
 # TODO - Add this to a configuration file somewhere, probably JSON
 from settings import EMAIL_HOST, EMAIL_HOST_PASSWORD, EMAIL_HOST_USER, EMAIL_PORT, EMAIL_USE_SSL, EMAIL_USE_TLS
@@ -31,7 +35,7 @@ def format_header():
 
 def send_daily_logs():
     # Grab Log File
-    logging_file = open('logger.txt', 'r', encoding='utf-8')
+    logging_file = open(text_file_location, 'r', encoding='utf-8')
 
     # Create a new string
     temp_file = ''
@@ -57,7 +61,7 @@ def send_daily_logs():
         # Attach message as plain text
         msg.attach(MIMEText(temp_file, 'plain'))
 
-        attached_logs = open('logger.txt', 'rb')
+        attached_logs = open(text_file_location, 'rb')
         filename = formatted_header
 
         attachment = MIMEBase('application', 'octet-stream')
