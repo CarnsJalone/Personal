@@ -25,6 +25,7 @@ static_files_directory = os.path.join(personal_directory, 'static')
 static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
 resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
 logger = os.path.join(static_files_directory, 'txt/logger.txt')
+JSON_DIR = os.path.join(static_files_directory, 'json')
 
 # Directories for Employment Calculator
 employment_calculator_dir = os.path.join(current_directory, 'Employment_Calculator')
@@ -39,6 +40,7 @@ sys.path.append(converted_files_directory)
 sys.path.append(static_files_directory)
 sys.path.append(static_pdf_file_directory)
 sys.path.append(employment_calculator_dir)
+sys.path.append(JSON_DIR)
 
 # Django Imports
 from django.shortcuts import render, redirect, render_to_response
@@ -98,61 +100,66 @@ def download_resume(request):
         return response
 
 def connect(request):
+
+    path_to_json_file = os.path.join(JSON_DIR, 'input_error.json')
+
+    with open(path_to_json_file) as json_data:
+        input_error_json = json.loads(json_data.read())
     
-    if request.method == 'POST':
+        if request.method == 'POST':
 
-        first_name = None
-        last_name = None
-        email = None
-        body = None
+            first_name = None
+            last_name = None
+            email = None
+            body = None
 
-        form = ConnectForm(request.POST)
+            form = ConnectForm(request.POST)
 
-        if form.is_valid():
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            email = form.cleaned_data['email']
-            body = form.cleaned_data['body']
+            if form.is_valid():
+                first_name = form.cleaned_data['first_name']
+                last_name = form.cleaned_data['last_name']
+                email = form.cleaned_data['email']
+                body = form.cleaned_data['body']
 
-            form.save()
+                form.save()
 
-            form_variables = {
-                'first_name' : first_name, 
-                'last_name' : last_name, 
-                'email' : email, 
-                'body' : body,
-                }
+                form_variables = {
+                    'first_name' : first_name, 
+                    'last_name' : last_name, 
+                    'email' : email, 
+                    'body' : body,
+                    }
 
-            # Email Preferences
-            connect_response_email_to_submitter = render_to_string('email/connect_response.html', form_variables)
+                # Email Preferences
+                connect_response_email_to_submitter = render_to_string('email/connect_response.html', form_variables)
 
-            personal_email = settings.EMAIL_HOST_USER
+                personal_email = settings.EMAIL_HOST_USER
 
-            # Send email to the submitter
-            submitter_email_subject = '*Ding Ding*'
-            submitter_text_argument = 'For some reason a text file was submitted. Uh oh.'
+                # Send email to the submitter
+                submitter_email_subject = '*Ding Ding*'
+                submitter_text_argument = 'For some reason a text file was submitted. Uh oh.'
 
-            send_mail(
-                submitter_email_subject,
-                submitter_text_argument,
-                personal_email,
-                [email],
-                html_message=connect_response_email_to_submitter,
-                fail_silently=False
-            )
+                send_mail(
+                    submitter_email_subject,
+                    submitter_text_argument,
+                    personal_email,
+                    [email],
+                    html_message=connect_response_email_to_submitter,
+                    fail_silently=False
+                )
 
 
-            return render(request, 'thank_you.html', {'form_variables' : form_variables, 'navbar' : 'connect'})
-        
-        else:
+                return render(request, 'thank_you.html', {'form_variables' : form_variables, 'navbar' : 'connect', 'input_error_json' : input_error_json})
+            
+            else:
+                form = ConnectForm()
+                return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect', 'input_error_json' : input_error_json})
+        else: 
             form = ConnectForm()
-            return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect'})
-    else: 
-        form = ConnectForm()
-        return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect'})
+            return render(request, 'connect.html', {'form' : form, 'navbar' : 'connect', 'input_error_json' : input_error_json})
 
 
-    return render(request, 'connect.html', {'form':form, 'navbar' : 'connect'})
+        return render(request, 'connect.html', {'form':form, 'navbar' : 'connect', 'input_error_json' : input_error_json})
 
 def projects(request):
     return render(request, 'project_home_page.html', {'navbar' : 'projects'})

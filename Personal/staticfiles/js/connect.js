@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    // Read In Django Variable JSON from HTML
+    var json_data = window.json_data    
+
     // Phone Animation
 
     var phone_span = $('#connect_by_phone_span');
@@ -160,38 +163,53 @@ $(document).ready(function(){
             engage_loader();
         } else if (first_name_check == false) {
             event.preventDefault()
+            var potentially_invalid_first_name_no_response = json_data.Data[0]["potentially_invalid_first_name_no_response"]
+            var random_choice = Math.floor(Math.random() * potentially_invalid_first_name_no_response.length)
+            var random_response = potentially_invalid_first_name_no_response[random_choice][random_choice.toString()]
             first_name.attr({
                 class : "form-control input_issue",
-                placeholder : "You sure that's your first name?"
+                placeholder : random_response
                 })
         } else if (last_name_check == false) {
             event.preventDefault()
+            var potentially_invalid_last_name_no_response = json_data.Data[0]["potentially_invalid_last_name_no_response"]
+            var random_choice = Math.floor(Math.random() * potentially_invalid_last_name_no_response.length)
+            var random_response = potentially_invalid_last_name_no_response[random_choice][random_choice.toString()]
             last_name.attr({
                 class : "form-control input_issue",
-                placeholder : "You sure that's your last name?"
+                placeholder : random_response
                 })
         } else if (email_check == false) {
             event.preventDefault()
             if (email.val() != "") {
+                var potentially_invalid_email_incorrect_response = json_data.Data[0]["potentially_invalid_email_incorrect_response"]
+                var random_choice = Math.floor(Math.random() * potentially_invalid_email_incorrect_response.length)
+                var random_response = potentially_invalid_email_incorrect_response[random_choice][random_choice.toString()]
                 var incorrect_email_entry = email.val()
                 var temp_email_value = incorrect_email_entry
                 email.val("")
                 email.attr({
                     class : "form-control input_issue",
-                    placeholder : `${temp_email_value} is a weird email...`
+                    placeholder : temp_email_value + random_response
                     })
                 
             } else {
+                var potentially_invalid_email_no_response = json_data.Data[0]["potentially_invalid_email_no_response"]
+                var random_choice = Math.floor(Math.random() * potentially_invalid_email_no_response.length)
+                var random_response = potentially_invalid_email_no_response[random_choice][random_choice.toString()]
                 email.attr({
                     class : "form-control input_issue",
-                    placeholder : "That's a strange looking email..."
+                    placeholder : random_response
                     })
             }
         } else if (body_check == false) {
             event.preventDefault()
+            var potentially_invalid_body_no_response = json_data.Data[0]["potentially_invalid_body_no_response"]
+            var random_choice = Math.floor(Math.random() * potentially_invalid_body_no_response.length)
+            var random_response = potentially_invalid_body_no_response[random_choice][random_choice.toString()]
             body.attr({
                 class : "form-control input_issue",
-                placeholder : "Leave me something to go on!"
+                placeholder : random_response
                 })
         } else {
             event.preventDefault();
