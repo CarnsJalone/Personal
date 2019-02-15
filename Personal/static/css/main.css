@@ -1687,10 +1687,10 @@ i#connect_by_contact_form_i {
 
 @keyframes contactformanimation {
   0% {}
-  25% {transform: rotate(45deg);}
-  50% {transform: rotate(90deg);}
-  75% {transform: rotate(135deg);}
-  100% {transform: rotate(180deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
 }
 
 /* Connect Page - Form Loader */
@@ -1959,6 +1959,35 @@ a.project_home_project_description_links:active {
 a#random_word_generator_link p {
   margin: 0px;
 }
+
+div#view_projects_or_code {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+div#view_projects_or_code p {
+  text-align: center;
+}
+
+div#view_code {
+  flex-direction: column;
+}
+
+div#view_code img {
+  width: 35px;
+}
+
+div#view_code img:hover {
+  animation: rotate_icon 1s linear 0s 1 reverse;
+
+}
+
+@keyframes rotate_icon {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
 
 /* Page Headers */
 
