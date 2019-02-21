@@ -132,7 +132,9 @@ $(document).ready(function(){
         contact_form_p.attr('class', 'connect_centered_li');
     }
 
-    var input_field_position = first_name_field.position();
+    var input_field_position = f
+    +9*
+    irst_name_field.position();
 
     contact_form_p.click(function(event){
         scroll(0, input_field_position.top);

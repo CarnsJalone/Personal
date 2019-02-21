@@ -117,6 +117,7 @@ body {
 
   img.project_home_project_thumbnail_img {
     width: 100%;
+    height: 50px;
   }
 
   /* Content Display Page */
@@ -1564,7 +1565,7 @@ p.connect_centered_li {
 
 .target_methods_of_comm a,
 .target_methods_of_comm p {
-  font-size: 12.5pt; */
+  font-size: 12.5pt;
   padding: 5px;
   text-decoration: none;
 }
@@ -1917,12 +1918,9 @@ div#thank_you_page_inner_container_1 {
   text-align: center;
 }
 
-div#thank_you_page_inner_container_2 {}
 
 
 /* Projects Home Page */
-
-div#project_home_main_div {}
 
 div.project_home_section {
   display: flex;
@@ -1991,15 +1989,12 @@ div#view_code img:hover {
 
 /* Page Headers */
 
-div.page_header_text {}
-
 div.page_header_container h3 {
   padding: 0px;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
 }
-
 
 /* Random Word Generator Page */
 
@@ -2074,10 +2069,6 @@ div#pdf_parser_file_upload_form_container {
   border-radius: .375rem;
 }
 
-div#pdf_parser_file_upload_form_form {}
-
-div#pdf_parser_file_upload_form_submit_button {}
-
 input#pdf_parser_file_upload_form_title,
 input#pdf_parser_file_upload_form_file_upload {
   padding: 3px;
@@ -2133,9 +2124,6 @@ div#display_contents_uploaded_data_container pre {
   height: 75vh;
   width: 100%;
   /* overflow: scroll; */
-}
-
-div#display_contents_uploaded_data_container p {
 }
 
 div#display_contents_uploaded_data_search_bar_container {
@@ -2312,6 +2300,70 @@ div.error_page_background_circle_container::before {
 
 .test_1 {
   color: white;
+}
+
+/* Projects - Reaction Test */
+
+div#reaction_time_introductory_outer_div {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  text-align: center;
+}
+
+div#main_canvas_div {
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+canvas#canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #1D3B57;
+  border-radius: .25em;
+}
+
+.hidden {
+  position: absolute;
+  left: 999;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+img#my_face_left {
+  height: 25px;
+  width: 25px;
+}
+
+div#reaction_time_display_outer_div {
+  width: 75%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+button#reaction_time_start_button {
+  background-color: #4c8872;
+  color: #C5E1CB;
+  border: 1px solid #C5E1CB;
+}
+
+button#reaction_time_start_button:hover {
+  border: 1px solid #000; 
+  background-color: #C5E1CB;
+  color: #000;
 }
 
 

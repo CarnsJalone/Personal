@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+
+{% load static %}
+
+{% block reaction_time_test %}
+
+    <div class="hidden" id="main_canvas_div">
+
+        <canvas id="canvas">
+        </canvas>
+
+    </div>
+
+    <img id="my_face_left" class="hidden" src="{% static 'png/living_life_after.png' %}" alt="My Face Left">
+    <img id="my_face_right" class="hidden" src="{% static 'png/living_life_before.png' %}" alt="My Face Right">
+
+    <div class="visible standard_size" id="reaction_time_introductory_outer_div">
+        <div id="reaction_time_introductory_inner_div">
+            <p>Here's a fun little game I created. It tests your reaction time!</p>
+
+            <p>Click on the button below to begin!</p>
+
+            <button class="btn" id="reaction_time_start_button" type="submit">Reaction Test</button>
+        </div>
+    </div>
+
+    <div id="reaction_time_display_outer_div" class="standard_size">
+        <div class="hidden" id="reaction_time_display_results_container">
+
+            <p id="reaction_time_display_results_p">Nice job on the test! Your average 
+            reaction time was <strong><span id="reaction_time_avg_score"></span> milliseconds</strong>.</p> 
+            <br>
+            <div id="reaction_time_data_div">
+
+                <strong><p>Statistically Speaking...<p></strong>
+                <br>
+                <span id="reaction_time_data_span"></span>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var reaction_times = {{ reaction_times | safe }}
+    </script>
+
+
+{% endblock %}
+
+{% block reaction_time_test_script %}
+    <script src="{% static 'js/reaction_time/reaction_time_objects.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/reaction_time/reaction_time_main.js' %}" type="text/javascript"></script>
+{% endblock %}

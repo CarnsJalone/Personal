@@ -25,6 +25,7 @@ urlpatterns = [
     path('projects/random_name_generator', views.random_name_generator, name="random_name_generator"),
     path('projects/upload_pdf', views.upload_pdf, name="upload_pdf"), 
     path('projects/display_content', views.display_content, name="display_content"),
+    path('projects/reaction_time_test', views.reaction_time_test, name="reaction_time_test"),
     path('test/500', views.test_500, name="500_test"),
 ]
 

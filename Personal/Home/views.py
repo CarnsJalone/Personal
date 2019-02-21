@@ -280,6 +280,23 @@ def display_content(request):
 
     return render(request, 'display_content.html', rendered_variables)
 
+
+
+def reaction_time_test(request):
+
+    path_to_json_file = os.path.join(JSON_DIR, 'reaction_time_percentile.json')
+
+    with open(path_to_json_file) as json_data:
+        reaction_time_json = json.loads(json_data.read())
+
+        rendered_variables = {
+            'reaction_times' : reaction_time_json, 
+            'navbar' : 'projects'
+        }
+
+        return render(request, 'reaction_time_test.html', rendered_variables)
+
+
 # Create error views
 
 def test_500(request):
