@@ -25,7 +25,8 @@ class Employment_Calculator():
         sys.path.append(self.TXT_DIR)
 
         # Create logging file
-        logging.basicConfig(filename=self.logger_txt_file, level=logging.DEBUG)
+        logging.basicConfig(level=logging.DEBUG, filename=self.logger_txt_file, format='%(asctime)s\n %(levelname)s %(message)s',datefmt='%H:%M:%S') 
+        # logging.basicConfig(filename=self.logger_txt_file, level=logging.DEBUG)
 
          
 
@@ -33,7 +34,7 @@ class Employment_Calculator():
     def write_logging_header(self):
 
         logging_file = open(self.logger_txt_file, 'a')
-        logging_file.write('\n------Employment Calculator Logging Begun at ' + now + '-----\n\n')
+        logging_file.write('\n------Employment Calculator Logging Begun at ' + now + '-----\n')
         logging_file.close()
 
     def get_date_time_object(self):
@@ -115,5 +116,5 @@ class Employment_Calculator():
     def write_logging_footer(self):
 
         logging_file = open(self.logger_txt_file, 'a')
-        logging_file.write('\n-----Employment Calculator Logging Completed at ' + now + '-----\n')
+        logging_file.write('-----Employment Calculator Logging Completed at ' + now + '-----\n\n')
         logging_file.close()

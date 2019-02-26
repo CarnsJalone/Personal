@@ -11,9 +11,8 @@ now = str(now)
 HOME_DIR = path.dirname(path.dirname(path.abspath(__file__)))
 BASE_DIR = path.dirname(HOME_DIR)
 TXT_DIR = path.join(BASE_DIR, 'static/txt')
-LOGGING_DIR = path.join(HOME_DIR, 'Logging')
 
-sys.path.append(LOGGING_DIR)
+sys.path.append(TXT_DIR)
 
 PDF_PARSER_LOG_FILE = path.join(TXT_DIR, 'logger.txt')
 
@@ -33,7 +32,7 @@ class PDF_Handler():
     def write_logging_header(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\n-----PDF Parser Logging Begun at ' + now + '-----\n\n')
+        logging_file.write('\n-----PDF Parser Logging Begun at ' + now + '-----')
         logging_file.close()
 
     def check_and_create_folders(self):
@@ -209,7 +208,7 @@ class PDF_Handler():
     def write_logging_footer(self):
 
         logging_file = open(PDF_PARSER_LOG_FILE, 'a')
-        logging_file.write('\n-----PDF Parser Logging Completed at ' + now + '-----\n\n')
+        logging_file.write('-----PDF Parser Logging Completed at ' + now + '-----\n\n')
         logging_file.close()
 
 class TextHandler():

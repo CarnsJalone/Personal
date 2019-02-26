@@ -17,11 +17,13 @@ import logging
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOGGING_DIR = os.path.join(BASE_DIR, 'Home/Logging')
+TXT_DIR = os.path.join(BASE_DIR, 'static/txt')
+TEXT_FILE = os.path.join(TXT_DIR, 'logger.txt')
 
-sys.path.append(LOGGING_DIR)
 
-logging.basicConfig(filename=os.path.join(LOGGING_DIR, 'logger.txt'), level=logging.DEBUG)
+sys.path.append(TXT_DIR)
+
+logging.basicConfig(filename=TEXT_FILE, level=logging.DEBUG)
 
 
 # Quick-start development settings - unsuitable for production
@@ -102,6 +104,25 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': TEXT_FILE,
+#         },
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['file'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }
 
 
 # Password validation
