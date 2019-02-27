@@ -83,7 +83,7 @@ def send_daily_logs():
 
         # Send the email
         server.sendmail(EMAIL_HOST_USER, recipient, body)
-        logging.info('\nEmail Sent To {} at {}'.format(recipient, now))
+        logging.info('\nEmail Sent To {} at {}\n'.format(recipient, now))
         server.quit()
 
         # Close Files
