@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block linkedin_bot %}
+
+    <div class="standard_size" id="linkedin_bot_outer_div">
+
+        <div id="linkedin_bot_inner_div">
+
+            <br>
+
+            <h2>LinkedIn Bot</h2>
+
+            <br>
+
+            <p><strong>*DISCLAIMER*</strong> - I want to preemptively state very emphatically that I respect the 
+            privacy policy afforded by LinkedIn. In no way did I intend on desecrating that privacy policy 
+            by creating this web scraper. All information compiled from the LinkedIn Bot was acquired through 
+            public forum, with information that is readily available to anyone with a basic LinkedIn account. 
+            This was all done so for the purpose of a "proof of concept" for my learning purposes. 
+            I also failed to add blur to people displayed in the subsequent videos. For that I am sorry, 
+            I tried to add a mosaic to block out information but I was unsuccessful.</p>
+
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <h5>.discover_new_people()</h5>
+
+            <br>
+
+            <p>In the first clip, my python Linkin Bot class is instantiated and executes it's first method,
+            which, discovers new people. Here, it scrapes the suggested people's profile information from the network tab of LinkedIn. 
+            All this information is set into a local database that is further parsed into smaller chunks.</p>
+
+            <br>
+
+            <iframe class="linkedin_bot_video" src="https://www.youtube.com/embed/EfIMv5enj3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <h5>.gather_data()</h5>
+
+            <br>
+
+            <p>In this second clip, my bot takes the information it acquired in the above video and goes out in search 
+            of more personalized information. Here it simply visits the urls acquired from the initial scrape, gets the 
+            job description from the candidate's URL and then cleans up some of the other info that was very brief in the 
+            Discover New People tab.</p>
+
+            <br>
+
+            <iframe class="linkedin_bot_video" src="https://www.youtube.com/embed/qu85K-8kd14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <h5>.update_matches()</h5>
+
+            <br>
+
+            <p>In this third clip, the a text file with target search terminology is read into the LinkedIn_Bot class. Here, 
+            it compares the Job Descriptions acquired from the above method against the search terms and flags certain individuals 
+            as being 'Potential Candidates' in my job search.</p>
+
+            <br>
+
+            <iframe class="linkedin_bot_video" src="https://www.youtube.com/embed/yvfbeGsdAV0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <h5>.add_candidates()</h5>
+
+            <br>
+
+            <p>In this last clip, I once more reach into my database to pull out the potential candidates who's job description matches 
+            my search terminology listed above. It shuffles the list, then goes back out to add each candidate iteratively.</p>
+
+            <br>
+
+            <iframe class="linkedin_bot_video" src="https://www.youtube.com/embed/3vZcA4gRxAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <br>
+            <br>
+            <hr class="target_hr">
+            <br>
+
+            <h5>.message_candidates()</h5>
+
+            <br>
+
+            <p>In the LinkedIn bot, there is another method that returns to the candidates that were added and flagged as so. It has a predefined message 
+            that says something to the degree of "Hey I'm Jarret, looking to extend my network, etc..." but I'm not going to include that. I am very 
+            respectful of the LinkedIn privacy policy and I felt as though doing so did violate those terms so I chose not to implement that method here.</p>
+
+        </div>
+
+        <div class="return_link_container">
+            <a class="project_home_project_description_links" href="{% url 'projects_home_page' %}"><p>Back To Projects Home</p></a>
+        </div>
+
+    </div>
+
+
+{% endblock %}
+
+{% block linkedin_bot_script %}
+<script src="{% static 'js/linkedin_bot.js' %}" type="text/javascript"></script>
+{% endblock %}

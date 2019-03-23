@@ -40,10 +40,22 @@
 
      <div class="project_home_section">
         <div class="project_home_project_description_div">
-            <a class="project_home_project_description_links" id="upload_pdf_link" href="{% url 'reaction_time_test' %}"><p>Reaction Test</p></a>
+            <a class="project_home_project_description_links" id="reaction_time_test_link" href="{% url 'reaction_time_test' %}"><p>Reaction Test</p></a>
         </div>
         <div class="project_home_project_thumbnail_div">
-            <img class="project_home_project_thumbnail_img" src="{% static 'gif/Reaction_Time.gif' %}" alt="Reaction Time Test Thumbnail">
+            <img class="project_home_project_thumbnail_img" id="reaction_time_test_img" src="{% static 'gif/Reaction_Time.gif' %}" alt="Reaction Time Test Thumbnail">
+        </div>
+
+    </div>
+
+    <hr class="target_header">
+
+     <div class="project_home_section">
+        <div class="project_home_project_description_div">
+            <a class="project_home_project_description_links" id="linkedin_bot_link" href="{% url 'linkedin_bot' %}"><p>LinkedIn Bot</p></a>
+        </div>
+        <div class="project_home_project_thumbnail_div">
+            <img class="project_home_project_thumbnail_img" id="LinkedIn_Bot_gif" src="{% static 'gif/LinkedIn_Bot_Cropped.gif' %}" alt="Reaction Time Test Thumbnail">
         </div>
 
     </div>

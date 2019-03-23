@@ -26,6 +26,7 @@ static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
 resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
 logger = os.path.join(static_files_directory, 'txt/logger.txt')
 JSON_DIR = os.path.join(static_files_directory, 'json')
+MP4_DIR = os.path.join(static_files_directory, "mp4")
 
 # Directories for Employment Calculator
 employment_calculator_dir = os.path.join(current_directory, 'Employment_Calculator')
@@ -41,6 +42,7 @@ sys.path.append(static_files_directory)
 sys.path.append(static_pdf_file_directory)
 sys.path.append(employment_calculator_dir)
 sys.path.append(JSON_DIR)
+sys.path.append(MP4_DIR)
 
 # Django Imports
 from django.shortcuts import render, redirect, render_to_response
@@ -295,6 +297,14 @@ def reaction_time_test(request):
         }
 
         return render(request, 'reaction_time_test.html', rendered_variables)
+
+def linkedin_bot(request):
+
+    rendered_variables = {
+        'navbar' : 'projects'
+    }
+
+    return render(request, 'linkedin_bot.html', rendered_variables)
 
 
 # Create error views

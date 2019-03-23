@@ -26,6 +26,7 @@ urlpatterns = [
     path('projects/upload_pdf', views.upload_pdf, name="upload_pdf"), 
     path('projects/display_content', views.display_content, name="display_content"),
     path('projects/reaction_time_test', views.reaction_time_test, name="reaction_time_test"),
+    path('projects/linkedin_bot', views.linkedin_bot, name="linkedin_bot"),
     path('test/500', views.test_500, name="500_test"),
 ]
 

@@ -136,6 +136,11 @@ body {
     top: 57.5%;
   }
 
+  iframe.linkedin_bot_video {
+    width: 95%;
+  }
+
+
   /* Error Pages */
 
   /* 500 Error */
@@ -289,6 +294,11 @@ body {
   div#main_canvas_div {
     top: 57.5%;
   }
+
+  iframe.linkedin_bot_video {
+    width: 90%;
+  }
+
 
   /* Error Pages */
 
@@ -451,6 +461,11 @@ body {
     top: 57.5%;
   }
 
+  iframe.linkedin_bot_video {
+    width: 85%;
+  }
+
+
   /* Error Pages */
 
   /* 500 Error */
@@ -608,6 +623,12 @@ body {
 
   div#main_canvas_div {
     top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 80%;
   }
 
   /* Error Pages */
@@ -769,6 +790,12 @@ body {
     top: 50%;
   }
 
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 75%;
+  }
+
 
   /* Error Pages */
 
@@ -925,10 +952,15 @@ body {
 
  /* Reaction Time Page */
 
- div#main_canvas_div {
-  top: 50%;
-}
+  div#main_canvas_div {
+    top: 50%;
+  }
 
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 70%;
+  }
 
   /* Sizes  */
 
@@ -1097,6 +1129,12 @@ body {
 
   div#main_canvas_div {
     top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 65%;
   }
   
 
@@ -2031,6 +2069,16 @@ div#view_code img:hover {
   100% { transform: rotate(0deg); }
 }
 
+img#reaction_time_test_img {
+  width: 50%;
+  height: auto;
+}
+
+img#LinkedIn_Bot_gif {
+  height: 80%;
+  width: auto;
+}
+
 
 /* Page Headers */
 
@@ -2184,6 +2232,22 @@ input#display_contents_uploaded_data_search_bar_input {
 
 span#immediate_search_terms {
   background-color: #6e73ab;
+}
+
+/* LinkedIn Bot Page */
+
+div#linkedin_bot_inner_div {
+  text-align: center;
+}
+
+/* iframe.linkedin_bot_video {
+  width: 50%;
+  height: 500px;
+} */
+
+div#linkedin_bot_outer_div {
+  /* margin: 0 auto; */
+  text-align: center;
 }
 
 /* Return Links */

@@ -20,25 +20,38 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TXT_DIR = os.path.join(BASE_DIR, 'static/txt')
 TEXT_FILE = os.path.join(TXT_DIR, 'logger.txt')
 
-
 sys.path.append(TXT_DIR)
 
 logging.basicConfig(filename=TEXT_FILE, level=logging.DEBUG)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # Function to read in credentials, this determines if we are on our local server
 # Or deployed
-if os.path.isfile('/home/jarret/Documents/Python/Credentials/Personal/credentials.json'):
-    with open('/home/jarret/Documents/Python/Credentials/Personal/credentials.json') as credentials:
-        data = json.loads(credentials.read())
-elif os.path.isfile('/opt/Credentials/Personal/credentials.json'):
-    with open('/opt/Credentials/Personal/credentials.json') as credentials:
-        data = json.loads(credentials.read())
+OS = sys.platform
+
+if OS == "linux":
+    if os.path.isfile('/home/jarret/Documents/Python/Credentials/Personal/credentials.json'):
+        with open('/home/jarret/Documents/Python/Credentials/Personal/credentials.json') as credentials:
+            temp_data = json.loads(credentials.read())
+            data = temp_data
+    elif os.path.isfile('/opt/Credentials/Personal/credentials.json'):
+        with open('/opt/Credentials/Personal/credentials.json') as credentials:
+            temp_data = json.loads(credentials.read())
+            data = temp_data
+    else:
+        logging.critical("Unable to read in necessary credentials, unable to proceed...")
+
+elif OS == "win32":
+    if os.path.isfile(r'D:\Programming\Projects\Personal\Credentials\credentials.json'):
+        with open(r'D:\Programming\Projects\Personal\Credentials\credentials.json') as credentials:
+            data = json.loads(credentials.read())
+    else:
+        logging.critical("Unable to read in necessary credentials, unable to proceed...")
+
 else:
-    logging.critical("Unable to read in necessary credentials, unable to proceed...")
+    print("Unable to determine current operating system...")
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -46,7 +59,7 @@ else:
 SECRET_KEY = data["Personal_Credentials"][0]["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['206.81.4.37', '127.0.0.1', 'localhost', 'carnsjalone.com', 'www.carnsjalone.com']
 
