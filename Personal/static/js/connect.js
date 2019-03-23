@@ -132,9 +132,7 @@ $(document).ready(function(){
         contact_form_p.attr('class', 'connect_centered_li');
     }
 
-    var input_field_position = f
-    +9*
-    irst_name_field.position();
+    var input_field_position = first_name_field.position();
 
     contact_form_p.click(function(event){
         scroll(0, input_field_position.top);
@@ -148,6 +146,7 @@ $(document).ready(function(){
     var curtain_1 = $('#connect_mj_curtain_1');
     var curtain_2 = $('#connect_mj_curtain_2');
     var submit_button = $('#connect_page_form_submit_button');
+    console.log(submit_button)
 
     submit_button.click(function(event){
 
@@ -251,8 +250,6 @@ $(document).ready(function(){
             placeholder: ""
         })
     })
-    
-
 
     function engage_loader(){
         modal_with_opacity.attr('class', 'modal_background_engaged');
