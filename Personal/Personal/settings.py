@@ -59,7 +59,7 @@ else:
 SECRET_KEY = data["Personal_Credentials"][0]["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['206.81.4.37', '127.0.0.1', 'localhost', 'carnsjalone.com', 'www.carnsjalone.com']
 
