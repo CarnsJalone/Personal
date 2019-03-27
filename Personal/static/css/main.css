@@ -1414,6 +1414,101 @@ img#home_me_living_life_img {
   transition: .5s;
 }
 
+div.active_animation {
+  animation-name: flight_intro;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+}
+
+@keyframes flight_intro {
+  0% {}
+  5% {
+    top: 10%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    top: -10%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
+  }
+  15% {
+    top: -30%;
+    left: 50%;
+    transform: rotate(0deg);
+    transform: translate(-50%, -50%);
+  }
+  20% {
+    top: -30%;
+    left: 25%;
+    transform: rotate(-180deg);
+
+  }
+  25% {
+    left: 25%;
+    top: -10%;
+    transform: rotate(-180deg);
+  }
+  30% {
+    left: 25%;
+    top: 15%;
+    transform: rotate(-180deg);
+  }
+  35% {
+    left: 30%;
+    top: 30%;
+    transform: rotate(-202.5deg);
+  }
+  37.5% {
+    left: 35%;
+    top: 45%;
+    transform: rotate(-225deg);
+  }
+  40% {
+    left: 45%;
+    top: 60%;
+    transform: rotate(-236.25deg);
+  }
+  42.5% {
+    left: 55%;
+    top: 65%;
+    transform: rotate(-247.5deg);
+  }
+  45% {
+    left: 75%;
+    top: 70%;
+    transform: rotate(-258.75deg);
+  }
+  47.5% {
+    left: 105%;
+    top: 75%;
+    transform: rotate(-258.75deg);
+  }
+  50% {
+    left: 125%;
+    top: 80%;
+    transform: rotate(-270deg);
+  }
+  55% {
+    left: 145%;
+    top: 85%;
+    transform: rotate(-270deg);
+  }
+  60% {
+    left: 145%;
+    top: 70%;
+    transform: rotate(-270deg);
+
+  }
+  70% {}
+  80% {}
+  90% {}
+  100% {}
+}
+
 /* About Me Page */
 
 .minimized_modal {
