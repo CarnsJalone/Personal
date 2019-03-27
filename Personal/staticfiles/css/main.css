@@ -130,6 +130,17 @@ body {
     width: 85%;
   }
 
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 57.5%;
+  }
+
+  iframe.linkedin_bot_video {
+    width: 95%;
+  }
+
+
   /* Error Pages */
 
   /* 500 Error */
@@ -277,6 +288,17 @@ body {
   div#display_contents_uploaded_data_search_bar_container {
     width: 75%;
   }
+
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 57.5%;
+  }
+
+  iframe.linkedin_bot_video {
+    width: 90%;
+  }
+
 
   /* Error Pages */
 
@@ -433,6 +455,17 @@ body {
     width: 60%;
   }
 
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 57.5%;
+  }
+
+  iframe.linkedin_bot_video {
+    width: 85%;
+  }
+
+
   /* Error Pages */
 
   /* 500 Error */
@@ -584,6 +617,18 @@ body {
 
   div#display_contents_uploaded_data_search_bar_container {
     width: 50%;
+  }
+
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 80%;
   }
 
   /* Error Pages */
@@ -739,6 +784,19 @@ body {
     width: 45%;
   }
 
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 75%;
+  }
+
+
   /* Error Pages */
 
   /* 500 Error */
@@ -890,6 +948,18 @@ body {
 
   div#display_contents_uploaded_data_search_bar_container {
     width: 40%;
+  }
+
+ /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 70%;
   }
 
   /* Sizes  */
@@ -1055,6 +1125,19 @@ body {
     width: 35%;
   }
 
+  /* Reaction Time Page */
+
+  div#main_canvas_div {
+    top: 50%;
+  }
+
+  /* LinkedIn Bot Page */
+
+  iframe.linkedin_bot_video {
+    width: 65%;
+  }
+  
+
   /* Sizes  */
 
   .standard_size {
@@ -1123,7 +1206,8 @@ body {
 
 
 .blue_hr {
-  background-color: #78A091;
+  /* background-color: #78A091; */
+  background-color: #221100;
 }
 
 .off_white_hr {
@@ -1141,7 +1225,9 @@ body {
 }
 
 .about_me_blue_text_highlight {
-  color: #78A091;
+  /* color: #78A091; */
+  color: #221100;
+  /* color: #37536D; */
   /* background-color: #fff; */
   /* background: linear-gradient(0.25turn, transparent 5%, #FFF8BE, transparent 95%); */
   background: #FFF8BE;
@@ -1159,7 +1245,8 @@ body {
 
 .about_me_off_white_text_highlight {
   color: #FFF8BE;
-  background: #78A091;
+  /* background: #78A091; */
+  background: #221100;
   text-align: center;
 
 }
@@ -1209,7 +1296,8 @@ div#main_header_left_half {
 
 div#main_header_left_half p {
   margin: 0 auto;
-  color: #1D3B57;
+  color: #221100;
+  font-weight: bold;
 }
 
 div#main_header_right_half {
@@ -1430,7 +1518,8 @@ div#resume_page_download_resume_container {
 }
 
 button#resume_page_download_resume_button {
-  background-color: #4c8872;
+  /* background-color: #4c8872; */
+  background-color: #221100;
   color: #FFF8BE;
   border: 1px solid #FFF8BE;
 }
@@ -1522,7 +1611,8 @@ div#connect_page_form_div label {
 
 input#connect_page_form_submit_button {
   margin: 0 auto;
-  background-color: #4c8872;
+  /* background-color: #4c8872; */
+  background-color: #221100;
   color: #FFF8BE;
   border: 1px solid #FFF8BE;
   padding-top: 5px;
@@ -1578,7 +1668,8 @@ p.connect_centered_li {
 
 .blue_method_of_comm a,
 .blue_method_of_comm p {
-  color: #1D3B57;
+  /* color: #1D3B57; */
+  color: #221100;
 }
 
 .off_white_method_of_comm a,
@@ -1986,6 +2077,16 @@ div#view_code img:hover {
   100% { transform: rotate(0deg); }
 }
 
+img#reaction_time_test_img {
+  width: 50%;
+  height: auto;
+}
+
+img#LinkedIn_Bot_gif {
+  height: 80%;
+  width: auto;
+}
+
 
 /* Page Headers */
 
@@ -2139,6 +2240,22 @@ input#display_contents_uploaded_data_search_bar_input {
 
 span#immediate_search_terms {
   background-color: #6e73ab;
+}
+
+/* LinkedIn Bot Page */
+
+div#linkedin_bot_inner_div {
+  text-align: center;
+}
+
+/* iframe.linkedin_bot_video {
+  width: 50%;
+  height: 500px;
+} */
+
+div#linkedin_bot_outer_div {
+  /* margin: 0 auto; */
+  text-align: center;
 }
 
 /* Return Links */
@@ -2317,10 +2434,10 @@ div#main_canvas_div {
   height: 75%;
   position: absolute;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   transition: 1s;
 }
+
 
 canvas#canvas {
   width: 100%;

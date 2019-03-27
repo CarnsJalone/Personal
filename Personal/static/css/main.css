@@ -1206,7 +1206,8 @@ body {
 
 
 .blue_hr {
-  background-color: #78A091;
+  /* background-color: #78A091; */
+  background-color: #221100;
 }
 
 .off_white_hr {
@@ -1224,7 +1225,9 @@ body {
 }
 
 .about_me_blue_text_highlight {
-  color: #78A091;
+  /* color: #78A091; */
+  color: #221100;
+  /* color: #37536D; */
   /* background-color: #fff; */
   /* background: linear-gradient(0.25turn, transparent 5%, #FFF8BE, transparent 95%); */
   background: #FFF8BE;
@@ -1242,7 +1245,8 @@ body {
 
 .about_me_off_white_text_highlight {
   color: #FFF8BE;
-  background: #78A091;
+  /* background: #78A091; */
+  background: #221100;
   text-align: center;
 
 }
@@ -1292,7 +1296,8 @@ div#main_header_left_half {
 
 div#main_header_left_half p {
   margin: 0 auto;
-  color: #1D3B57;
+  color: #221100;
+  font-weight: bold;
 }
 
 div#main_header_right_half {
@@ -1513,7 +1518,8 @@ div#resume_page_download_resume_container {
 }
 
 button#resume_page_download_resume_button {
-  background-color: #4c8872;
+  /* background-color: #4c8872; */
+  background-color: #221100;
   color: #FFF8BE;
   border: 1px solid #FFF8BE;
 }
@@ -1605,7 +1611,8 @@ div#connect_page_form_div label {
 
 input#connect_page_form_submit_button {
   margin: 0 auto;
-  background-color: #4c8872;
+  /* background-color: #4c8872; */
+  background-color: #221100;
   color: #FFF8BE;
   border: 1px solid #FFF8BE;
   padding-top: 5px;
@@ -1661,7 +1668,8 @@ p.connect_centered_li {
 
 .blue_method_of_comm a,
 .blue_method_of_comm p {
-  color: #1D3B57;
+  /* color: #1D3B57; */
+  color: #221100;
 }
 
 .off_white_method_of_comm a,

@@ -1,156 +1,309 @@
 
-------Employment Calculator Logging Begun at 2019-02-14 20:24:54.879009-----
+------Employment Calculator Logging Begun at 2019-02-26 18:03:33.704874-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-02-26 18:03:33.704874-----
+
+INFO:root:
+Email Sent To Jlamborghini22@gmail.com at 2019-02-26 13:48:55.099857
+
+INFO:root:
+Email Sent To Jarret.Laberdee@fcagroup.com at 2019-02-26 13:48:55.099857
+
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+CRITICAL:root:Unable to read in necessary credentials, unable to proceed...
+
+------Employment Calculator Logging Begun at 2019-03-22 20:43:49.443372-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-22 20:43:49.443372-----
+
+ERROR:django.request:Internal Server Error: /projects/linkedin_bot
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'end'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\Personal\Personal\Personal\Home\views.py", line 303, in linkedin_bot
+    return render(request, 'linkedin_bot.html', rendered_variables)
+  File "D:\Programming\Python\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'end', expected 'endblock'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-03-22 20:57:11.072810-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-22 20:57:11.072810-----
+
+
+------Employment Calculator Logging Begun at 2019-03-22 21:11:06.416199-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-22 21:11:06.416199-----
 
 
------Employment Calculator Logging Completed at 2019-02-14 20:24:54.879009-----
+------Employment Calculator Logging Begun at 2019-03-23 11:28:49.049580-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-23 11:28:49.049580-----
 
-------Employment Calculator Logging Begun at 2019-02-14 20:29:06.387763-----
 
+------Employment Calculator Logging Begun at 2019-03-23 11:28:49.049580-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-23 11:28:49.049580-----
 
------Employment Calculator Logging Completed at 2019-02-14 20:29:06.387763-----
 
-------Employment Calculator Logging Begun at 2019-02-14 20:29:06.387763-----
+------Employment Calculator Logging Begun at 2019-03-23 11:28:49.049580-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-23 11:28:49.049580-----
 
 
------Employment Calculator Logging Completed at 2019-02-14 20:29:06.387763-----
+------Employment Calculator Logging Begun at 2019-03-23 11:28:49.049580-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-23 11:28:49.049580-----
 
-------Employment Calculator Logging Begun at 2019-02-15 12:17:17.484109-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 12:17:17.484109-----
 
-------Employment Calculator Logging Begun at 2019-02-15 12:17:17.484109-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 12:17:17.484109-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 12:17:17.484109-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 12:17:17.484109-----
 
-------Employment Calculator Logging Begun at 2019-02-15 12:39:57.616966-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 12:39:57.616966-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 15:12:36.930050-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 15:12:36.930050-----
 
-------Employment Calculator Logging Begun at 2019-02-15 16:29:10.032871-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 16:29:10.032871-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 16:29:10.032871-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 16:29:10.032871-----
 
-------Employment Calculator Logging Begun at 2019-02-15 16:29:10.032871-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-15 16:29:10.032871-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-15 19:34:21.037430-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-15 19:34:21.037430-----
 
-------Employment Calculator Logging Begun at 2019-02-16 21:49:37.378427-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
 
------Employment Calculator Logging Completed at 2019-02-16 21:49:37.378427-----
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
-------Employment Calculator Logging Begun at 2019-02-16 21:49:37.378427-----
 
+------Employment Calculator Logging Begun at 2019-03-26 19:58:47.318554-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-03-26 19:58:47.318554-----
 
------Employment Calculator Logging Completed at 2019-02-16 21:49:37.378427-----
-
-------Employment Calculator Logging Begun at 2019-02-16 21:49:37.378427-----
-
-
------Employment Calculator Logging Completed at 2019-02-16 21:49:37.378427-----
-
-------Employment Calculator Logging Begun at 2019-02-18 18:05:00.534255-----
-
-
------Employment Calculator Logging Completed at 2019-02-18 18:05:00.534255-----
-
-------Employment Calculator Logging Begun at 2019-02-19 01:35:17.206574-----
-
-
------Employment Calculator Logging Completed at 2019-02-19 01:35:17.206574-----
-
-------Employment Calculator Logging Begun at 2019-02-19 16:01:20.362306-----
-
-
------Employment Calculator Logging Completed at 2019-02-19 16:01:20.362306-----
-
-------Employment Calculator Logging Begun at 2019-02-19 16:01:20.362306-----
-
-
------Employment Calculator Logging Completed at 2019-02-19 16:01:20.362306-----
-
-------Employment Calculator Logging Begun at 2019-02-19 16:01:20.362306-----
-
-
------Employment Calculator Logging Completed at 2019-02-19 16:01:20.362306-----
-
-------Employment Calculator Logging Begun at 2019-02-20 00:32:04.118013-----
-
-
------Employment Calculator Logging Completed at 2019-02-20 00:32:04.118013-----
-
------PDF Parser Logging Begun at 2019-02-20 22:09:58.954154-----
-
-
------PDF Parser Logging Completed at 2019-02-20 22:09:58.954154-----
-
-
-------Employment Calculator Logging Begun at 2019-02-20 22:09:58.979773-----
-
-
------Employment Calculator Logging Completed at 2019-02-20 22:09:58.979773-----
-
-------Employment Calculator Logging Begun at 2019-02-20 23:56:42.487952-----
-
-
------Employment Calculator Logging Completed at 2019-02-20 23:56:42.487952-----
-
-------Employment Calculator Logging Begun at 2019-02-21 16:48:08.298661-----
-
-
------Employment Calculator Logging Completed at 2019-02-21 16:48:08.298661-----
