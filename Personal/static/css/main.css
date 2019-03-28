@@ -1363,7 +1363,7 @@ div#vector_mountain_div {
   position: fixed;
   left: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -2;
 }
 
 img#vector_mountain_img {
@@ -1414,7 +1414,7 @@ img#home_me_living_life_img {
   transition: .5s;
 }
 
-div.active_animation {
+/* div.active_animation {
   animation-name: flight_intro;
   animation-iteration-count: infinite;
   animation-duration: 5s;
@@ -1507,7 +1507,7 @@ div.active_animation {
   80% {}
   90% {}
   100% {}
-}
+} */
 
 /* About Me Page */
 
