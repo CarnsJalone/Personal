@@ -65,7 +65,6 @@ from Personal import settings
 # logging.basicConfig(filename=logger, level=logging.DEBUG)
 logging.basicConfig(level=logging.DEBUG, filename=logger, format='%(asctime)s\n %(levelname)s %(message)s',datefmt='%H:%M:%S') 
 
-
 def home(request):
 
     rendered_variables = {

@@ -419,3 +419,10 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 -----Employment Calculator Logging Completed at 2019-03-27 18:33:37.190306-----
 
+
+------Employment Calculator Logging Begun at 2019-04-27 15:37:31.008314-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-27 15:37:31.008314-----
+
