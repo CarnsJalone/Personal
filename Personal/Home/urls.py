@@ -27,15 +27,10 @@ urlpatterns = [
     path('projects/display_content', views.display_content, name="display_content"),
     path('projects/reaction_time_test', views.reaction_time_test, name="reaction_time_test"),
     path('projects/linkedin_bot', views.linkedin_bot, name="linkedin_bot"),
+    path('projects/access_log_visualizer', views.access_log_visualizer, name="access_log_visualizer"),
     path('test/500', views.test_500, name="500_test"),
 ]
 
-# if settings.DEBUG:
-#     urlpatterns += path('test/404', views.test_404, name="404_test")
-
-
-# handler404 = 'Home.views.error_404'
-# handler500 = 'Home.views.error_500'
 
 
 

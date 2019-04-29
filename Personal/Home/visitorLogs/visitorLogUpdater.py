@@ -18,6 +18,7 @@ from logAcquirer import copyAccessLogsFromVarDirectoryToCopiedLogsDirectory as l
 from logPreparer import unzipNecessaryFilesAndMigrateAllFilesToPreparedLogsDirectory as logUpdateStepTwo
 from logCompiler import combineAllAccessLogsIntoSingleLogInCompiledLogsDirectory as logUpdateStepThree
 from logExaminer import requestAdditionalDataAboutVisitorIPAdressesAndWriteToVisitorDataDirectory as logUpdateStepFour
+from visitorLogInjector import insertFormattedJSONIntoSQLITEDatabase as logUpdateStepFive
 
 class visitorLogUpdater:
 
@@ -30,6 +31,7 @@ class visitorLogUpdater:
             logUpdateStepTwo()
             logUpdateStepThree()
             logUpdateStepFour()
+            logUpdateStepFive()
         else:
             print(f'Unable to process certain commands on {sys.platform}. Needs to be ran on a Linux machine...')
             return

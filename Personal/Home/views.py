@@ -32,6 +32,8 @@ MP4_DIR = os.path.join(static_files_directory, "mp4")
 employment_calculator_dir = os.path.join(current_directory, 'Employment_Calculator')
 employment_calculator_file = os.path.join(employment_calculator_dir, 'Employment_Calculator.py')
 
+# If I were more thoughtful, I wouldn't hardcode this, but meh, yolo swag
+GCPAPIKEY = "AIzaSyASSZA3KJq9J3hWHJzvV7YWsm6g1VVXa94"
 
 # Append them to the path so Django will recognize them
 sys.path.append(child_personal_directory)
@@ -304,6 +306,15 @@ def linkedin_bot(request):
     }
 
     return render(request, 'linkedin_bot.html', rendered_variables)
+
+def access_log_visualizer(request):
+
+    rendered_variables = {
+        'navbar' : 'projects', 
+        'maps_api_key' : GCPAPIKEY
+    }
+
+    return render(request, 'access_log_visualizer.html', rendered_variables)
 
 
 # Create error views

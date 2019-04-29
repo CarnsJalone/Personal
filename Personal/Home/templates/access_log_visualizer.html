@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block access_log_visualizer %}
+
+    <div id="access_log_map_container">
+
+        <div id="access_log_map_map">
+
+        </div>
+
+    </div>
+
+    <script
+        initMap()
+    > </script>
+
+{% endblock %}
+
+{% block access_log_visualizer_script %}
+<script src="https://maps.googleapis.com/maps/api/js?key={{maps_api_key}}&callback=initMap"></script>
+<script src="{% static 'js/access_log_visualizer.js' %}" type="text/javascript"></script>
+{% endblock %}

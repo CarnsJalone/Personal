@@ -4,6 +4,7 @@ import json
 import sqlite3
 
 # Here we will grab the visitor data JSON from several directories up
+# The class takes the logs from 
 
 VISITOR_LOG_ANALYSIS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 HOME_DIR = os.path.dirname(VISITOR_LOG_ANALYSIS_DIR)
@@ -19,11 +20,10 @@ sys.path.append(INNER_PERSONAL_DIR)
 VISITOR_DATA_DIR = os.path.join(LOG_ANALYSIS_DIR, 'visitorData')
 PATH_TO_SQLITE_DB = os.path.join(BASE_DIR, 'db.sqlite3')
 
-
 class visitorLogInjector:
 
     def __init__(self):
-        self.formattedVisitorDataFile = os.path.join(VISITOR_DATA_DIR, 'formattedVisitorData.json')
+        self.formattedVisitorDataFile = os.path.join(VISITOR_DATA_DIR, 'visitorData.json')
 
     def readInVisitorDataToMemory(self):
         print("Reading entries into memory as a list...")
@@ -74,7 +74,6 @@ class visitorLogInjector:
         self.commitTransaction(dbConnection)
         self.closeConnectionToDatabase(dbConnection)
 
-
     def openConnectionToDatabase(self):
         try:
             dbConnection = sqlite3.connect(PATH_TO_SQLITE_DB)
@@ -121,7 +120,6 @@ class visitorLogInjector:
             visitorsLatitude REAL
         ) 
         '''
-
         print("Creating visitorLogs table in SQLite Database...")
         self.executeTransaction(dbConnection, createTableString)
         self.commitTransaction(dbConnection)
@@ -167,12 +165,15 @@ class visitorLogInjector:
 
         return sqlInsertStatement
 
-
 def main():
     loganalyzer = visitorLogInjector()
     visitorEntries = loganalyzer.readInVisitorDataToMemory()
     loganalyzer.insertEntriesIntoDatabase(visitorEntries)
 
+def insertFormattedJSONIntoSQLITEDatabase():
+    loganalyzer = visitorLogInjector()
+    visitorEntries = loganalyzer.readInVisitorDataToMemory()
+    loganalyzer.insertEntriesIntoDatabase(visitorEntries)
 
 main()
 
