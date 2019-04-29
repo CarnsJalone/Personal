@@ -35,6 +35,7 @@ class visitorLogInjector:
         self.visitorDataFile = os.path.join(VISITOR_DATA_DIR, 'visitorData.json')
 
     def readInVisitorDataToMemory(self):
+        print("Reading Entries Into Memory as an array...")
         logging.info("Reading Entries Into Memory as an array...")
         
         listOfAllEntries = []
@@ -87,6 +88,8 @@ class visitorLogInjector:
         try:
             dbConnection = sqlite3.connect(PATH_TO_SQLITE_DB)
             if dbConnection is not None:
+                print("Database Connection Successfully Established...")
+                logging.info("Database Connection Successfully Established...")
                 return dbConnection
         except Exception as e:
             print(e)
@@ -97,14 +100,18 @@ class visitorLogInjector:
             dbConnection.close()
         except Exception as e:
             print(e)
+            logging.info(e)
             return
 
     def executeTransaction(self, dbConnection, transaction):
         dbCursor = dbConnection.cursor()
         try:
             dbCursor.execute(transaction)
+            print(f"{transaction} SuccessFully Executed")
+            logging.info(f"{transaction} SuccessFully Executed")
         except Exception as e:
             print(e)
+            logging.info(e)
             return 
 
     def commitTransaction(self, dbConnection):
@@ -130,6 +137,7 @@ class visitorLogInjector:
         ) 
         '''
         logging.info("Creating visitorLogs Table in SQLite Database...")
+        print("Creating visitorLogs Table in SQLite Database...")
         self.executeTransaction(dbConnection, createTableString)
         self.commitTransaction(dbConnection)
 
@@ -137,7 +145,9 @@ class visitorLogInjector:
         
         thisInsertionStatement = self.createEntryInsertionString(visitorEntry)
 
+        print(f"Inserting data for IP address {visitorEntry[0]} into visitorLogs table...")
         logging.info(f"Inserting data for IP address {visitorEntry[0]} into visitorLogs table...")
+        
         self.executeTransaction(dbConnection, thisInsertionStatement)
 
     def createEntryInsertionString(self, visitorEntryAsList):

@@ -39,12 +39,47 @@ class visitorLogUpdater:
 
     def updateAccessLogs(self):
         if sys.platform == 'linux':
-            logging.info("Preparing To Update Access Logs...")
+            
+            # Step One
+            now = time.time()
+            print("Step One Beginning...")
+            logging.info("Step One Beginning...")
             logUpdateStepOne()
+            print(f"Step One Successfully Completed. Took {time.time() - now} to Complete...")
+            logging.info(f"Step One Successfully Completed. Took {time.time() - now} to Complete...")
+
+            # Step Two
+            now = time.time()
+            print("Step Two Beginning...")
+            logging.info("Step Two Beginning...")
             logUpdateStepTwo()
+            print(f"Step Two Successfully Completed. Took {time.time() - now} to Complete...")
+            logging.info(f"Step Two Successfully Completed. Took {time.time() - now} to Complete...")
+
+            # Step Three
+            now = time.time()
+            print("Step Three Beginning...")
+            logging.info("Step Three Beginning...")
             logUpdateStepThree()
+            print(f"Step Three Successfully Completed. Took {time.time() - now} to Complete...")
+            logging.info(f"Step Three Successfully Completed. Took {time.time() - now} to Complete...")
+
+
+            now = time.time()
+            print("Step Four Beginning...")
+            logging.info("Step Four Beginning...")
             logUpdateStepFour()
+            print(f"Step Four Successfully Completed. Took {time.time() - now} to Complete...")
+            logging.info(f"Step Four Successfully Completed. Took {time.time() - now} to Complete...")
+
+
+            now = time.time()
+            print("Step Five Beginning Beginning...")
+            logging.info("Step Five Beginning...")
             logUpdateStepFive()
+            print(f"Step Five Successfully Completed. Took {time.time() - now} to Complete...")
+            logging.info(f"Step Five Successfully Completed. Took {time.time() - now} to Complete...")
+
         else:
             failedToUpdateMessage = f'Unable To Process Certain On Elements On {sys.platform}. This Functionality Is Based On A Linux Machine...'
             logging.debug(failedToUpdateMessage)
