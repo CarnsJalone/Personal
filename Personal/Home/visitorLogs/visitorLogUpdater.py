@@ -33,12 +33,17 @@ class visitorLogUpdater:
             logUpdateStepFour()
             logUpdateStepFive()
         else:
-            print(f'Unable to process certain commands on {sys.platform}. Needs to be ran on a Linux machine...')
-            return
+            failedToUpdateMessage = f'Unable to process certain commands on {sys.platform}. Needs to be ran on a Linux machine...'
+            print(failedToUpdateMessage)
+            return failedToUpdateMessage
 
 def main():
     logupdater = visitorLogUpdater()
     logupdater.updateAccessLogs()
+
+def updateAccessLogs():
+    logupdater = visitorLogUpdater()
+    return logupdater.updateAccessLogs()
 
 if __name__ == '__main__':
     main()

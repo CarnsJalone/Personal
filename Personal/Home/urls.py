@@ -15,6 +15,8 @@ from Personal import settings
 
 urlpatterns = [
     path('', views.home, name="home"),
+    path('update_access_logs', views.update_access_logs, name="update_access_logs"),
+    path('update_access_logs/triggered', views.update_access_logs_triggered, name="update_access_logs_triggered"),
     path('about_me/', views.about_me, name="about_me"),
     path('about_me/download_resume', views.download_resume, name="download_resume"),
     path('connect/', views.connect, name="connect"), 

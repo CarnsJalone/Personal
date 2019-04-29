@@ -52,6 +52,7 @@
       <img id="vector_mountain_img" src="{% static 'png/vector_mountains.png' %}" alt="Vectored Mountains">
     </div>
   
+    {% block update_access_logs %}{% endblock %}
     {% block home %}{% endblock %} 
     {% block resume %}{% endblock %}
     {% block about_me %}{% endblock %}
@@ -74,6 +75,7 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="{% static 'js/main.js' %}" type="text/javascript"></script>
+    {% block access_log_update_script %} {% endblock %}
     {% block random_generator_script %}{% endblock %}
     {% block pdf_parser_script %} {% endblock %}
     {% block pdf_loader_script %} {% endblock %}

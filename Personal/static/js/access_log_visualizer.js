@@ -1,19 +1,26 @@
 $(document).ready(function() {
-    var map_element = $("#access_log_map_map")
 
-    function initMap() {
-        var center = {lat: 44.5393, lng: -123.2799};
+    var map_element = document.getElementById("access_log_map_map")
+    var map;
 
-        var map = new google.maps.Map((map_element), 
-        {
-            zoom: 10, 
-            center: center
-        });
+    initMap = function() {
 
-        var marker = new google.maps.Marker({
-            position: center, 
+        var map_center_options = {
+            center: {
+                lat: 41.536531, 
+                lng: -83.528592
+            }, 
+            zoom: 10
+        }
+
+        map = new google.maps.Map(map_element, map_center_options)
+
+        var marker_options = {
+            position: map_center_options.center,
             map: map
-        })
-    };
+        }
 
+        var marker = new google.maps.Marker(marker_options)
+
+    };
 });

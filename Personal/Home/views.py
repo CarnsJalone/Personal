@@ -13,7 +13,6 @@ BASE_DIR = os.path.dirname(current_directory)
 child_personal_directory = os.path.join(BASE_DIR, "Personal")
 # settings_file_path = os.path.join(child_personal_directory, "settings.py")
 
-
 # Directories for PDF Parser application
 pdf_parser_directory = os.path.join(current_directory, 'PDF_Parser')
 uploaded_files_directory = os.path.join(pdf_parser_directory, 'Uploaded_Files')
@@ -21,6 +20,7 @@ converted_files_directory = os.path.join(pdf_parser_directory, 'Converted_Files'
 
 # Directories for Resume download
 personal_directory = os.path.dirname(current_directory)
+VISITOR_LOGS_DIRECTORY = os.path.join(current_directory, 'visitorLogs')
 static_files_directory = os.path.join(personal_directory, 'static')
 static_pdf_file_directory = os.path.join(static_files_directory, 'pdf')
 resume_file_path = os.path.join(static_pdf_file_directory, 'Jarret_Laberdee_Resume.pdf')
@@ -36,6 +36,7 @@ employment_calculator_file = os.path.join(employment_calculator_dir, 'Employment
 GCPAPIKEY = "AIzaSyASSZA3KJq9J3hWHJzvV7YWsm6g1VVXa94"
 
 # Append them to the path so Django will recognize them
+sys.path.append(VISITOR_LOGS_DIRECTORY)
 sys.path.append(child_personal_directory)
 sys.path.append(pdf_parser_directory)
 sys.path.append(uploaded_files_directory)
@@ -63,6 +64,7 @@ from . random_name_generator import Generator
 from PDF_Parser import PDF_Handler, TextHandler
 from Employment_Calculator import Employment_Calculator
 from Personal import settings
+from visitorLogUpdater import updateAccessLogs
 
 # logging.basicConfig(filename=logger, level=logging.DEBUG)
 logging.basicConfig(level=logging.DEBUG, filename=logger, format='%(asctime)s\n %(levelname)s %(message)s',datefmt='%H:%M:%S') 
@@ -260,8 +262,6 @@ def upload_pdf(request):
         form = PDF_Upload_Form()
         return render(request, 'pdf_parser.html', {'form' : form, 'navbar' : 'projects'})
 
-
-
     return render(request, 'pdf_parser.html', {})
 
 def display_content(request):
@@ -316,6 +316,24 @@ def access_log_visualizer(request):
 
     return render(request, 'access_log_visualizer.html', rendered_variables)
 
+def update_access_logs(request):
+
+    if not request.user.is_authenticated:
+        return redirect('/admin')
+
+    return render(request, 'admin_templates/update_access_logs.html', {})
+
+def update_access_logs_triggered(request):
+
+    if request.method == "GET":
+        stackTrace = updateAccessLogs()
+
+        json_update_message = {
+        'status' : 'Updating...',
+        'stackTrace' : stackTrace
+    }
+
+        return JsonResponse(json_update_message)
 
 # Create error views
 

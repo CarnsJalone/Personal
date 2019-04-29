@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block update_access_logs %}
+
+    <div id="update_logs_outer_container">
+
+        <div id="update_logs_form_container">
+            <form id="update_logs_form_form" action="{% url 'update_access_logs_triggered' %}" method="get">
+                {% csrf_token %}
+                <button id="update_logs_submit_button" type="submit">Update Logs</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="update_logs_status_outer_container">
+        <div id="update_logs_status_inner_container">
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block access_log_update_script %}
+<script src="{% static 'js/access_log_update.js' %}" type="text/javascript"></script>
+{% endblock %}
