@@ -140,6 +140,13 @@ body {
     width: 95%;
   }
 
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
 
   /* Error Pages */
 
@@ -299,6 +306,13 @@ body {
     width: 90%;
   }
 
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 325px;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
 
   /* Error Pages */
 
@@ -465,6 +479,13 @@ body {
     width: 85%;
   }
 
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
 
   /* Error Pages */
 
@@ -629,6 +650,14 @@ body {
 
   iframe.linkedin_bot_video {
     width: 80%;
+  }
+
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 7%;
   }
 
   /* Error Pages */
@@ -796,6 +825,13 @@ body {
     width: 75%;
   }
 
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 7%;
+  }
 
   /* Error Pages */
 
@@ -961,6 +997,14 @@ body {
   iframe.linkedin_bot_video {
     width: 70%;
   }
+
+    /* Access Log Visualization Page */
+
+    div#access_log_map_container {
+      height: 500px;
+      margin: 0 auto;
+      margin-top: 5%;
+    }
 
   /* Sizes  */
 
@@ -1135,6 +1179,14 @@ body {
 
   iframe.linkedin_bot_video {
     width: 65%;
+  }
+
+  /* Access Log Visualization Page */
+
+  div#access_log_map_container {
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 3%;
   }
   
 
@@ -1314,6 +1366,7 @@ div#main_header_right_half p:hover,
 div#main_header_right_half a:hover {
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .active_header_link {
@@ -1336,7 +1389,7 @@ div#main_header_right_half a:hover {
   opacity: .5;
   transform: scale(.1125);
   background-size: 2px 2px;
-  display:flex;
+  display: flex;
   height: 25px;
   margin-top: -10px;
   margin-right: -42.5px;
@@ -2357,9 +2410,6 @@ div#access_log_description_inner_div {
 }
 
 div#access_log_map_container {
-  margin: 0 auto;
-  height: 500px;
-  z-index: 5;
   background-color: #fff;
   border-radius: .25em;
 }

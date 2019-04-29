@@ -2,6 +2,7 @@ import os
 import sys 
 import json
 import sqlite3
+import logging
 
 # Here we will grab the visitor data JSON from several directories up
 # The class takes the logs from 
@@ -20,6 +21,11 @@ sys.path.append(INNER_PERSONAL_DIR)
 VISITOR_DATA_DIR = os.path.join(LOG_ANALYSIS_DIR, 'visitorData')
 PATH_TO_SQLITE_DB = os.path.join(BASE_DIR, 'db.sqlite3')
 
+STATUS_LOG_TXT = os.path.join(VISITOR_LOG_ANALYSIS_DIR, 'statusLog.txt')
+
+# Logger to output to DOM
+logging.basicConfig(level=logging.DEBUG, filename=STATUS_LOG_TXT)
+
 class visitorLogInjector:
 
     def __init__(self):
@@ -29,7 +35,7 @@ class visitorLogInjector:
         self.visitorDataFile = os.path.join(VISITOR_DATA_DIR, 'visitorData.json')
 
     def readInVisitorDataToMemory(self):
-        print("Reading entries into memory as a list...")
+        logging.info("Reading Entries Into Memory as an array...")
         
         listOfAllEntries = []
 
@@ -123,7 +129,7 @@ class visitorLogInjector:
             visitorsLatitude REAL
         ) 
         '''
-        print("Creating visitorLogs table in SQLite Database...")
+        logging.info("Creating visitorLogs Table in SQLite Database...")
         self.executeTransaction(dbConnection, createTableString)
         self.commitTransaction(dbConnection)
 
@@ -131,7 +137,7 @@ class visitorLogInjector:
         
         thisInsertionStatement = self.createEntryInsertionString(visitorEntry)
 
-        print(f"Inserting data for IP address {visitorEntry[0]} into visitorLogs table...")
+        logging.info(f"Inserting data for IP address {visitorEntry[0]} into visitorLogs table...")
         self.executeTransaction(dbConnection, thisInsertionStatement)
 
     def createEntryInsertionString(self, visitorEntryAsList):
