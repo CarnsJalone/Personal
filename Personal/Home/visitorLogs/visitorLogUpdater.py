@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 
 VISITOR_LOG_ANALYSIS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)))
 HOME_DIR = os.path.dirname(VISITOR_LOG_ANALYSIS_DIR)
@@ -26,16 +27,20 @@ class visitorLogUpdater:
         pass
 
     def updateAccessLogs(self):
-        if sys.platform == 'linux':
-            logUpdateStepOne()
-            logUpdateStepTwo()
-            logUpdateStepThree()
-            logUpdateStepFour()
-            logUpdateStepFive()
-        else:
-            failedToUpdateMessage = f'Unable to process certain commands on {sys.platform}. Needs to be ran on a Linux machine...'
-            print(failedToUpdateMessage)
-            return failedToUpdateMessage
+        # if sys.platform == 'linux':
+        logUpdateStepOne()
+        time.sleep(5)
+        logUpdateStepTwo()
+        time.sleep(5)
+        logUpdateStepThree()
+        time.sleep(5)
+        logUpdateStepFour()
+        time.sleep(5)
+        logUpdateStepFive()
+        # else:
+        #     failedToUpdateMessage = f'Unable to process certain commands on {sys.platform}. Needs to be ran on a Linux machine...'
+        #     print(failedToUpdateMessage)
+        #     return failedToUpdateMessage
 
 def main():
     logupdater = visitorLogUpdater()

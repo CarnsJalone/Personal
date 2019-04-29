@@ -680,3 +680,71 @@ Traceback (most recent call last):
   File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 333, in update_access_logs_triggered
     update_access_logs()
 TypeError: update_access_logs() missing 1 required positional argument: 'request'
+
+------Employment Calculator Logging Begun at 2019-04-29 13:30:51.321589-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 13:30:51.321589-----
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //71.6.167.142?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //110.67.55.207?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //185.131.190.176?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //200.158.193.49?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //94.218.1.83?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //139.162.119.197?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //18.237.118.159?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.209.244.10?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.217.210.127?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.222.55.204?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.220.186.104?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //54.184.65.163?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //85.27.34.254?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //187.108.71.242?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //193.106.30.98?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //77.247.109.70?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //45.173.108.170?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //187.101.185.23?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+WARNING:django.request:Not Found: /access_log_visualizer
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+

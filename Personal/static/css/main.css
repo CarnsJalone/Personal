@@ -1388,7 +1388,7 @@ img#home_me_living_life_img {
   /* top: 50%;
   left: 50%;
   transform: translateX(-50%); */
-  opacity: .25;
+  opacity: .175;
   filter: drop-shadow(-15px 15px 30px #78A091)
 
 }
@@ -2346,12 +2346,22 @@ div#linkedin_bot_outer_div {
 
 /* Access Log Visualizer Page */
 
+div#access_log_description_outer_div {
+  margin: 0 auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+div#access_log_description_inner_div {
+  margin: 0 auto;
+}
+
 div#access_log_map_container {
   margin: 0 auto;
-  width: 75%;
   height: 500px;
   z-index: 5;
   background-color: #fff;
+  border-radius: .25em;
 }
 
 div#access_log_map_map {
@@ -2359,6 +2369,11 @@ div#access_log_map_map {
   width: 100%;
   height: 100%;
   z-index: 5;
+  border-radius: .25em;
+}
+
+div#visitor_data_div_hidden {
+  display: none;
 }
 
 /* Update Access Log Page */

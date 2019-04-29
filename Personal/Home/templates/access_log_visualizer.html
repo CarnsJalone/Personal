@@ -3,9 +3,31 @@
 
 {% block access_log_visualizer %}
 
-    <div id="access_log_map_container">
-        <div id="access_log_map_map">
+    <div class="standard_size">
+
+        <div id="access_log_description_outer_div">
+            <div id="access_log_description_inner_div">
+                <h3>Apache Access Log Map Visualization</h3>
+                <p>A while back, I saw an interesting idea... Someone examined there NGINX access 
+                logs and created a map to visualize the locations of some of those IP Addresses. 
+                Well I kind of stole that idea. Here I am using a the Google Maps API to chart 
+                the <i>rough</i> locations of those IP addresses. It's really interesting to see 
+                how far the reach of the internet is, scam or not. You can also click on each marker to 
+                return a small description I gathered about each visitor as well.</p>
+
+            </div>
+
         </div>
+
+        <div id="access_log_map_container">
+            <div id="access_log_map_map">
+            </div>
+        </div>
+
+        <div id="visitor_data_div_hidden">
+            <p id="visitorData">{{visitorData}}</p>
+        </div>
+
     </div>
 
 {% endblock %}
@@ -14,6 +36,7 @@
 <script src="{% static 'js/access_log_visualizer.js' %}" type="text/javascript"></script>
 <script>
     function initMap(){}
+    var visitorData = document.getElementById("visitorData")
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key={{maps_api_key}}&callback=initMap"></script>
 {% endblock %}

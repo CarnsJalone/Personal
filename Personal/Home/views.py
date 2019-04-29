@@ -65,6 +65,7 @@ from PDF_Parser import PDF_Handler, TextHandler
 from Employment_Calculator import Employment_Calculator
 from Personal import settings
 from visitorLogUpdater import updateAccessLogs
+from visitorLogExtractor import returnVisitorDataFromDatabase
 
 # logging.basicConfig(filename=logger, level=logging.DEBUG)
 logging.basicConfig(level=logging.DEBUG, filename=logger, format='%(asctime)s\n %(levelname)s %(message)s',datefmt='%H:%M:%S') 
@@ -309,9 +310,13 @@ def linkedin_bot(request):
 
 def access_log_visualizer(request):
 
+    visitorData = returnVisitorDataFromDatabase()
+    visitorData = json.dumps(visitorData)
+
     rendered_variables = {
         'navbar' : 'projects', 
-        'maps_api_key' : GCPAPIKEY
+        'maps_api_key' : GCPAPIKEY, 
+        'visitorData' : visitorData
     }
 
     return render(request, 'access_log_visualizer.html', rendered_variables)

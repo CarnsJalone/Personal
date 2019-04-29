@@ -23,14 +23,17 @@ PATH_TO_SQLITE_DB = os.path.join(BASE_DIR, 'db.sqlite3')
 class visitorLogInjector:
 
     def __init__(self):
-        self.formattedVisitorDataFile = os.path.join(VISITOR_DATA_DIR, 'visitorData.json')
+        self.visitorDataFile = ""
+
+    def updateInitializedVariables(self):
+        self.visitorDataFile = os.path.join(VISITOR_DATA_DIR, 'visitorData.json')
 
     def readInVisitorDataToMemory(self):
         print("Reading entries into memory as a list...")
         
         listOfAllEntries = []
 
-        with open(self.formattedVisitorDataFile, encoding='utf-8') as visitorDataFile:
+        with open(self.visitorDataFile, encoding='utf-8') as visitorDataFile:
             jsonFile = json.loads(visitorDataFile.read())
 
             for entry in jsonFile:
@@ -167,11 +170,13 @@ class visitorLogInjector:
 
 def main():
     loganalyzer = visitorLogInjector()
+    loganalyzer.updateInitializedVariables()
     visitorEntries = loganalyzer.readInVisitorDataToMemory()
     loganalyzer.insertEntriesIntoDatabase(visitorEntries)
 
 def insertFormattedJSONIntoSQLITEDatabase():
     loganalyzer = visitorLogInjector()
+    loganalyzer.updateInitializedVariables()
     visitorEntries = loganalyzer.readInVisitorDataToMemory()
     loganalyzer.insertEntriesIntoDatabase(visitorEntries)
 

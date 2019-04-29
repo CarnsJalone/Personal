@@ -419,3 +419,332 @@ INFO:root:Time Delta Created
 INFO:root:Formatted Date Created
 -----Employment Calculator Logging Completed at 2019-03-27 18:33:37.190306-----
 
+
+------Employment Calculator Logging Begun at 2019-04-27 15:37:31.008314-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-27 15:37:31.008314-----
+
+INFO:django.request:OK: /projects/access_log_visualizer
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 314, in access_log_visualizer
+    return render(request, 'access_log_visualizer.html', rendered_variables)
+  File "D:\Programming\Python\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\cached.py", line 54, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\contrib\staticfiles\templatetags\staticfiles.py", line 28, in do_static
+    return _do_static(parser, token)
+  File "D:\Programming\Python\lib\site-packages\django\templatetags\static.py", line 159, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "D:\Programming\Python\lib\site-packages\django\templatetags\static.py", line 133, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''js/access_log_visualizer.js' from ''js/access_log_visualizer.js'
+ERROR:django.request:Internal Server Error: /projects/access_log_visualizer
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 314, in access_log_visualizer
+    return render(request, 'access_log_visualizer.html', rendered_variables)
+  File "D:\Programming\Python\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\contrib\staticfiles\templatetags\staticfiles.py", line 28, in do_static
+    return _do_static(parser, token)
+  File "D:\Programming\Python\lib\site-packages\django\templatetags\static.py", line 159, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "D:\Programming\Python\lib\site-packages\django\templatetags\static.py", line 133, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 663, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ''js/access_log_visualizer.js' from ''js/access_log_visualizer.js'
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /projects/access_log_visualizer
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endbock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 314, in access_log_visualizer
+    return render(request, 'access_log_visualizer.html', rendered_variables)
+  File "D:\Programming\Python\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 18: 'endbock', expected 'endblock'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /projects/admin
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /projects/access_log_visualizer
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 312, in access_log_visualizer
+    'maps_api_key' : GCPAPIKEY + 5
+TypeError: can only concatenate str (not "int") to str
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /projects/update_access_logs
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /update_access_logs
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /update_access_logs
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /update_access_logs
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'endbock'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 321, in update_access_logs
+    return render(request, 'admin_templates/update_access_logs.html', {})
+  File "D:\Programming\Python\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Programming\Python\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Programming\Python\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Programming\Python\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Programming\Python\lib\site-packages\django\template\base.py", line 528, in invalid_block_tag
+    get_text_list(["'%s'" % p for p in parse_until], 'or'),
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 21: 'endbock', expected 'endblock'. Did you forget to register or load this tag?
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /update_access_logs_triggered
+WARNING:django.security.csrf:Forbidden (CSRF token missing or incorrect.): /update_access_logs/triggered
+ERROR:django.request:Internal Server Error: /update_access_logs/triggered
+Traceback (most recent call last):
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Programming\Python\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Programming\Projects\DO_Folder_Structure\Personal\Personal\Personal\Home\views.py", line 333, in update_access_logs_triggered
+    update_access_logs()
+TypeError: update_access_logs() missing 1 required positional argument: 'request'
+
+------Employment Calculator Logging Begun at 2019-04-29 13:30:51.321589-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 13:30:51.321589-----
+
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //71.6.167.142?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //110.67.55.207?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //185.131.190.176?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //200.158.193.49?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //94.218.1.83?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //139.162.119.197?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //18.237.118.159?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.209.244.10?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.217.210.127?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.222.55.204?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //34.220.186.104?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //54.184.65.163?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //85.27.34.254?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //187.108.71.242?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //193.106.30.98?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //77.247.109.70?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //45.173.108.170?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+DEBUG:urllib3.connectionpool:http://api.ipstack.com:80 "GET //187.101.185.23?access_key=3069cb037d9f02837a5f858c10db2c04 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): api.ipstack.com:80
+WARNING:django.request:Not Found: /access_log_visualizer
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Not Found: /favicon.ico
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+
+
+------Employment Calculator Logging Begun at 2019-04-29 14:42:33.031675-----
+INFO:root:Date Succesfully Acquired; Hire-Date: 2015-02-09 05:30:00
+INFO:root:Time Delta Created
+INFO:root:Formatted Date Created
+-----Employment Calculator Logging Completed at 2019-04-29 14:42:33.031675-----
+
